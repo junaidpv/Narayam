@@ -2168,10 +2168,10 @@ $messages['nl'] = array(
  */
 $messages['or'] = array(
 	'narayam-toggle-ime' => '($1) ସଚଳ କରାଇବେ',
-	'narayam-menu' => 'ନିବେଶ (Press Ctrl+M for Odia Typing)',
+	'narayam-menu' => 'Type in Odia (Press Ctrl+M)',
 	'narayam-help' => 'ସହଯୋଗ',
 	'narayam-help-page' => '//or.wikipedia.org/wiki/Help:ଟାଇପ କରିବା',
-	'narayam-more-imes' => 'ଅଧିକ ନିବେଶ ପ୍ରଣାଳୀ',
+	'narayam-more-imes' => 'More input methods',
 	'narayam-as-inscript' => 'ଆସାମିଜ ଇନସ୍କ୍ରିପ୍ଟ',
 	'narayam-brx-inscript' => 'ବୋଡ଼ୋ ଇନସ୍କ୍ରିପ୍ଟ',
 	'narayam-hi-inscript' => 'ହିନ୍ଦୀ ଇନସ୍କ୍ରିପ୍ଟ',
