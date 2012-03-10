@@ -1945,6 +1945,7 @@ $messages['ml'] = array(
 /** Marathi (मराठी)
  * @author Ankitgadgil
  * @author Kaajawa
+ * @author Mahitgar
  * @author Pathak.ab
  * @author Shantanoo
  */
@@ -1954,6 +1955,7 @@ $messages['mr'] = array(
 	'narayam-menu' => 'इनपुट पद्धती.',
 	'narayam-menu-tooltip' => 'इनपुट पद्धती निवडा.',
 	'narayam-help' => 'मदत',
+	'narayam-help-page' => 'https://mr.wikipedia.org/wiki/विकिपीडिया:Input_System',
 	'narayam-checkbox-tooltip' => 'इनपुट पद्धती चालू आणि बंद करा.',
 	'narayam-enable-preference' => 'इनपुट पद्धतीला ईनेबल करा.',
 	'narayam-more-imes' => 'इतर भाषा',
@@ -2933,6 +2935,7 @@ $messages['sv'] = array(
 );
 
 /** Tamil (தமிழ்)
+ * @author Karthi.dr
  * @author Logicwiki
  * @author Sodabottle
  * @author Surya Prakash.S.A.
@@ -2947,10 +2950,21 @@ $messages['ta'] = array(
 	'narayam-checkbox-tooltip' => 'தட்டச்சுக் கருவியைத் தேர்வு செய்ய இப்பெட்டியை சொடுக்குங்கள்',
 	'narayam-enable-preference' => 'தட்டச்சுக் கருவியை செயலாக்கு',
 	'narayam-more-imes' => 'மேலுமுள்ள தட்டச்சு முறைகள்',
+	'narayam-ml' => 'மலையாள எழுத்துப்பெயர்ப்பு',
+	'narayam-ml-inscript' => 'மலையாள இன்ஸ்கிரிப்ட்',
+	'narayam-mr' => 'மராத்தி எழுத்துப்பெயர்ப்பு',
+	'narayam-mr-inscript' => 'மராத்தி இன்ஸ்கிரிப்ட்',
 	'narayam-ta-99' => 'தமிழ்99',
 	'narayam-ta-inscript' => 'தமிழ் இன்ஸ்கிரிப்ட் (சோதனை)',
 	'narayam-ta' => 'எழுத்துப்பெயர்ப்பு',
 	'narayam-ta-bamini' => 'பாமினி (சோதனை)',
+	'narayam-ur' => 'உருது திட்டநிலை',
+	'narayam-de' => 'இடாய்ச்சுமொழி (செருமன்)',
+	'narayam-gu' => 'குஜராத்தி எழுத்துப்பெயர்ப்பு',
+	'narayam-gu-inscript' => 'குஜராத்தி இன்ஸ்கிரிப்ட்',
+	'narayam-ru-standard' => 'உருசிய திட்டநிலை',
+	'narayam-hne-inscript' => 'சத்தீஷ்கரி இன்ஸ்கிரிப்ட்',
+	'narayam-mai-inscript' => 'மைதிலி இன்ஸ்கிரிப்ட்',
 );
 
 /** Telugu (తెలుగు)
