@@ -1261,6 +1261,7 @@ $messages['he'] = array(
  * @author Ansumang
  */
 $messages['hi'] = array(
+	'narayam-desc' => 'इनपुट फ़ील्ड के लिए कस्टम इनपुट विधि को जोड़ने की अनुमति देता है',
 	'narayam-toggle-ime' => 'सक्षम करें ($1)',
 	'narayam-menu' => 'इनपुट विधि',
 	'narayam-menu-tooltip' => 'इनपुट विधि क चयन करें',
@@ -1318,6 +1319,10 @@ $messages['hi'] = array(
 	'narayam-sah-standard' => 'सखा स्टैंडर्ड',
 	'narayam-hne-inscript' => 'छतीसगड़ि इनस्क्रिप्ट',
 	'narayam-mai-inscript' => 'मैथिली इनस्क्रिप्ट',
+	'narayam-gom-deva' => 'गोवा कोंकणी - देवनागरी लिप्यंतरण',
+	'narayam-gom-deva-inscript' => 'गोवा कोंकणी - देवनागरी लिपी',
+	'narayam-he-standard-2011-extonly' => 'हिब्रू मानक २०११',
+	'narayam-he-standard-2011' => 'हिब्रू मानक २०११ (अंग्रेजी कीबोर्ड)',
 );
 
 /** Upper Sorbian (Hornjoserbsce)
@@ -2186,12 +2191,12 @@ $messages['nl'] = array(
  * @author Psubhashish
  */
 $messages['or'] = array(
-	'narayam-toggle-ime' => '($1) ସଚଳ କରାଇବେ',
+	'narayam-toggle-ime' => 'Enable ($1)',
 	'narayam-menu' => 'Type in Odia (Press Ctrl+M)',
-	'narayam-help' => 'ସହଯୋଗ',
+	'narayam-help' => 'Help',
 	'narayam-help-page' => '//or.wikipedia.org/wiki/Help:ଟାଇପ କରିବା',
 	'narayam-more-imes' => 'More input methods',
-	'narayam-as-inscript' => 'ଆସାମିଜ ଇନସ୍କ୍ରିପ୍ଟ',
+	'narayam-as-inscript' => 'ଆସାମୀ ଇନସ୍କ୍ରିପ୍ଟ',
 	'narayam-brx-inscript' => 'ବୋଡ଼ୋ ଇନସ୍କ୍ରିପ୍ଟ',
 	'narayam-hi-inscript' => 'ହିନ୍ଦୀ ଇନସ୍କ୍ରିପ୍ଟ',
 	'narayam-kn-inscript' => 'କନ୍ନଡ଼ ଇନସ୍କ୍ରିପ୍ଟ',
