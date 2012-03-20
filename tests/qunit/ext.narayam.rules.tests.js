@@ -32,7 +32,9 @@ typeChars = function( $input, charstr ) {
 		var code = charstr.charCodeAt(i);
 		// Trigger event and undo if prevented
 		var event = new jQuery.Event( 'keypress', { keyCode: code, which: code, charCode: code } );
-		$input.trigger( event );
+		if( $input.triggerHandler( event ) ) {
+			$input.val(  $input.val() + charstr[i] ) ;
+		}
 	}
 };
 
@@ -130,7 +132,16 @@ narayamTest ( {
 	scheme: 'mr',
 	$input: $( '<input>' ).attr( { id: "mr", type: 'text' } )
 } );
-
+narayamTest( {
+	description: 'German Transliteration and keybuffer test',
+	tests: [
+		{ input: '~o', output: 'ö', description: 'German ö' },
+		{ input: '~O', output: 'Ö', description: 'German Ö' },
+		{ input: '~s', output: 'ß', description: 'German ß' }
+	],
+	scheme: 'de',
+	$input: $( '<input>' ).attr( { id: 'de', type: 'text' } )
+} );
 teardown( );
 
 }() );
