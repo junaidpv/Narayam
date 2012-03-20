@@ -25,15 +25,35 @@ test( "-- Initial check", function() {
 } );
 
 // Basic sendkey-implementation
-typeChars = function( $input, charstr ) {
-	var len = charstr.length;
+// $input - the input element
+// characters - either
+//		- a string
+//		- an array of pairs of character and altKey value
+typeChars = function( $input, characters ) {
+	var len = characters.length;
 	for ( var i = 0; i < len; i++ ) {
 		// Get the key code
-		var code = charstr.charCodeAt(i);
+		var character,
+			altKeyValue;
+		if ( typeof( characters ) === 'string' ) {
+			character = characters[i];
+			altKeyValue = false;
+		} else {
+			character = characters[i][0];
+			altKeyValue = characters[i][1];
+		}
+
+		var code = character.charCodeAt(0);
+
 		// Trigger event and undo if prevented
-		var event = new jQuery.Event( 'keypress', { keyCode: code, which: code, charCode: code } );
+		var event = new jQuery.Event( 'keypress', {
+			keyCode: code,
+			which: code,
+			charCode: code,
+			altKey: altKeyValue
+		} );
 		if( $input.triggerHandler( event ) ) {
-			$input.val(  $input.val() + charstr[i] ) ;
+			$input.val(  $input.val() + character ) ;
 		}
 	}
 };
@@ -140,8 +160,9 @@ narayamTest ( {
 		{ input: 'dny', output: 'ज्ञ्', description: 'dny for ज्ञ् in Marathi transliteration' }
 	],
 	scheme: 'mr',
-	$input: $( '<input>' ).attr( { id: "mr", type: 'text' } )
+	$input: $( '<input>' ).attr( { id: 'mr', type: 'text' } )
 } );
+
 narayamTest( {
 	description: 'German Transliteration and keybuffer test',
 	tests: [
@@ -152,6 +173,17 @@ narayamTest( {
 	scheme: 'de',
 	$input: $( '<input>' ).attr( { id: 'de', type: 'text' } )
 } );
+
+narayamTest( {
+	description: 'Hebrew Transliteration and extended keys test',
+	tests: [
+		{ input: [ [ '-', false ] ], output: '-', description: 'Hebrew regular -' },
+		{ input: [ [ '-', true ]  ], output: '־', description: 'Hebrew extended -' }
+	],
+	scheme: 'he-standard-2011-extonly',
+	$input: $( '<input>' ).attr( { id: 'he-standard-2011-extonly', type: 'text' } )
+} );
+
 teardown( );
 
 }() );
