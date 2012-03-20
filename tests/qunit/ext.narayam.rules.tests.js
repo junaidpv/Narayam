@@ -48,7 +48,7 @@ var narayamTest = function( options ) {
 		tests: [],
 		scheme: '' // The input method name.
 	}, options );
-	
+
 	test( opt.description, function() {
 		expect( opt.tests.length );
 		$.narayam.enable();
@@ -57,7 +57,7 @@ var narayamTest = function( options ) {
 			opt.$input.appendTo( '#qunit-fixture' );
 			$.narayam.addInputs( opt.$input );
 			$.narayam.setScheme( opt.scheme  );
-			for ( var i= 0 ; i < opt.tests.length; i++ ) {
+			for ( var i = 0 ; i < opt.tests.length; i++ ) {
 				// Simulate pressing keys for each of the sample characters
 				typeChars( opt.$input, opt.tests[i].input );
 				equals( opt.$input.val(), opt.tests[i].output, opt.tests[i].description );
@@ -93,21 +93,31 @@ narayamTest( {
 } );
 
 narayamTest( {
-	description: 'Oriya Inscript test',
+	description: 'Telugu Transliteration test',
+	tests: [
+		{ input: 'c', output: 'చ్', description: 'Telugu c' },
+		{ input: 'ch', output: 'చ్', description: 'Telugu ch' }
+	],
+	scheme: 'te',
+	$input: $( '<input>' ).attr( { id: 'te', type: 'text' } )
+} );
+
+narayamTest( {
+	description: 'Oriya InScript test',
 	tests: [{ input: 'ka', output: 'କୋ' }],
 	scheme: 'or-inscript',
 	$input: $( '<input>' ).attr( { id: 'or', type: 'text' } )
 } );
 
 narayamTest( {
-	description: 'Malayalam Inscript test',
+	description: 'Malayalam InScript test',
 	tests: [{ input: 'ka', output: 'കോ' }],
 	scheme: 'ml-inscript',
 	$input: $( '<input>' ).attr( { id: 'ml-inscript', type: 'text' } )
 } );
 
 narayamTest( {
-	description: 'Tamil Inscript test',
+	description: 'Tamil InScript test',
 	tests: [
 		{ input: 'ka', output: 'கோ', description: 'Tamil Inscript கோ' }
 	],

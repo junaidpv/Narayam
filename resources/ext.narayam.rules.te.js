@@ -8,7 +8,7 @@
  * License: GPLv3,  CC-BY-SA 3.0
  */
 
- // Normal rules
+// Normal rules
 var rules = [
 // handle sunna for n and m
 ['(మ్|న్)b', '', 'ంబ్'],
