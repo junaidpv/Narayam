@@ -177,6 +177,10 @@ narayamTest( {
 narayamTest( {
 	description: 'Hebrew Transliteration and extended keys test',
 	tests: [
+		// The first case is a regular hyphen-minus ('-'), which is the same
+		// when it is pressed by itself without Alt.
+		// The second case is hyphen-minus with Alt, which produces the Hebrew
+		// hyphen (maqaf).
 		{ input: [ [ '-', false ] ], output: '-', description: 'Hebrew regular -' },
 		{ input: [ [ '-', true ]  ], output: '־', description: 'Hebrew extended -' }
 	],
