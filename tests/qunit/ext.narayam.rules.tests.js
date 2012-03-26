@@ -80,8 +80,9 @@ var narayamTest = function( options ) {
 			for ( var i = 0 ; i < opt.tests.length; i++ ) {
 				// Simulate pressing keys for each of the sample characters
 				typeChars( opt.$input, opt.tests[i].input );
-				equals( opt.$input.val(), opt.tests[i].output, opt.tests[i].description );
+				equals( opt.$input.val() || opt.$input.text(), opt.tests[i].output, opt.tests[i].description );
 				opt.$input.val( '' );
+				opt.$input.text( '' );
 			}
 			$.narayam.disable();
 			start();
@@ -110,6 +111,30 @@ narayamTest( {
 	],
 	scheme: 'ml',
 	$input: $( '<input>' ).attr( { id: 'ml', type: 'text' } )
+} );
+
+
+narayamTest( {
+	description: 'Malayalam Transliteration test on contenteditable div',
+	tests: [
+		{ input: 'a', output: 'അ', description: 'Malayalam a' },
+		{ input: 'ra', output: 'ര', description: 'Malayalam ra' },
+		{ input: 'p', output: 'പ്', description: 'Malayalam p' },
+		{ input: 'kh', output: 'ഖ്', description: 'Malayalam kh' },
+		{ input: 'nch', output: 'ഞ്ച്', description: 'Malayalam nch' },
+		{ input: 'au', output: 'ഔ', description: 'Malayalam au' },
+		{ input: 'maU', output: 'മൌ', description: 'Malayalam aU' },
+		{ input: 'kshau', output: 'ക്ഷൗ', description: 'Malayalam kshau' },
+		{ input: 'ram', output: 'രം', description: 'Malayalam ram' },
+		{ input: 'rama', output: 'രമ', description: 'Malayalam rama' },
+		{ input: 'baH', output: 'ബഃ', description: 'baH' },
+		{ input: 'bah', output: 'ബഹ്', description: 'bah' },
+		{ input: 'ai', output: 'ഐ', description: 'ai' },
+		{ input: 'lai', output: 'ലൈ', description: 'lai' },
+		{ input: 'nta', output: 'ന്റ', description: 'Malayalam nta' }
+	],
+	scheme: 'ml',
+	$input: $( '<div contenteditable>' ).attr( { id: 'ml', type: 'text' } )
 } );
 
 narayamTest( {

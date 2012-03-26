@@ -184,13 +184,13 @@ $.narayam = new ( function() {
 		// Get the current caret position. The user may have selected text to overwrite,
 		// so get both the start and end position of the selection. If there is no selection,
 		// startPos and endPos will be equal.
-		var pos = $this.textSelection( 'getCaretPosition', { 'startAndEnd': true } );
+		var pos = getCaretPosition(this);
 		var startPos = pos[0];
 		var endPos = pos[1];
 		// Get the last few characters before the one the user just typed,
 		// to provide context for the transliteration regexes.
 		// We need to append c because it hasn't been added to $this.val() yet
-		var input = that.lastNChars( $this.val(), startPos, currentScheme.lookbackLength ) + c;
+		var input = that.lastNChars(  $this.val() || $this.text(), startPos, currentScheme.lookbackLength ) + c;
 		var keyBuffer = $this.data( 'narayamKeyBuffer' );
 		var replacement = that.transliterate( input, keyBuffer, e.altKey );
 
@@ -211,17 +211,40 @@ $.narayam = new ( function() {
 		var divergingPos = that.firstDivergence( input, replacement );
 		input = input.substring( divergingPos );
 		replacement = replacement.substring( divergingPos );
-
-		$this.textSelection( 'encapsulateSelection', {
-			peri: replacement,
-			replace: true,
-			selectPeri: false,
-			selectionStart: startPos - input.length + 1,
-			selectionEnd: endPos
-		} );
-
+		replaceText( this, replacement, startPos - input.length + 1, endPos );
 		e.stopPropagation();
 		return false;
+	}
+
+
+	function getCaretPosition( element ){
+		var isDiv = ( element.nodeName === 'DIV' );
+		if ( !isDiv ) {
+			return $( element ).textSelection( 'getCaretPosition', { 'startAndEnd': true } );
+		}
+		return getDivCaretPos( element );
+	}
+
+	function replaceText( element, replacement, start, end ) {
+		var isDiv = ( element.nodeName === 'DIV' );
+		var $this = $( element );
+		if ( !isDiv ) {
+			 $this.textSelection( 'encapsulateSelection', {
+				peri: replacement,
+				replace: true,
+				selectPeri: false,
+				selectionStart: start,
+				selectionEnd: end
+			} );
+		} else {
+			// Replace the text in the selection part with translterated text.
+			$this.text( $this.text().substr( 0, start ) + replacement + $this.text().substr( end, $this.text().length ) );
+			// Move the cursor to the end of the replaced text.
+			setDivCaretPos( element, {
+				start: start + replacement.length,
+				end:  start + replacement.length,
+			} );
+		}
 	}
 
 	/**

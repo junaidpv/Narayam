@@ -262,7 +262,15 @@ $wgResourceModules['ext.narayam.core'] = $narayamTpl + array(
 		'mediawiki.util',
 		'jquery.textSelection',
 		'jquery.cookie',
+		'ext.narayam.core.contenteditable',
 	),
+);
+
+$wgResourceModules['ext.narayam.core.contenteditable'] = $narayamTpl + array(
+	'scripts' => array(
+		'resources/contenteditable/rangy/rangy-core.js',
+		'resources/contenteditable/ext.narayam.contenteditable.js'
+		),
 );
 
 $wgResourceModules['ext.narayam.rules.ahr'] = $narayamTpl + array(
