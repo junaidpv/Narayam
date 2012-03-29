@@ -55,9 +55,13 @@ $wgNarayamSchemes = array(
 		'as-bornona' => 'ext.narayam.rules.as-bornona',
 		'as-inscript' => 'ext.narayam.rules.as-inscript',
 	),
+	'bh' => array( // Identical to bho
+		'bho' => 'ext.narayam.rules.bho',
+		'bho-inscript' => 'ext.narayam.rules.bho-inscript',
+	),
 	'bho' => array(
-		'bho' => array( 'ext.narayam.rules.bho', 'beta' ),
-		'bho-inscript' => array( 'ext.narayam.rules.bho-inscript', 'beta' ),
+		'bho' => 'ext.narayam.rules.bho',
+		'bho-inscript' => 'ext.narayam.rules.bho-inscript',
 	),
 	'bn' => array(
 		'bn-avro' => 'ext.narayam.rules.bn-avro',
