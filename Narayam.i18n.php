@@ -32,6 +32,7 @@ $messages['en'] = array(
 	'narayam-as-inscript' => 'Assamese InScript',
 	'narayam-ber-tfng' => 'Tifinagh Transliteration',
 	'narayam-brx-inscript' => 'Bodo InScript',
+	'narayam-cyrl-palochka' => 'Cyrillic with palochka',
 	'narayam-eo' => 'Esperanto',
 	'narayam-hi' => 'Hindi Transliteration',
 	'narayam-hi-bolnagri' => 'Hindi Bolnagri',
@@ -105,6 +106,7 @@ See: http://www.mediawiki.org/wiki/Extension:Narayam',
 	'narayam-help-page' => '{{doc-important|Only translate this message if the documentation on MediaWiki.org is not used for a language.}}
 This is a URL to the help page for Narayam that describes how to use this tool.',
 	'narayam-checkbox-tooltip' => 'Toggle the input method —that is, the interpretation of keystrokes— between "standard" and "interpreted by Narayam".',
+	'narayam-cyrl-palochka' => 'This is a name of a keyboard mapping for the Cyrillic alphabet that includes the letter palochka. See https://en.wikipedia.org/wiki/Palochka .',
 	'narayam-eo' => 'The language "Esperanto" in your local language.
 This allows for Narayam to add custom input methods for input fields. Esperanto x-system transcription. For more information, see http://www.mediawiki.org/wiki/Extension:Narayam .',
 	'narayam-hi-bolnagri' => '[[w:Bolnagri|Bolnagri]] keyboard layout for the Hindi language.',
@@ -2617,6 +2619,7 @@ $messages['ru'] = array(
 	'narayam-as-inscript' => 'Ассамский InScript',
 	'narayam-ber-tfng' => 'Тифинаг (транслитерация)',
 	'narayam-brx-inscript' => 'Bodo InScript',
+	'narayam-cyrl-palochka' => 'Кириллица с палочкой для языков Кавказа',
 	'narayam-eo' => 'Эсперанто',
 	'narayam-hi' => 'Хинди (транслитерация)',
 	'narayam-hi-inscript' => 'InScript для Хинди',

@@ -42,9 +42,16 @@ $wgNarayamUseBetaMapping = false;
 // Enable experimental onscreen keyboard feature.
 $wgNarayamUseOSK = false;
 
+// This layout is repeated many times
+$cyrlPalochkaScheme = array(
+	'cyrl-palochka' => array( 'ext.narayam.rules.cyrl-palochka', 'beta' ),
+);
+
 // Array mapping language codes and scheme names to module names
 // Custom schemes can be added here
 $wgNarayamSchemes = array(
+	'ady' => $cyrlPalochkaScheme,
+	'ady-cyrl' => $cyrlPalochkaScheme,
 	'ahr' => array(
 		'ahr' => 'ext.narayam.rules.ahr',
 		'ahr-inscript' => 'ext.narayam.rules.ahr-inscript',
@@ -62,6 +69,7 @@ $wgNarayamSchemes = array(
 		'bho' => 'ext.narayam.rules.bho',
 		'bho-inscript' => 'ext.narayam.rules.bho-inscript',
 	),
+	'av' => $cyrlPalochkaScheme,
 	'bho' => array(
 		'bho' => 'ext.narayam.rules.bho',
 		'bho-inscript' => 'ext.narayam.rules.bho-inscript',
@@ -77,6 +85,7 @@ $wgNarayamSchemes = array(
 	'hne' => array(
 		'hne-inscript' => array( 'ext.narayam.rules.hne-inscript', 'beta' ),
 	),
+	'ce' => $cyrlPalochkaScheme,
 	'de' => array(
 		'de' => 'ext.narayam.rules.de',
 	),
@@ -100,10 +109,15 @@ $wgNarayamSchemes = array(
 		'hi-bolnagri' => 'ext.narayam.rules.hi-bolnagri',
 		'hi-inscript' => 'ext.narayam.rules.hi-inscript',
 	),
+	'inh' => $cyrlPalochkaScheme,
+	'kbd' => $cyrlPalochkaScheme,
+	'kbd-cyrl' => $cyrlPalochkaScheme,
 	'kn' => array(
 		'kn' => 'ext.narayam.rules.kn',
 		'kn-inscript' => 'ext.narayam.rules.kn-inscript',
 	),
+	'lbe' => $cyrlPalochkaScheme,
+	'lez' => $cyrlPalochkaScheme,
 	'mai' => array(
 		'mai-inscript' => array( 'ext.narayam.rules.mai-inscript', 'beta' ),
 	),
@@ -160,6 +174,7 @@ $wgNarayamSchemes = array(
 		'te' => 'ext.narayam.rules.te',
 		'te-inscript' => 'ext.narayam.rules.te-inscript',
 	),
+	'tkr' => $cyrlPalochkaScheme,
 	'ur' => array(
 		'ur' => array( 'ext.narayam.rules.ur', 'beta' ),
 	),
@@ -229,6 +244,7 @@ $wgResourceModules['ext.narayam.core'] = $narayamTpl + array(
 		'narayam-bn-nkb',
 		'narayam-ber-tfng',
 		'narayam-brx-inscript',
+		'narayam-cyrl-palochka',
 		'narayam-de',
 		'narayam-eo',
 		'narayam-gom-deva',
@@ -350,6 +366,10 @@ $wgResourceModules['ext.narayam.rules.bn-inscript'] = $narayamTpl + array(
 );
 $wgResourceModules['ext.narayam.rules.bn-nkb'] = $narayamTpl + array(
 	'scripts' => 'resources/ext.narayam.rules.bn-nkb.js',
+	'dependencies' => 'ext.narayam.core',
+);
+$wgResourceModules['ext.narayam.rules.cyrl-palochka'] = $narayamTpl + array(
+	'scripts' => 'resources/ext.narayam.rules.cyrl-palochka.js',
 	'dependencies' => 'ext.narayam.core',
 );
 $wgResourceModules['ext.narayam.rules.de'] = $narayamTpl + array(

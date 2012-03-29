@@ -253,6 +253,45 @@ narayamTest( {
 	$input: $( '<input>' ).attr( { id: 'pa', type: 'text' } )
 } );
 
+// Variables for Cyrillic with palochka transliteration tests.
+// All the characters are very similar in appearance,
+// so it's better to give them names to avoid confusion.
+var palochka = 'Ӏ';
+var latinSmallL = 'l';
+var latinCapitalI = 'I';
+var ukrainianCapitalI = 'І';
+var digitOne = '1';
+
+narayamTest( {
+	description: 'Cyrillic with palochka transliteration test',
+	tests: [
+		// Sanity test - palochka should produce itself
+		{ input: palochka, output: palochka, description: 'Palochka itself is unchanged' },
+
+		{ input: 'L', output: 'L', description: 'Latin capital L is unchanged' },
+		{ input: latinSmallL, output: palochka, description: 'Latin small l becomes palochka' },
+
+		{ input: latinCapitalI, output: palochka, description: 'Latin capital I becomes palochka' },
+		{ input: 'i', output: 'i', description: 'Latin small i becomes palochka' },
+
+		{ input: ukrainianCapitalI, output: palochka, description: 'Ukrainian capital І becomes palochka' },
+
+		{ input: digitOne, output: digitOne, description: 'Digit one (1) is unchanged' },
+		{ input: [ [ digitOne, true ]  ], output: palochka, description: 'Extended digit one (1) becomes palochka' },
+
+		{ input: 'д', output: 'д', description: 'Cyrillic small д is is unchanged' },
+		{ input: [ [ 'д', true ]  ], output: palochka, description: 'Extended Cyrillic д becomes palochka' },
+
+		{ input: 'ш', output: 'ш', description: 'Cyrillic small ш is is unchanged' },
+		{ input: [ [ 'ш', true ]  ], output: palochka, description: 'Extended Cyrillic small ш becomes palochka' },
+
+		{ input: 'Ш', output: 'Ш', description: 'Cyrillic capital Ш is is unchanged' },
+		{ input: [ [ 'Ш', true ]  ], output: palochka, description: 'Extended Cyrillic capital Ш becomes palochka' }
+	],
+	scheme: 'cyrl-palochka',
+	$input: $( '<input>' ).attr( { id: 'cyrl-palochka', type: 'text' } )
+} );
+
 teardown( );
 
 }() );
