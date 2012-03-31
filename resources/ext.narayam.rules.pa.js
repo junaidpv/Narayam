@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Transliteration regular expression rules table for Gurmukhi script for Punjabi
  * @author Amir E. Aharoni
  * Semi-automatically created from the Hindi transliteration mapping using

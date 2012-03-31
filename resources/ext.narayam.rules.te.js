@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Trasliteration regular expression rules table for Telugu
  * based on RTS
  * @author Veeven ([[user:Veeven]])
