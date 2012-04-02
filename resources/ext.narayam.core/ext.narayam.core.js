@@ -114,8 +114,14 @@ $.narayam = new ( function() {
 	function changeVisual( $element ) {
 		if ( enabled ) {
 			$element.addClass( 'narayam-input' );
+			if( $.narayam.osk ) {
+				 $.narayam.osk.bind( $element, currentScheme.namemsg );
+			}
 		} else {
 			$element.removeClass( 'narayam-input' );
+			if( $.narayam.osk ) {
+				$.narayam.osk.unbind( $element );
+			}
 		}
 	}
 

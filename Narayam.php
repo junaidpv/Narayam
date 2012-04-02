@@ -39,6 +39,9 @@ $wgNarayamRecentItemsLength = 3;
 // Whether the extension should load input methods in beta status
 $wgNarayamUseBetaMapping = false;
 
+// Enable experimental onscreen keyboard feature.
+$wgNarayamUseOSK = false;
+
 // Array mapping language codes and scheme names to module names
 // Custom schemes can be added here
 $wgNarayamSchemes = array(
@@ -281,6 +284,18 @@ $wgResourceModules['ext.narayam.core.contenteditable'] = $narayamTpl + array(
 		'resources/contenteditable/rangy/rangy-core.js',
 		'resources/contenteditable/ext.narayam.contenteditable.js'
 		),
+);
+
+$wgResourceModules['ext.narayam.osk'] = $narayamTpl + array(
+	'scripts' => 'resources/osk/ext.narayam.osk.js',
+	'styles' => 'resources/osk/ext.narayam.osk.css',
+	'dependencies' => array( 'jquery.keyboard', 'ext.narayam.core' ),
+);
+
+$wgResourceModules['jquery.keyboard'] = $narayamTpl + array(
+	'scripts' => 'resources/osk/jquery.keyboard/jquery.keyboard.js',
+	'styles' => 'resources/osk/jquery.keyboard/keyboard.css',
+	'dependencies' => array( 'jquery.ui.core', 'jquery.ui.position' ),
 );
 
 $wgResourceModules['ext.narayam.rules.ahr'] = $narayamTpl + array(
