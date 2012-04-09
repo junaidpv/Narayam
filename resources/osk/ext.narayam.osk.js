@@ -14,29 +14,31 @@ $.narayam.osk = new ( function() {
 	 */
 	this.bind = function( $element, schemename ) {
 		layout = 'qwerty';
-		build( schemename, layout );
 		var $keyboard = $element.data( 'keyboard' );
-		if ( !$keyboard ) {
-			// TODO position it correctly. And show the kyboard only on click of that.
-			// $element.parent().append("<span id='narayam-osk-box'>&nbsp;&nbsp;</span>");
-			$element.keyboard( {
-					layout : schemename,
-					usePreview: false,
-					autoAccept: true,
-					position : {
-						of : null, // optional - null (attach to input/textarea) or a jQuery object (attach elsewhere)
-						my : 'left top',
-						at : 'center top',
-						at2: 'left bottom', // used when "usePreview" is false (centers keyboard at bottom of the input/textarea)
-						collision: 'flip'
-					},
-				} );
+		if ( $keyboard && $keyboard.options.layout === schemename ) {
+			return;
 		}
+		this.unbind( $element );
+		build( schemename, layout );
+		// TODO position it correctly. And show the kyboard only on click of that.
+		// $element.parent().append("<span id='narayam-osk-box'>&nbsp;&nbsp;</span>");
+		$element.keyboard( {
+				layout : schemename,
+				usePreview: false,
+				autoAccept: true,
+				position : {
+					of : null, // optional - null (attach to input/textarea) or a jQuery object (attach elsewhere)
+					my : 'left top',
+					at : 'center top',
+					at2: 'left bottom', // used when "usePreview" is false (centers keyboard at bottom of the input/textarea)
+					collision: 'flip'
+					},
+		} );
 	}
 
 	this.unbind = function( $element ){
 		var $keyboard = $element.data( 'keyboard' );
-		if ( !$keyboard ) {
+		if ( $keyboard ) {
 			$keyboard.destroy();
 		}
 	}
@@ -45,7 +47,9 @@ $.narayam.osk = new ( function() {
 	 * @param scheme Name of the input method, eg: hi-inscript
 	 */
 	function build( scheme, layout ){
-		if ( $.keyboard.layouts[scheme] ) return;
+		if ( $.keyboard.layouts[scheme] ) {
+			 return;
+		}
 		$.keyboard.layouts[scheme] = {};
 		for ( var level in $.keyboard.layouts[layout] ) {
 			$.keyboard.layouts[scheme][level] = [];
@@ -58,7 +62,15 @@ $.narayam.osk = new ( function() {
 					if( key.match( "^{" ) && key.match( "}$" ) ){
 						keyLine += key + " ";
 					} else {
-						keyLine += $.narayam.transliterate( key , '', true ) + " ";
+						var transliteratedKey = $.narayam.transliterate( key , '', false ) ;
+						if ( transliteratedKey === "\u200C" ){
+							transliteratedKey = "zwnj";
+						}
+						if ( transliteratedKey === "\u200D" ){
+							transliteratedKey = "zwj";
+						}
+
+						keyLine += transliteratedKey + " ";
 					}
 				}
 				$.keyboard.layouts[scheme][level][i] = keyLine;

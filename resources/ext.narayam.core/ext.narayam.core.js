@@ -120,7 +120,7 @@ $.narayam = new ( function() {
 		} else {
 			$element.removeClass( 'narayam-input' );
 			if( $.narayam.osk ) {
-				$.narayam.osk.unbind( $element );
+				//$.narayam.osk.unbind( $element );
 			}
 		}
 	}

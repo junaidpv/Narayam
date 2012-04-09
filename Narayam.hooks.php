@@ -14,13 +14,13 @@ class NarayamHooks {
 	 * @return bool
 	 */
 	public static function addModules( $out, $skin ) {
-		global $wgNarayamUseOSK;
+		global $wgNarayamUseOSK, $wgRequest;
 		if ( $out->getUser()->getOption( 'narayamEnable' ) ) {
 			$schemes = array_values( self::getSchemes() );
 			if ( count( $schemes ) ) {
 				$out->addModules( $schemes );
 				$out->addModules( 'ext.narayam' );
-				if ( $wgNarayamUseOSK === true ) {
+				if ( $wgNarayamUseOSK === true || $wgRequest->getText( 'useosk' ) === 'true' ) {
 					$out->addModules( 'ext.narayam.osk' );
 				}
 			}
