@@ -1360,6 +1360,8 @@ $messages['hsb'] = array(
 	'narayam-mr' => 'Transliteracija maratišćiny',
 	'narayam-mr-inscript' => 'Maratišćina (InScript)',
 	'narayam-ne' => 'Transliteracija nepalšćiny',
+	'narayam-new-inscript' => 'Newari InScript',
+	'narayam-new' => 'Newari (Transliteracija)',
 	'narayam-ne-inscript' => 'Nepalšćina (InScript)',
 	'narayam-or' => 'Transliteracija orijišćiny',
 	'narayam-or-lekhani' => 'Odijašćina (Lekhani)',
@@ -1512,8 +1514,10 @@ $messages['it'] = array(
 	'narayam-desc' => 'Permette di aggiungere metodi di input personalizzati per i campi di input',
 	'narayam-toggle-ime' => 'Abilita ($1)',
 	'narayam-menu' => 'Metodo di input',
+	'narayam-menu-tooltip' => 'Seleziona un metodo di input',
 	'narayam-help' => 'Aiuto',
 	'narayam-checkbox-tooltip' => 'Attiva o disattiva il metodo di input',
+	'narayam-enable-preference' => 'Abilita il metodo di input',
 	'narayam-more-imes' => "Altri metodi d'input",
 	'narayam-am' => 'Amarica (translitterazione)',
 	'narayam-as' => 'Assamese (translitterazione)',
@@ -1532,7 +1536,14 @@ $messages['it'] = array(
 	'narayam-mr' => 'Marathi (translitterazione)',
 	'narayam-mr-inscript' => 'Marathi (InScript)',
 	'narayam-ne' => 'Nepalese (translitterazione)',
+	'narayam-new-inscript' => 'Newari (InScript)',
+	'narayam-new' => 'Newari (translitterazione)',
 	'narayam-ne-inscript' => 'Nepalese (InScript)',
+	'narayam-or' => 'Oriya (translitterazione)',
+	'narayam-or-lekhani' => 'Odiya (Lekhani)',
+	'narayam-or-inscript' => 'Oriya (InScript)',
+	'narayam-pa' => 'Punjabi in Gurmukhi (translitterazione)',
+	'narayam-pa-phonetic' => 'Punjabi in Gurmukhi (fonetico)',
 	'narayam-pa-inscript' => 'Punjabi in Gurmukhi (InScript)',
 	'narayam-sa' => 'Sanscrito (translitterazione)',
 	'narayam-sa-inscript' => 'Sanscrito (InScript)',
@@ -1543,7 +1554,10 @@ $messages['it'] = array(
 	'narayam-ta' => 'Tamil (translitterazione)',
 	'narayam-ta-bamini' => 'Tamil (Bamini)',
 	'narayam-tcy' => 'Tulu (translitterazione)',
+	'narayam-te' => 'Telugu (translitterazione)',
 	'narayam-te-inscript' => 'Telugu (InScript)',
+	'narayam-bho' => 'Bhojpuri (translitterazione)',
+	'narayam-bho-inscript' => 'Bhojpuri (InScript)',
 	'narayam-bn-avro' => 'Bengalese (Avro)',
 	'narayam-bn-inscript' => 'Bengalese (InScript)',
 	'narayam-bn-nkb' => 'Bengalese (NKB)',
@@ -2154,6 +2168,8 @@ $messages['nl'] = array(
 	'narayam-mr' => 'Marathi (transliteratie)',
 	'narayam-mr-inscript' => 'Marathi InScript',
 	'narayam-ne' => 'Nepalees (transliteratie)',
+	'narayam-new-inscript' => 'Newari InScript',
+	'narayam-new' => 'Newari (transliteratie)',
 	'narayam-ne-inscript' => 'Nepalees InScript',
 	'narayam-or' => 'Oriya (transliteratie)',
 	'narayam-or-lekhani' => 'Oriya Lekhani',
@@ -2227,6 +2243,13 @@ $messages['or'] = array(
  */
 $messages['pdc'] = array(
 	'narayam-help' => 'Hilf',
+);
+
+/** Pälzisch (Pälzisch)
+ * @author Manuae
+ */
+$messages['pfl'] = array(
+	'narayam-de' => 'Daidsch',
 );
 
 /** Polish (Polski)
