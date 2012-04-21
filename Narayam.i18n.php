@@ -1576,16 +1576,22 @@ $messages['it'] = array(
 /** Japanese (日本語)
  * @author Anakmalaysia
  * @author Schu
+ * @author Shirayuki
  * @author Whym
  */
 $messages['ja'] = array(
 	'narayam-desc' => '入力フィールドにカスタム入力メソッドを追加できるようにします。',
 	'narayam-toggle-ime' => '入力メソッドを切り替え ($1)',
 	'narayam-menu' => '入力メソッド',
-	'narayam-menu-tooltip' => '入力方法を選択する',
+	'narayam-menu-tooltip' => '入力方法を選択',
 	'narayam-help' => 'ヘルプ',
-	'narayam-checkbox-tooltip' => '入力メソッドの入・切を反転させる',
+	'narayam-checkbox-tooltip' => '入力メソッドのON/OFFを切り替え',
+	'narayam-enable-preference' => '入力メソッドを有効にする',
+	'narayam-more-imes' => 'その他の入力メソッド',
+	'narayam-ahr' => 'アヒラーニー語翻字',
+	'narayam-ahr-inscript' => 'アヒラーニー語 InScript',
 	'narayam-am' => 'アムハラ語翻字',
+	'narayam-as' => 'アッサム語翻字',
 	'narayam-as-avro' => 'アッサム語 Avro',
 	'narayam-as-bornona' => 'アッサム語 Bornona',
 	'narayam-as-inscript' => 'アッサム語 InScript',
@@ -1601,10 +1607,13 @@ $messages['ja'] = array(
 	'narayam-mr' => 'マラーティー語翻字',
 	'narayam-mr-inscript' => 'マラーティー語 InScript',
 	'narayam-ne' => 'ネパール語翻字',
+	'narayam-new-inscript' => 'ネワール文字 InScript',
+	'narayam-new' => 'ネワール文字翻字',
 	'narayam-ne-inscript' => 'ネパール語 InScript',
 	'narayam-or' => 'オリヤ語翻字',
 	'narayam-or-lekhani' => 'オリヤ語 Lekhani',
 	'narayam-or-inscript' => 'オリヤ語 InScript',
+	'narayam-pa' => 'パンジャブ語グルームキー文字翻字',
 	'narayam-pa-phonetic' => 'パンジャブ語グルムキー文字表音入力',
 	'narayam-pa-inscript' => 'パンジャブ語グルムキー文字 InScript',
 	'narayam-sa' => 'サンスクリット語翻字',
@@ -1616,7 +1625,10 @@ $messages['ja'] = array(
 	'narayam-ta' => 'タミル語翻字',
 	'narayam-ta-bamini' => 'タミル語 Bamini',
 	'narayam-tcy' => 'トゥル語翻字',
+	'narayam-te' => 'テルグ語翻字',
 	'narayam-te-inscript' => 'テルグ語 InScript',
+	'narayam-bho' => 'ボージュプリー語翻字',
+	'narayam-bho-inscript' => 'ボージュプリー語 InScript',
 	'narayam-bn-avro' => 'ベンガル語 Avro',
 	'narayam-bn-inscript' => 'ベンガル語 InScript',
 	'narayam-bn-nkb' => 'ベンガル語 NKB',
