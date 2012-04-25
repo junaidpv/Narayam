@@ -296,7 +296,6 @@ $.narayam = new ( function() {
 					||
 					( // Keybuffer match specified, so it should be met
 						rules[i][1].length > 0
-						&& rules[i][1].length <= keyBuffer.length
 						&& new RegExp( rules[i][1] + '$' ).test( keyBuffer )
 					)
 				)
