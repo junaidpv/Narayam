@@ -157,7 +157,7 @@ $wgNarayamSchemes = array(
 		'tcy' => array( 'ext.narayam.rules.tcy', 'beta' ),
 	),
 	'te' => array(
-		'te' => array( 'ext.narayam.rules.te', 'beta' ),
+		'te' => 'ext.narayam.rules.te',
 		'te-inscript' => 'ext.narayam.rules.te-inscript',
 	),
 	'ur' => array(
