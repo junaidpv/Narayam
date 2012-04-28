@@ -213,6 +213,46 @@ narayamTest( {
 	$input: $( '<input>' ).attr( { id: 'he-standard-2011-extonly', type: 'text' } )
 } );
 
+narayamTest( {
+	description: 'Punjabi Gurmukhi Transliteration',
+	tests: [
+		{ input: 'kaI', output: 'ਕਈ', description: 'Punjabi Gurmukhi kaI' },
+		{ input: 'hoiaa', output: 'ਹੋਇਆ', description: 'Punjabi Gurmukhi hoiaa' },
+		{ input: 'ki', output: 'ਕਿ', description: 'Punjabi Gurmukhi ki' },
+		{ input: 'kii', output: 'ਕੀ', description: 'Punjabi Gurmukhi kii' },
+		{ input: 'kI', output: 'ਕੀ', description: 'Punjabi Gurmukhi kI' },
+		{ input: 'kee', output: 'ਕੀ', description: 'Punjabi Gurmukhi kee' },
+		{ input: 'ku', output: 'ਕੁ', description: 'Punjabi Gurmukhi ku' },
+		{ input: 'kuu', output: 'ਕੂ', description: 'Punjabi Gurmukhi kuu' },
+		{ input: 'kU', output: 'ਕੂ', description: 'Punjabi Gurmukhi kU' },
+		{ input: 'koo', output: 'ਕੂ', description: 'Punjabi Gurmukhi koo' },
+		{ input: 'kai', output: 'ਕੈ', description: 'Punjabi Gurmukhi kai' },
+		{ input: 'kE', output: 'ਕੈ', description: 'Punjabi Gurmukhi kE' },
+		{ input: 'ko', output: 'ਕੋ', description: 'Punjabi Gurmukhi ko' },
+		{ input: 'kO', output: 'ਕੋ', description: 'Punjabi Gurmukhi ko' },
+		{ input: 'kau', output: 'ਕੌ', description: 'Punjabi Gurmukhi kau' },
+		{ input: 'g`a', output: 'ਗ਼', description: 'Punjabi Gurmukhi g`a (bindi)' },
+		{ input: 'u', output: 'ਉ', description: 'Punjabi Gurmukhi u' },
+		{ input: 'uu', output: 'ਊ', description: 'Punjabi Gurmukhi uu' },
+		{ input: 'oo', output: 'ਊ', description: 'Punjabi Gurmukhi oo' },
+		{ input: 'a^', output: 'ੲ', description: 'Punjabi Gurmukhi a^ (iri)' },
+		{ input: 'u^', output: 'ੳ', description: 'Punjabi Gurmukhi u^ (ura)' },
+		{ input: 'X', output: 'ੴ', description: 'Punjabi Gurmukhi X (Ek onkar)' },
+		{ input: 'kaM', output: 'ਕਂ', description: 'Punjabi Gurmukhi kaM (bindi)' },
+		{ input: 'kaMM', output: 'ਕਁ', description: 'Punjabi Gurmukhi kaMM (adak bindi)' },
+		{ input: 'kaMm', output: 'ਕਁ', description: 'Punjabi Gurmukhi kaMm (adak bindi)' },
+		{ input: 'kaM^', output: 'ਕਁ', description: 'Punjabi Gurmukhi kaM^ (adak bindi)' },
+		{ input: 'k`haalasaa', output: 'ਖ਼ਾਲਸਾ', description: 'Punjabi Gurmukhi k`haalasaa' },
+		{ input: 'raNajiita', output: 'ਰਣਜੀਤ', description: 'Punjabi Gurmukhi raNajiita (testing NNA)' },
+		{ input: 'khadeRhana', output: 'ਖਦੇੜ੍ਹਨ', description: 'Punjabi Gurmukhi khadeRhana (testing R and subjoined h)' },
+		{ input: 'siNNgha', output: 'ਸਿੰਘ', description: 'Punjabi Gurmukhi siNNgha (testing Tippi)' },
+		{ input: 'hai.', output: 'ਹੈ।', description: 'Punjabi Gurmukhi hai. (testing danda)' },
+		{ input: 'phaaga..', output: 'ਫਾਗ॥', description: 'Punjabi Gurmukhi phaaga.. (testing double danda)' }
+	],
+	scheme: 'pa',
+	$input: $( '<input>' ).attr( { id: 'pa', type: 'text' } )
+} );
+
 teardown( );
 
 }() );
