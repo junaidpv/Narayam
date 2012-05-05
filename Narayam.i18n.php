@@ -588,6 +588,7 @@ $messages['de'] = array(
 	'narayam-as-inscript' => 'Assamesisch (InScript)',
 	'narayam-ber-tfng' => 'Tifinagh (Transliteration)',
 	'narayam-brx-inscript' => 'Bodo (InScript)',
+	'narayam-cyrl-palochka' => 'Kyrillisch mit Palotschka',
 	'narayam-eo' => 'Esperanto',
 	'narayam-hi' => 'Hindi (Transliteration)',
 	'narayam-hi-bolnagri' => 'Hindi (Bolnagri)',
@@ -735,6 +736,7 @@ $messages['es'] = array(
 	'narayam-as-inscript' => 'InScript asamés',
 	'narayam-ber-tfng' => 'Transliteración tifinagh',
 	'narayam-brx-inscript' => 'Bodo InScript',
+	'narayam-cyrl-palochka' => 'Cirílico con palochka',
 	'narayam-eo' => 'Esperanto',
 	'narayam-hi' => 'Transliteración hindi',
 	'narayam-hi-bolnagri' => 'Hindi Bolnagri',
@@ -1455,8 +1457,10 @@ $messages['ia'] = array(
 	'narayam-as-inscript' => 'Assamese InScript',
 	'narayam-ber-tfng' => 'Translitteration in tifinagh',
 	'narayam-brx-inscript' => 'Bodo InScript',
+	'narayam-cyrl-palochka' => 'Cyrillic con palochka',
 	'narayam-eo' => 'Esperanto',
 	'narayam-hi' => 'Translitteration in hindi',
+	'narayam-hi-bolnagri' => 'Hindi Bolnagri',
 	'narayam-hi-inscript' => 'Hindi (InScript)',
 	'narayam-kn' => 'Translitteration in kannada',
 	'narayam-kn-inscript' => 'Kannada (InScript)',
@@ -1465,6 +1469,8 @@ $messages['ia'] = array(
 	'narayam-mr' => 'Translitteration in marathi',
 	'narayam-mr-inscript' => 'Marathi InScript',
 	'narayam-ne' => 'Translitteration nepalese',
+	'narayam-new-inscript' => 'InScript Newari',
+	'narayam-new' => 'Translitteration in newari',
 	'narayam-ne-inscript' => 'InScript nepalese',
 	'narayam-or' => 'Translitteration in oriya',
 	'narayam-or-lekhani' => 'Odiya Lekhani',
@@ -1901,6 +1907,7 @@ $messages['mk'] = array(
 	'narayam-as-inscript' => 'асамски - InScript',
 	'narayam-ber-tfng' => 'Транслитерација на тифинаг',
 	'narayam-brx-inscript' => 'бодо - InScript',
+	'narayam-cyrl-palochka' => 'кирилица со палочка',
 	'narayam-eo' => 'есперанто',
 	'narayam-hi' => 'Транслитерација на хинди',
 	'narayam-hi-bolnagri' => 'хинди - болнагри',
@@ -2471,12 +2478,13 @@ $messages['pt'] = array(
 /** Brazilian Portuguese (Português do Brasil)
  * @author Giro720
  * @author MetalBrasil
+ * @author 555
  */
 $messages['pt-br'] = array(
 	'narayam-desc' => 'Permite a adição de métodos de entrada personalizados para os campos de entrada',
-	'narayam-toggle-ime' => 'Habilitar ($1)',
+	'narayam-toggle-ime' => 'Ativar ($1)',
 	'narayam-menu' => 'Método de entrada',
-	'narayam-menu-tooltip' => 'Controlar o editor de método de entrada (IME) Narayam',
+	'narayam-menu-tooltip' => 'Selecionar um método de entrada',
 	'narayam-help' => 'Ajuda',
 	'narayam-checkbox-tooltip' => 'Para alternar o método de entrada entre ligado e desligado',
 	'narayam-eo' => 'Esperanto',
@@ -3070,6 +3078,8 @@ $messages['ta'] = array(
  * @author రహ్మానుద్దీన్
  */
 $messages['te'] = array(
+	'narayam-toggle-ime' => 'చేతనం చేయి ($1)',
+	'narayam-menu' => 'టైపింగు పద్ధతి',
 	'narayam-help' => 'సహాయం',
 	'narayam-hi' => 'హిందీ లిప్యంతరీకరణ',
 	'narayam-hi-inscript' => 'హిందీ ఇన్‌స్క్రిప్ట్',
