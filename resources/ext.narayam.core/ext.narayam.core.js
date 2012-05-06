@@ -630,12 +630,13 @@ $.narayam = new ( function() {
 
 		for ( var lang in allImes ) {
 			var langschemes = allImes[lang];
-			for ( var langscheme in langschemes ) {
+			for ( var scheme in langschemes ) {
 				// Do not repeat the input methods in more input methods section.
 				// If already shown on recent items.
-				if ( $.inArray( langscheme, seen ) > -1 ) { continue; }
+				if ( $.inArray( scheme, seen ) > -1 ) { continue; }
+				seen.push( scheme );
 
-				var $narayamMenuItem = that.buildMenuItem( langscheme );
+				var $narayamMenuItem = that.buildMenuItem( scheme );
 				$narayamMenuItem.addClass( 'narayam-scheme-dynamic-item' );
 				$narayamMenuItems.append( $narayamMenuItem );
 			}
