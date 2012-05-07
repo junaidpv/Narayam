@@ -1375,6 +1375,7 @@ $messages['hsb'] = array(
 	'narayam-as-inscript' => 'Asamišćina (InScript)',
 	'narayam-ber-tfng' => 'Transliteracija tifinagšćiny',
 	'narayam-brx-inscript' => 'Bodošćina (InScript)',
+	'narayam-cyrl-palochka' => 'Kyriliski z paločku',
 	'narayam-eo' => 'Esperanto',
 	'narayam-hi' => 'Transliteracija hindišćiny',
 	'narayam-hi-bolnagri' => 'Hindišćina (Bolnagri)',
@@ -2207,6 +2208,7 @@ $messages['nl'] = array(
 	'narayam-as-inscript' => 'Assamees InScript',
 	'narayam-ber-tfng' => 'Tifinagh (transliteratie)',
 	'narayam-brx-inscript' => 'Bodo InScript',
+	'narayam-cyrl-palochka' => 'Cyrillisch met de letter palochka',
 	'narayam-eo' => 'Esperanto',
 	'narayam-hi' => 'Hindi (transliteratie)',
 	'narayam-hi-bolnagri' => 'Hindi Bolnagri',
@@ -2476,9 +2478,9 @@ $messages['pt'] = array(
 );
 
 /** Brazilian Portuguese (Português do Brasil)
+ * @author 555
  * @author Giro720
  * @author MetalBrasil
- * @author 555
  */
 $messages['pt-br'] = array(
 	'narayam-desc' => 'Permite a adição de métodos de entrada personalizados para os campos de entrada',
