@@ -920,6 +920,7 @@ $messages['fr'] = array(
 	'narayam-as-inscript' => 'InScript assamais',
 	'narayam-ber-tfng' => 'Traduction tifinagh',
 	'narayam-brx-inscript' => 'InScript Bodo',
+	'narayam-cyrl-palochka' => 'Cyrillique avec palochka',
 	'narayam-eo' => 'Espéranto',
 	'narayam-hi' => 'Traduction en hindi',
 	'narayam-hi-bolnagri' => 'Bolnagri hindi',
@@ -1375,6 +1376,7 @@ $messages['hsb'] = array(
 	'narayam-as-inscript' => 'Asamišćina (InScript)',
 	'narayam-ber-tfng' => 'Transliteracija tifinagšćiny',
 	'narayam-brx-inscript' => 'Bodošćina (InScript)',
+	'narayam-cyrl-palochka' => 'Kyriliski z paločku',
 	'narayam-eo' => 'Esperanto',
 	'narayam-hi' => 'Transliteracija hindišćiny',
 	'narayam-hi-bolnagri' => 'Hindišćina (Bolnagri)',
@@ -1558,6 +1560,7 @@ $messages['it'] = array(
 	'narayam-brx-inscript' => 'Bodo (InScript)',
 	'narayam-eo' => 'Esperanto',
 	'narayam-hi' => 'Hindi (translitterazione)',
+	'narayam-hi-bolnagri' => 'Hindi (Bolnagri)',
 	'narayam-hi-inscript' => 'Hindi (InScript)',
 	'narayam-kn' => 'Kannada (translitterazione)',
 	'narayam-kn-inscript' => 'Kannada (InScript)',
@@ -2207,6 +2210,7 @@ $messages['nl'] = array(
 	'narayam-as-inscript' => 'Assamees InScript',
 	'narayam-ber-tfng' => 'Tifinagh (transliteratie)',
 	'narayam-brx-inscript' => 'Bodo InScript',
+	'narayam-cyrl-palochka' => 'Cyrillisch met de letter palochka',
 	'narayam-eo' => 'Esperanto',
 	'narayam-hi' => 'Hindi (transliteratie)',
 	'narayam-hi-bolnagri' => 'Hindi Bolnagri',
@@ -2476,9 +2480,9 @@ $messages['pt'] = array(
 );
 
 /** Brazilian Portuguese (Português do Brasil)
+ * @author 555
  * @author Giro720
  * @author MetalBrasil
- * @author 555
  */
 $messages['pt-br'] = array(
 	'narayam-desc' => 'Permite a adição de métodos de entrada personalizados para os campos de entrada',
@@ -3200,6 +3204,7 @@ $messages['vi'] = array(
 	'narayam-as-inscript' => 'InScript Assam',
 	'narayam-ber-tfng' => 'Chuyển tự Tifinagh',
 	'narayam-brx-inscript' => 'InScript tiếng Bodo',
+	'narayam-cyrl-palochka' => 'Chữ Kirin có palochka',
 	'narayam-eo' => 'Quốc tế ngữ',
 	'narayam-hi' => 'Chuyển tự tiếng Hindi',
 	'narayam-hi-bolnagri' => 'Bolnagri Hindi',
