@@ -1231,6 +1231,7 @@ $messages['he'] = array(
 	'narayam-as-inscript' => 'אסאמית – InScript',
 	'narayam-ber-tfng' => 'תיפינאע׳ תעתיק',
 	'narayam-brx-inscript' => 'בודו InScript',
+	'narayam-cyrl-palochka' => 'קירילית עם מקל',
 	'narayam-eo' => 'אספרנטו',
 	'narayam-hi' => 'הינדי תעתיק',
 	'narayam-hi-bolnagri' => 'הינדי – בולנגרי',
