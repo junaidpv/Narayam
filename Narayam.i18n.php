@@ -2126,6 +2126,7 @@ $messages['ms'] = array(
 	'narayam-as-inscript' => 'InScript Assam',
 	'narayam-ber-tfng' => 'Alih Huruf Tifinagh',
 	'narayam-brx-inscript' => 'InScript Bodo',
+	'narayam-cyrl-palochka' => 'Cyril dengan huruf palochka',
 	'narayam-eo' => 'Esperanto',
 	'narayam-hi' => 'Alih Huruf Hindi',
 	'narayam-hi-bolnagri' => 'Bolnagri Hindi',
