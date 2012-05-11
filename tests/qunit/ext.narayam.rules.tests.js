@@ -292,6 +292,29 @@ narayamTest( {
 	$input: $( '<input>' ).attr( { id: 'cyrl-palochka', type: 'text' } )
 } );
 
+narayamTest( {
+	description: 'Gujarati Transliteration',
+	tests: [
+		{ input: '~', output: '~', description: 'Gujarati - tilde must not change' },
+		{ input: 'hiMmata', output: 'હિંમત', description: 'Gujarati hiMmata' },
+		{ input: 'aM^bara', output: 'અઁબર', description: 'Gujarati aM^bara - testing candrabindu' },
+		{ input: '_', output: '_', description: 'Gujarati - underscore must not change' },
+		{ input: 'oM', output: 'ઓં', description: 'Gujarati oM' },
+		{ input: 'OM', output: 'ૐ', description: 'Gujarati OM' },
+		{ input: 'K', output: '।', description: 'Gujarati K - testing danda' },
+		{ input: 'KK', output: '॥', description: 'Gujarati KK - testing double danda' },
+		{ input: 'ai', output: 'ઐ', description: 'Gujarati ai' },
+		{ input: 'eka', output: 'એક', description: 'Gujarati eka' },
+		{ input: 'aikya', output: 'ઐક્ય', description: 'Gujarati aikya' },
+		{ input: 'kailaasa', output: 'કૈલાસ', description: 'Gujarati kailaasa' },
+		{ input: 'EMjiiniyara', output: 'ઍંજીનિયર', description: 'Gujarati EMjiiniyara - testing candra e' },
+		{ input: 'sad`bhaava', output: 'સદ્‌ભાવ', description: 'Gujarati sad`bhaava - testing ZWNJ' },
+		{ input: 'caDJaavo', output: 'ચડ઼ાવો', description: 'Gujarati caDJaavo - testing nukta' }
+	],
+	scheme: 'gu',
+	$input: $( '<input>' ).attr( { id: 'gu', type: 'text' } )
+} );
+
 teardown( );
 
 }() );
