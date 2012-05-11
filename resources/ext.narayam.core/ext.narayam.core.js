@@ -13,7 +13,7 @@
  * documentation for addScheme().
  */
 
-( function( $ ) {
+( function( $, mw ) {
 $.narayam = new ( function() {
 	/* Private members */
 
@@ -248,7 +248,7 @@ $.narayam = new ( function() {
 			// Move the cursor to the end of the replaced text.
 			setDivCaretPos( element, {
 				start: start + replacement.length,
-				end:  start + replacement.length,
+				end:  start + replacement.length
 			} );
 		}
 	}
@@ -305,7 +305,7 @@ $.narayam = new ( function() {
 		}
 		// No matches, return the input
 		return str;
-	}
+	};
 
 	/**
 	 * Get the n characters in str that immediately precede pos
@@ -323,7 +323,7 @@ $.narayam = new ( function() {
 		} else {
 			return str.substr( pos - n, n );
 		}
-	}
+	};
 
 	/**
 	 * Find the point at which a and b diverge, i.e. the first position
@@ -340,7 +340,7 @@ $.narayam = new ( function() {
 			}
 		}
 		return -1;
-	}
+	};
 
 	/**
 	 * Add more inputs to apply Narayam to
@@ -672,7 +672,7 @@ $.narayam = new ( function() {
 			.attr( 'id', 'narayam-menu-items' )
 			.addClass( 'menu-items' )
 			.append( $narayamMenuItems );
-	}
+	};
 
 	/**
 	 * Construct the menu for Narayam
@@ -681,7 +681,7 @@ $.narayam = new ( function() {
 		// Remove the menu if already exists
 		$( 'li#pt-narayam,div#narayam-menu' ).remove();
 		var $menuItemsDiv = that.buildMenuItems();
-		if( $menuItemsDiv == null ) {
+		if( $menuItemsDiv === null ) {
 			return;
 		}
 		var $menu = $( '<div>' )
@@ -741,7 +741,7 @@ $.narayam = new ( function() {
 			$menu.removeClass( 'open' );
 			$menu.hide();
 		} );
- 		$menu.click( function( event ) {
+		$menu.click( function( event ) {
 			event.stopPropagation();
 		} );
 
@@ -762,4 +762,4 @@ $.narayam = new ( function() {
 	};
 } )();
 
-} )( jQuery );
+} )( jQuery, mediaWiki );
