@@ -1680,6 +1680,14 @@ $messages['ja'] = array(
 	'narayam-he-standard-2011' => 'ヘブライ語2011年標準（英語キーボード）',
 );
 
+/** Georgian (ქართული)
+ * @author David1010
+ */
+$messages['ka'] = array(
+	'narayam-eo' => 'ესპერანტო',
+	'narayam-de' => 'გერმანული',
+);
+
 /** Khmer (ភាសាខ្មែរ)
  * @author វ័ណថារិទ្ធ
  */
@@ -1966,6 +1974,7 @@ $messages['mk'] = array(
  * @author Junaid P V
  * @author Junaidpv
  * @author Praveenp
+ * @author Santhosh.thottingal
  * @author Shijualex
  * @author Vssun
  */
@@ -1979,6 +1988,8 @@ $messages['ml'] = array(
 	'narayam-checkbox-tooltip' => 'എഴുത്തുപകരണം ഉപയോഗിക്കാനും ഒഴിവാക്കാനും ഇവിടെ ഞെക്കുക',
 	'narayam-enable-preference' => 'എഴുത്തുപകരണം ഉപയോഗിക്കുക',
 	'narayam-more-imes' => 'കൂടുതൽ എഴുത്തുരീതികൾ',
+	'narayam-ahr' => 'അഹിരാണി ലിപ്യന്തരണം',
+	'narayam-ahr-inscript' => 'അഹിരാണി ഇൻസ്ക്രിപ്റ്റ്',
 	'narayam-am' => 'അംഹാറിക് ലിപ്യന്തരണം',
 	'narayam-as' => 'ആസാമീസ് ലിപ്യന്തരണം',
 	'narayam-as-avro' => 'ആസാമീസ് ആവ്റോ',
@@ -1996,6 +2007,8 @@ $messages['ml'] = array(
 	'narayam-mr' => 'മറാത്തി ലിപ്യന്തരണം',
 	'narayam-mr-inscript' => 'മറാത്തി ഇൻസ്ക്രിപ്റ്റ്',
 	'narayam-ne' => 'നേപ്പാളി ലിപ്യന്തരണം',
+	'narayam-new-inscript' => 'നേവാരി ഇൻസ്ക്രിപ്റ്റ്',
+	'narayam-new' => 'നേവാരി ലിപ്യന്തരണം',
 	'narayam-ne-inscript' => 'നേപ്പാളി ഇൻസ്ക്രിപ്റ്റ്',
 	'narayam-or' => 'ഒറിയ ലിപ്യന്തരണം',
 	'narayam-or-lekhani' => 'ഒഡിയ ലെഖാനി',
@@ -2015,6 +2028,7 @@ $messages['ml'] = array(
 	'narayam-te' => 'തെലുഗു ലിപ്യന്തരണം',
 	'narayam-te-inscript' => 'തെലുഗു ഇൻസ്ക്രിപ്റ്റ്',
 	'narayam-bho' => 'ഭോജ്പുരി ലിപ്യന്തരണം',
+	'narayam-bho-inscript' => 'ഭോജ്പുരി ഇൻസ്ക്രിപ്റ്റ്',
 	'narayam-bn-avro' => 'ബംഗാളി അവ്രൊ',
 	'narayam-bn-inscript' => 'ബംഗാളി ഇൻസ്ക്രിപ്റ്റ്',
 	'narayam-bn-nkb' => 'ബംഗാളി നാഷണൽ കീബോർഡ്',
@@ -3136,11 +3150,13 @@ $messages['tl'] = array(
 
 /** Turkish (Türkçe)
  * @author Cekli829
+ * @author Suelnur
  */
 $messages['tr'] = array(
 	'narayam-help' => 'Yardım',
 	'narayam-ta-99' => 'Tamil99',
 	'narayam-ta-bamini' => 'Tamil Bamini',
+	'narayam-de' => 'Almanca',
 );
 
 /** Ukrainian (Українська)
