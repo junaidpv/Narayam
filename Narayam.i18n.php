@@ -1055,6 +1055,7 @@ $messages['gl'] = array(
 	'narayam-as-inscript' => 'InScript para asamés',
 	'narayam-ber-tfng' => 'Transliteración para tifinagh',
 	'narayam-brx-inscript' => 'InScript para bodo',
+	'narayam-cyrl-palochka' => 'Cirílico con palochka',
 	'narayam-eo' => 'Esperanto',
 	'narayam-hi' => 'Transliteración para hindi',
 	'narayam-hi-bolnagri' => 'Hindi Bolnagri',
