@@ -182,7 +182,8 @@ narayamTest ( {
 narayamTest ( {
 	description: 'Marathi Transliteration test',
 	tests: [
-		{ input: 'dny', output: 'ज्ञ्', description: 'dny for ज्ञ् in Marathi transliteration' }
+		{ input: 'dny', output: 'ज्ञ्', description: 'dny for ज्ञ् in Marathi transliteration' },
+		{ input: 'kOM', output: 'काँ', description: 'kOM for काँ (काँग्रेस) in Marathi transliteration' }
 	],
 	scheme: 'mr',
 	$input: $( '<input>' ).attr( { id: 'mr', type: 'text' } )
