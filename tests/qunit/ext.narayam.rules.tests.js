@@ -188,6 +188,15 @@ narayamTest ( {
 	$input: $( '<input>' ).attr( { id: 'mr', type: 'text' } )
 } );
 
+narayamTest ( {
+        description : 'Kannada Transliteration test',
+        tests: [
+                { input: 'd~ha', output: 'ದ್ಹ', description: 'd~ha for ದ್ಹ in Kannada transliteration' }
+        ],
+        scheme: 'kn',
+        $input: $( '<input>' ).attr( {id: 'kn', type: 'text' } )
+} );
+
 narayamTest( {
 	description: 'German Transliteration and keybuffer test',
 	tests: [
