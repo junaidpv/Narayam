@@ -21,7 +21,7 @@ function teardown() {
 
 test( "-- Initial check", function() {
 	expect( 1 );
-	ok( $.narayam,  '$.narayam is defined' );
+	ok( $.narayam, '$.narayam is defined' );
 } );
 
 // Basic sendkey-implementation
@@ -53,7 +53,7 @@ typeChars = function( $input, characters ) {
 			altKey: altKeyValue
 		} );
 		if( $input.triggerHandler( event ) ) {
-			$input.val(  $input.val() + character ) ;
+			$input.val( $input.val() + character ) ;
 		}
 	}
 };
@@ -76,7 +76,7 @@ var narayamTest = function( options ) {
 		$.narayam.setScheme( opt.scheme, function () {
 			opt.$input.appendTo( '#qunit-fixture' );
 			$.narayam.addInputs( opt.$input );
-			$.narayam.setScheme( opt.scheme  );
+			$.narayam.setScheme( opt.scheme );
 			for ( var i = 0 ; i < opt.tests.length; i++ ) {
 				// Simulate pressing keys for each of the sample characters
 				typeChars( opt.$input, opt.tests[i].input );
@@ -145,6 +145,28 @@ narayamTest( {
 	],
 	scheme: 'te',
 	$input: $( '<input>' ).attr( { id: 'te', type: 'text' } )
+} );
+
+narayamTest( {
+	description: 'Telugu InScript test',
+	tests: [
+		{ input: 'k-', output: 'కః', description: 'Telugu k- (visarga)' },
+		{ input: '}', output: 'ఞ', description: 'Telugu } (nya)' },
+		{ input: 'J', output: 'ఱ', description: 'Telugu J (rra)' },
+		{ input: '/', output: 'య', description: 'Telugu / (ya)' },
+		{ input: 'pz', output: 'జె', description: 'Telugu pz (je)' },
+		{ input: 'p`', output: 'జొ', description: 'Telugu p` (jo)' },
+		{ input: 'kX', output: 'కఁ', description: 'Telugu kX (ka@m, candrabindu)' },
+		{ input: 'hx', output: 'పం', description: 'Telugu hx (paM, anusvara)' },
+		{ input: '\\>', output: '।', description: 'Telugu > (danda)' },
+		{ input: [ [ '\\;', true ] ], output: 'ౘ', description: 'Telugu Alt ; (tsa)'},
+		{ input: [ [ 'p', true ] ], output: 'ౙ', description: 'Telugu Alt p (dza)'},
+		{ input: [ [ '4', true ] ], output: '₹', description: 'Alt 4; (rupee sign)'},
+		{ input: [ [ '\\=', true ] ], output: 'ౄ', description: 'Telugu Alt = (RRuu, vowel)'},
+		{ input: [ [ '\\+', true ] ], output: 'ౠ', description: 'Telugu Alt + (RRuu)'}
+	],
+	scheme: 'te-inscript',
+	$input: $( '<input>' ).attr( { id: 'te-inscript', type: 'text' } )
 } );
 
 narayamTest( {
@@ -243,7 +265,7 @@ narayamTest( {
 		// The second case is hyphen-minus with Alt, which produces the Hebrew
 		// hyphen (maqaf).
 		{ input: [ [ '-', false ] ], output: '-', description: 'Hebrew regular -' },
-		{ input: [ [ '-', true ]  ], output: '־', description: 'Hebrew extended -' }
+		{ input: [ [ '-', true ] ], output: '־', description: 'Hebrew extended -' }
 	],
 	scheme: 'he-standard-2011-extonly',
 	$input: $( '<input>' ).attr( { id: 'he-standard-2011-extonly', type: 'text' } )
@@ -313,16 +335,16 @@ narayamTest( {
 		{ input: ukrainianCapitalI, output: palochka, description: 'Ukrainian capital І becomes palochka' },
 
 		{ input: digitOne, output: digitOne, description: 'Digit one (1) is unchanged' },
-		{ input: [ [ digitOne, true ]  ], output: palochka, description: 'Extended digit one (1) becomes palochka' },
+		{ input: [ [ digitOne, true ] ], output: palochka, description: 'Extended digit one (1) becomes palochka' },
 
 		{ input: 'д', output: 'д', description: 'Cyrillic small д is is unchanged' },
-		{ input: [ [ 'д', true ]  ], output: palochka, description: 'Extended Cyrillic д becomes palochka' },
+		{ input: [ [ 'д', true ] ], output: palochka, description: 'Extended Cyrillic д becomes palochka' },
 
 		{ input: 'ш', output: 'ш', description: 'Cyrillic small ш is is unchanged' },
-		{ input: [ [ 'ш', true ]  ], output: palochka, description: 'Extended Cyrillic small ш becomes palochka' },
+		{ input: [ [ 'ш', true ] ], output: palochka, description: 'Extended Cyrillic small ш becomes palochka' },
 
 		{ input: 'Ш', output: 'Ш', description: 'Cyrillic capital Ш is is unchanged' },
-		{ input: [ [ 'Ш', true ]  ], output: palochka, description: 'Extended Cyrillic capital Ш becomes palochka' }
+		{ input: [ [ 'Ш', true ] ], output: palochka, description: 'Extended Cyrillic capital Ш becomes palochka' }
 	],
 	scheme: 'cyrl-palochka',
 	$input: $( '<input>' ).attr( { id: 'cyrl-palochka', type: 'text' } )
