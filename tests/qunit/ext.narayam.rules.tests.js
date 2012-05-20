@@ -173,7 +173,8 @@ narayamTest( {
 narayamTest ( {
 	description: 'Amharic Transliteration test',
 	tests: [
-		{ input: 'ka', output: 'ካ', description: 'Amharic ka->ካ' }
+		{ input: 'ka', output: 'ካ', description: 'Amharic ka -> ካ' },
+		{ input: 'dwa', output: 'ዷ', description: 'Amharic dwa -> ዷ' }
 	],
 	scheme: 'am',
 	$input: $( '<input>' ).attr( { id: 'am', type: 'text' } )
