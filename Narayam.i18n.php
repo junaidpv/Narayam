@@ -527,6 +527,9 @@ $messages['bs'] = array(
  */
 $messages['cs'] = array(
 	'narayam-desc' => 'Umožňuje přidávat ke vstupním polím vlastní metody vstupu',
+	'narayam-toggle-ime' => 'Zapnout ($1)',
+	'narayam-checkbox-tooltip' => 'Zapnout nebo vypnout metodu zadávání znaků',
+	'narayam-enable-preference' => 'Povolit metodu zadávání znaků',
 );
 
 /** Danish (Dansk)
