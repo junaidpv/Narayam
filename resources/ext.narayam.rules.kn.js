@@ -36,6 +36,7 @@
 ['ಓ~M', '','ॐ'],
  
 ['~l', '','ೞ್'],
+['~h', '','ಹ್'],
 ['~r', '','ಱ್'],
 ['q', '','ೞ್'],
 ['Q', '','ಱ್'],
@@ -146,4 +147,5 @@ jQuery.narayam.addScheme( 'kn', {
     'lookbackLength': 3,
     'keyBufferLength': 1,
     'rules': rules
-} ); 
+} );
+
