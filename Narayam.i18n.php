@@ -3066,6 +3066,7 @@ $messages['sv'] = array(
 /** Tamil (தமிழ்)
  * @author Karthi.dr
  * @author Logicwiki
+ * @author Shanmugamp7
  * @author Sodabottle
  * @author Surya Prakash.S.A.
  */
@@ -3079,14 +3080,24 @@ $messages['ta'] = array(
 	'narayam-checkbox-tooltip' => 'தட்டச்சுக் கருவியைத் தேர்வு செய்ய இப்பெட்டியை சொடுக்குங்கள்',
 	'narayam-enable-preference' => 'தட்டச்சுக் கருவியை செயலாக்கு',
 	'narayam-more-imes' => 'மேலுமுள்ள தட்டச்சு முறைகள்',
+	'narayam-hi' => 'இந்தி எழுத்துப்பெயர்ப்பு',
+	'narayam-kn' => 'கன்னட எழுத்துப்பெயர்ப்பு',
+	'narayam-kn-inscript' => 'கன்னட இன்ஸ்கிரிப்ட்',
 	'narayam-ml' => 'மலையாள எழுத்துப்பெயர்ப்பு',
 	'narayam-ml-inscript' => 'மலையாள இன்ஸ்கிரிப்ட்',
 	'narayam-mr' => 'மராத்தி எழுத்துப்பெயர்ப்பு',
 	'narayam-mr-inscript' => 'மராத்தி இன்ஸ்கிரிப்ட்',
+	'narayam-ne' => 'நேபாளி எழுத்துப்பெயர்ப்பு',
+	'narayam-or' => 'ஒடியா எழுத்துப்பெயர்ப்பு',
+	'narayam-or-inscript' => 'ஒடியா இன்ஸ்கிரிப்ட்',
+	'narayam-sa' => 'சமஸ்கிருத எழுத்துப்பெயர்ப்பு',
+	'narayam-sa-inscript' => 'சமஸ்கிருத இன்ஸ்கிரிப்ட்',
 	'narayam-ta-99' => 'தமிழ்99',
 	'narayam-ta-inscript' => 'தமிழ் இன்ஸ்கிரிப்ட் (சோதனை)',
 	'narayam-ta' => 'எழுத்துப்பெயர்ப்பு',
 	'narayam-ta-bamini' => 'பாமினி (சோதனை)',
+	'narayam-te' => 'தெலுங்கு எழுத்துப்பெயர்ப்பு',
+	'narayam-te-inscript' => 'தெலுங்கு இன்ஸ்கிரிப்ட்',
 	'narayam-ur' => 'உருது திட்டநிலை',
 	'narayam-de' => 'இடாய்ச்சுமொழி (செருமன்)',
 	'narayam-gu' => 'குஜராத்தி எழுத்துப்பெயர்ப்பு',
