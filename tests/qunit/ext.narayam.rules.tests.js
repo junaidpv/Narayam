@@ -204,12 +204,24 @@ narayamTest ( {
 } );
 
 narayamTest ( {
-        description : 'Kannada Transliteration test',
-        tests: [
-                { input: 'd~ha', output: 'ದ್ಹ', description: 'd~ha for ದ್ಹ in Kannada transliteration' }
-        ],
-        scheme: 'kn',
-        $input: $( '<input>' ).attr( {id: 'kn', type: 'text' } )
+	description : 'Kannada Transliteration test',
+	tests: [
+		{ input: 'd~ha', output: 'ದ್ಹ', description: 'd~ha for ದ್ಹ in Kannada transliteration' },
+		{ input: 'W', output: 'ಔ', description: 'W for ಔ in Kannada transliteration' },
+		{ input: 'Y', output: 'ಐ', description: 'Y for ಐ in Kannada transliteration' },
+		{ input: 'Yeso', output: 'ಐಎಸೊ', description: 'Yeso for ಐಎಸೊ in Kannada transliteration' },
+		{ input: 'nAkYdu', output: 'ನಾಕೈದು', description: 'nAkYdu for ನಾಕೈದು in Kannada transliteration' },
+		{ input: 'gautam', output: 'ಗೌತಮ್', description: 'gautam for ಗೌತಮ್ in Kannada transliteration' },
+		{ input: 'nAkaidu', output: 'ನಾಕೈದು', description: 'nAkaidu for ನಾಕೈದು in Kannada transliteration' },
+		{ input: 'gWtam', output: 'ಗೌತಮ್', description: 'gWtam for ಗೌತಮ್ in Kannada transliteration' },
+		{ input: 'WShadhi', output: 'ಔಷಧಿ', description: 'WShadhi for ಔಷಧಿ in Kannada transliteration' },
+		{ input: 'auShadhi', output: 'ಔಷಧಿ', description: 'auShadhi for ಔಷಧಿ in Kannada transliteration' },
+		{ input: 'Ydu', output: 'ಐದು', description: 'Ydu for ಐದು in Kannada transliteration' },
+		{ input: 'kY', output: 'ಕೈ', description: 'kY for ಕೈ in Kannada transliteration' },
+		{ input: 'kW', output: 'ಕೌ', description: 'kW for ಐದು in Kannada transliteration' }
+	],
+	scheme: 'kn',
+	$input: $( '<input>' ).attr( {id: 'kn', type: 'text' } )
 } );
 
 narayamTest( {
