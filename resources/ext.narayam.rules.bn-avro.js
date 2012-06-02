@@ -27,7 +27,6 @@ var rules = [
 
 ['([ক-হড়ঢ়য়][িুেো]|[এইওউ])a','[^o`]', '$1য়া'],
 ['([ক-হড়ঢ়য়][াে]|[আএ])o', '[^o`]', '$1ও'],
-//'চচh','[^o`]', 'চ্চ'],
 
 ['([কঙলষস])(k|K)','[^o`]','$1্ক'],
 ['([ঙদল])(g|G)','[^o`]','$1্গ'],
@@ -57,7 +56,6 @@ var rules = [
 
 ['ক্ক(h|H)','[^o`]','ক্ষ'],
 ['কশ(h|H)','[^o`]','ক্ষ'],
-//'([অ-ঔা-ৌ])ররk','[^o]','$1র্ক'],
 
 ['ররk','(o|a|i|I|u|U|e|O|OI|OU|rri)rr','র্ক'],
 ['ররg','(o|a|i|I|u|U|e|O|OI|OU|rri)rr','র্গ'],
@@ -191,7 +189,7 @@ var rules = [
 jQuery.narayam.addScheme( 'bn-avro', {
 	'namemsg': 'narayam-bn-avro',
 	'extended_keyboard': false,
-	'lookbackLength': 3,
+	'lookbackLength': 4,
 	'keyBufferLength': 5,
 	'rules': rules
 } );

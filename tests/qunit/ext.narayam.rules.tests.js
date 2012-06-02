@@ -325,6 +325,18 @@ narayamTest( {
 	$input: $( '<input>' ).attr( { id: 'gu', type: 'text' } )
 } );
 
+narayamTest( {
+	description: 'Bengali Avro layout test',
+	tests: [
+		{ input: 'ka', output: 'কা', description: 'Bengali Avro - ka' },
+		{ input: 'rri', output: 'ঋ', description: 'Bengali Avro - rri' },
+		{ input: 'drri', output: 'দৃ', description: 'Bengali Avro - drri' },
+		{ input: 'kee', output: 'কী', description: 'Bengali Avro - kee' }
+	],
+	scheme: 'bn-avro',
+	$input: $( '<input>' ).attr( { id: 'bn-avro', type: 'text' } )
+} );
+
 teardown( );
 
 }() );
