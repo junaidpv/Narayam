@@ -2624,7 +2624,7 @@ $messages['roa-tara'] = array(
 	'narayam-he-standard-2011' => 'Ebbrèe Stàndard 2011',
 );
 
-/** Russian (Русский)
+/** Russian (русский)
  * @author Amire80
  * @author Dim Grits
  * @author Eleferen
