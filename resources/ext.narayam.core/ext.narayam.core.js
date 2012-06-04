@@ -513,6 +513,9 @@ $.narayam = new ( function() {
 		} else {
 			//if no saved input scheme, select the first.
 			var $firstScheme = $( 'input.narayam-scheme:first' );
+			if ( $firstScheme.val() === undefined ){
+				return;
+			}
 			that.setScheme( $firstScheme.val() );
 			$firstScheme.prop( 'checked', true );
 
@@ -682,7 +685,7 @@ $.narayam = new ( function() {
 		$( 'li#pt-narayam,div#narayam-menu' ).remove();
 		var $menuItemsDiv = that.buildMenuItems();
 		if( $menuItemsDiv === null ) {
-			return;
+			return false;
 		}
 		var $menu = $( '<div>' )
 			.attr( 'id', 'narayam-menu' )
