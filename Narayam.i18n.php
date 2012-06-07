@@ -1542,7 +1542,7 @@ $messages['id'] = array(
 	'narayam-bn-nkb' => 'NKB Bengali',
 );
 
-/** Italian (Italiano)
+/** Italian (italiano)
  * @author Aushulz
  * @author Beta16
  * @author F. Cosoleto
@@ -1556,6 +1556,8 @@ $messages['it'] = array(
 	'narayam-checkbox-tooltip' => 'Attiva o disattiva il metodo di input',
 	'narayam-enable-preference' => 'Abilita il metodo di input',
 	'narayam-more-imes' => "Altri metodi d'input",
+	'narayam-ahr' => 'Ahirani (translitterazione)',
+	'narayam-ahr-inscript' => 'Ahirani (InScript)',
 	'narayam-am' => 'Amarica (translitterazione)',
 	'narayam-as' => 'Assamese (translitterazione)',
 	'narayam-as-avro' => 'Assamese (Avro)',
@@ -1563,6 +1565,7 @@ $messages['it'] = array(
 	'narayam-as-inscript' => 'Assamese (InScript)',
 	'narayam-ber-tfng' => 'Tifinagh (translitterazione)',
 	'narayam-brx-inscript' => 'Bodo (InScript)',
+	'narayam-cyrl-palochka' => 'Cirillico con pálochka',
 	'narayam-eo' => 'Esperanto',
 	'narayam-hi' => 'Hindi (translitterazione)',
 	'narayam-hi-bolnagri' => 'Hindi (Bolnagri)',
@@ -1607,6 +1610,8 @@ $messages['it'] = array(
 	'narayam-sah-standard' => 'Sacha (standard)',
 	'narayam-hne-inscript' => 'Chhattisgarhi (InScript)',
 	'narayam-mai-inscript' => 'Maithili (InScript)',
+	'narayam-gom-deva' => 'Goan Konkani-Devanagari (translitterazione)',
+	'narayam-gom-deva-inscript' => 'Goan Konkani-Devanagari (InScript)',
 	'narayam-he-standard-2011-extonly' => 'Ebreo (standard 2011)',
 	'narayam-he-standard-2011' => 'Ebreo (standard 2011)',
 );
