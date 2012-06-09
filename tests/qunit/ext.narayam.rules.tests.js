@@ -162,6 +162,20 @@ narayamTest( {
 } );
 
 narayamTest( {
+	description: 'Tamil 99 test',
+	tests: [
+		//hfW should give non-conjunct form of ksha க்‌ஷ
+		//T still gives the conjunct form க்ஷ
+		{ input: 'lshfWslf', output: 'திக்‌ஷித்', description: 'lshfWslf in Tamil99 for திக்‌ஷித் non conjunct form' },
+		{ input: 'lsTslf', output: 'திக்ஷித்', description: 'lsTslf in Tamil99 for திக்ஷித் conjunct form' },
+		{ input: 'hfWtkakf', output: 'க்‌ஷேமம்', description: 'hfWtkakf in Tamil99 for க்‌ஷேமம் hfW -> க்‌ஷ non conjunct form' },
+		{ input: 'Ttkakf', output: 'க்ஷேமம்', description: 'Ttkakf in Tamil99 for க்ஷேமம் T -> க்ஷ conjunct form' }
+	],
+	scheme: 'ta-99',
+	$input: $( '<input>' ).attr( { id: 'ta-99', type: 'text' } )
+} );
+
+narayamTest( {
 	description: 'Tamil InScript test',
 	tests: [
 		{ input: 'ka', output: 'கோ', description: 'Tamil Inscript கோ' }
