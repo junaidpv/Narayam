@@ -3191,17 +3191,21 @@ $messages['tr'] = array(
 	'narayam-de' => 'Almanca',
 );
 
-/** Ukrainian (Українська)
+/** Ukrainian (українська)
  * @author Dim Grits
+ * @author Olvin
  * @author Тест
  */
 $messages['uk'] = array(
 	'narayam-desc' => 'Дозволяє додавати користувацькі методи вводу для полів введення',
 	'narayam-toggle-ime' => 'Активувати ($1)',
 	'narayam-menu' => 'Метод введення',
-	'narayam-menu-tooltip' => 'Управління редактором методу введення нараям (IME)',
+	'narayam-menu-tooltip' => 'Виберіть метод введення',
 	'narayam-help' => 'Довідка',
 	'narayam-checkbox-tooltip' => 'Для перемикання методів вводу',
+	'narayam-enable-preference' => 'Дозволити методи введення (IME)',
+	'narayam-more-imes' => 'Більше методів введення',
+	'narayam-cyrl-palochka' => 'Кирилиця з паличкою (для кавказьких мов)',
 	'narayam-eo' => 'Есперанто',
 	'narayam-hi-inscript' => 'Гінді Inscript',
 	'narayam-kn' => 'Транслітерація каннада',
@@ -3224,6 +3228,7 @@ $messages['uk'] = array(
 	'narayam-bn-nkb' => 'Бенгальська НКБ',
 	'narayam-de' => 'Німецька',
 	'narayam-ru-standard' => 'Російська стандартна',
+	'narayam-he-standard-2011-extonly' => 'Hebrew Standard 2011',
 );
 
 /** Urdu (اردو)
