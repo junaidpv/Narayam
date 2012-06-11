@@ -1693,8 +1693,10 @@ $messages['ja'] = array(
  * @author David1010
  */
 $messages['ka'] = array(
+	'narayam-help' => 'დახმარება',
 	'narayam-eo' => 'ესპერანტო',
 	'narayam-de' => 'გერმანული',
+	'narayam-ru-standard' => 'რუსული სტანდარტული',
 );
 
 /** Khmer (ភាសាខ្មែរ)
@@ -2643,6 +2645,7 @@ $messages['roa-tara'] = array(
  * @author Dim Grits
  * @author Eleferen
  * @author Eugrus
+ * @author HalanTul
  * @author KPu3uC B Poccuu
  * @author Kaganer
  * @author MaxSem
@@ -2707,7 +2710,7 @@ $messages['ru'] = array(
 	'narayam-gu' => 'Транслитерация гуджарати',
 	'narayam-gu-inscript' => 'Gujarati InScript',
 	'narayam-ru-standard' => 'русская стандартная',
-	'narayam-sah-standard' => 'стандартная саха',
+	'narayam-sah-standard' => 'Саха стандарт',
 	'narayam-hne-inscript' => 'Chhattisgarhi InScript',
 	'narayam-mai-inscript' => 'Maithili InScript',
 	'narayam-gom-deva' => 'Транслитерация деванагари гоайского конкани',
