@@ -1868,6 +1868,14 @@ $messages['ksh'] = array(
 	'narayam-he-standard-2011' => 'Hebrääjesch (jewöhnlesch, vun 2011)',
 );
 
+/** Kurdish (Latin script) (‪Kurdî (latînî)‬)
+ * @author George Animal
+ */
+$messages['ku-latn'] = array(
+	'narayam-help' => 'Alîkarî',
+	'narayam-eo' => 'Esperantoyî',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
