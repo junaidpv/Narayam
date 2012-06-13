@@ -158,12 +158,12 @@ narayamTest( {
 		{ input: 'p`', output: 'జొ', description: 'Telugu p` (jo)' },
 		{ input: 'kX', output: 'కఁ', description: 'Telugu kX (ka@m, candrabindu)' },
 		{ input: 'hx', output: 'పం', description: 'Telugu hx (paM, anusvara)' },
-		{ input: '\\>', output: '।', description: 'Telugu > (danda)' },
-		{ input: [ [ '\\;', true ] ], output: 'ౘ', description: 'Telugu Alt ; (tsa)'},
+		{ input: '>', output: '।', description: 'Telugu > (danda)' },
+		{ input: [ [ ';', true ] ], output: 'ౘ', description: 'Telugu Alt ; (tsa)'},
 		{ input: [ [ 'p', true ] ], output: 'ౙ', description: 'Telugu Alt p (dza)'},
 		{ input: [ [ '4', true ] ], output: '₹', description: 'Alt 4; (rupee sign)'},
-		{ input: [ [ '\\=', true ] ], output: 'ౄ', description: 'Telugu Alt = (RRuu, vowel)'},
-		{ input: [ [ '\\+', true ] ], output: 'ౠ', description: 'Telugu Alt + (RRuu)'}
+		{ input: [ [ '=', true ] ], output: 'ౄ', description: 'Telugu Alt = (RRuu, vowel)'},
+		{ input: [ [ '+', true ] ], output: 'ౠ', description: 'Telugu Alt + (RRuu)'}
 	],
 	scheme: 'te-inscript',
 	$input: $( '<input>' ).attr( { id: 'te-inscript', type: 'text' } )
