@@ -254,7 +254,7 @@ $messages['as'] = array(
 	'narayam-as-inscript' => 'অসমীয়া ইন্‌স্ক্ৰিপ্ত',
 );
 
-/** Azerbaijani (Azərbaycanca)
+/** Azerbaijani (azərbaycanca)
  * @author Cekli829
  */
 $messages['az'] = array(
@@ -382,7 +382,7 @@ $messages['be-tarask'] = array(
 	'narayam-bn-nkb' => 'Бэнгальская NKB',
 );
 
-/** Bulgarian (Български)
+/** Bulgarian (български)
  * @author DCLXVI
  */
 $messages['bg'] = array(
@@ -444,7 +444,7 @@ $messages['bn'] = array(
 	'narayam-bn-nkb' => 'বাংলা এনকেবি',
 );
 
-/** Breton (Brezhoneg)
+/** Breton (brezhoneg)
  * @author Fulup
  * @author Y-M D
  */
@@ -495,7 +495,7 @@ $messages['br'] = array(
 	'narayam-he-standard-2011' => 'Hebraeg standard 2011',
 );
 
-/** Bosnian (Bosanski)
+/** Bosnian (bosanski)
  * @author CERminator
  */
 $messages['bs'] = array(
@@ -522,7 +522,7 @@ $messages['bs'] = array(
 	'narayam-bn-nkb' => 'Bengalski NKB',
 );
 
-/** Czech (Česky)
+/** Czech (česky)
  * @author Mormegil
  */
 $messages['cs'] = array(
@@ -532,7 +532,7 @@ $messages['cs'] = array(
 	'narayam-enable-preference' => 'Povolit metodu zadávání znaků',
 );
 
-/** Danish (Dansk)
+/** Danish (dansk)
  * @author Peter Alberti
  */
 $messages['da'] = array(
@@ -716,7 +716,7 @@ $messages['eo'] = array(
 	'narayam-he-standard-2011' => 'hebrea normo 2011',
 );
 
-/** Spanish (Español)
+/** Spanish (español)
  * @author Armando-Martin
  * @author Fitoschido
  * @author Imre
@@ -834,7 +834,7 @@ $messages['fa'] = array(
 	'narayam-he-standard-2011' => 'عبری استاندارد ۲۰۱۱',
 );
 
-/** Finnish (Suomi)
+/** Finnish (suomi)
  * @author Crt
  * @author Nike
  * @author Olli
@@ -897,7 +897,7 @@ $messages['fi'] = array(
 	'narayam-he-standard-2011' => 'Heprea standardi 2011',
 );
 
-/** French (Français)
+/** French (français)
  * @author Coyau
  * @author DavidL
  * @author Gomoko
@@ -974,7 +974,7 @@ $messages['fr'] = array(
 	'narayam-he-standard-2011' => 'Hébreu Standard 2011',
 );
 
-/** Franco-Provençal (Arpetan)
+/** Franco-Provençal (arpetan)
  * @author ChrisPtDe
  */
 $messages['frp'] = array(
@@ -1432,7 +1432,7 @@ $messages['hsb'] = array(
 	'narayam-he-standard-2011' => 'Hebrejski standard 2011 (jendźelska tastatura)',
 );
 
-/** Hungarian (Magyar)
+/** Hungarian (magyar)
  * @author Dani
  * @author Dj
  */
@@ -1443,7 +1443,7 @@ $messages['hu'] = array(
 	'narayam-eo' => 'Eszperantó',
 );
 
-/** Interlingua (Interlingua)
+/** Interlingua (interlingua)
  * @author McDutchie
  */
 $messages['ia'] = array(
@@ -1893,7 +1893,7 @@ $messages['lb'] = array(
 	'narayam-ru-standard' => 'Russesch (Standard)',
 );
 
-/** Lithuanian (Lietuvių)
+/** Lithuanian (lietuvių)
  * @author Eitvys200
  */
 $messages['lt'] = array(
@@ -1903,7 +1903,7 @@ $messages['lt'] = array(
 	'narayam-ru-standard' => 'Rusiškas Standartas',
 );
 
-/** Latvian (Latviešu)
+/** Latvian (latviešu)
  * @author GreenZeb
  */
 $messages['lv'] = array(
@@ -1925,7 +1925,7 @@ $messages['mai'] = array(
 	'narayam-sa-inscript' => 'संस्कृत इनस्क्रिप्ट',
 );
 
-/** Macedonian (Македонски)
+/** Macedonian (македонски)
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
@@ -2350,7 +2350,7 @@ $messages['pfl'] = array(
 	'narayam-de' => 'Daidsch',
 );
 
-/** Polish (Polski)
+/** Polish (polski)
  * @author BeginaFelicysym
  * @author Olgak85
  * @author Sp5uhe
@@ -2488,7 +2488,7 @@ $messages['ps'] = array(
 	'narayam-ru-standard' => 'معياري روسي',
 );
 
-/** Portuguese (Português)
+/** Portuguese (português)
  * @author Hamilton Abreu
  * @author MetalBrasil
  * @author SandroHc
@@ -2523,7 +2523,7 @@ $messages['pt'] = array(
 	'narayam-bn-nkb' => 'NKB para bengali',
 );
 
-/** Brazilian Portuguese (Português do Brasil)
+/** Brazilian Portuguese (português do Brasil)
  * @author 555
  * @author Giro720
  * @author MetalBrasil
@@ -2557,7 +2557,7 @@ $messages['pt-br'] = array(
 	'narayam-bn-nkb' => 'NKB para bengali',
 );
 
-/** Romanian (Română)
+/** Romanian (română)
  * @author Firilacroco
  * @author Minisarm
  */
@@ -2587,7 +2587,7 @@ $messages['ro'] = array(
 	'narayam-bn-nkb' => 'NKB bengalez',
 );
 
-/** Tarandíne (Tarandíne)
+/** tarandíne (tarandíne)
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
@@ -2803,7 +2803,7 @@ $messages['sa'] = array(
 	'narayam-mai-inscript' => 'मैथिली इनस्क्रिप्ट',
 );
 
-/** Sakha (Саха тыла)
+/** Sakha (саха тыла)
  * @author HalanTul
  */
 $messages['sah'] = array(
@@ -2827,7 +2827,7 @@ $messages['sah'] = array(
 	'narayam-bn-nkb' => 'Бэнгээл NKB',
 );
 
-/** Sicilian (Sicilianu)
+/** Sicilian (sicilianu)
  * @author Aushulz
  */
 $messages['scn'] = array(
@@ -2898,7 +2898,7 @@ $messages['si'] = array(
 	'narayam-he-standard-2011-extonly' => 'සම්මත යුදෙව් 2011',
 );
 
-/** Slovak (Slovenčina)
+/** Slovak (slovenčina)
  * @author Helix84
  */
 $messages['sk'] = array(
@@ -2925,7 +2925,7 @@ $messages['sk'] = array(
 	'narayam-bn-nkb' => 'Bengálčina, NKB',
 );
 
-/** Slovenian (Slovenščina)
+/** Slovenian (slovenščina)
  * @author Dbc334
  */
 $messages['sl'] = array(
@@ -2993,7 +2993,7 @@ $messages['sl'] = array(
 	'narayam-he-standard-2011' => 'hebrejski standard 2011',
 );
 
-/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
  * @author Nikola Smolenski
  * @author Rancher
  */
@@ -3055,7 +3055,7 @@ $messages['sr-ec'] = array(
 	'narayam-he-standard-2011' => 'Хебрејски (стандард 2011)',
 );
 
-/** Serbian (Latin script) (‪Srpski (latinica)‬) */
+/** Serbian (Latin script) (‪srpski (latinica)‬) */
 $messages['sr-el'] = array(
 	'narayam-desc' => 'Omogućava dodavanje prilagođenih ulaznih metoda za uređivački okvir',
 	'narayam-toggle-ime' => 'Omogući ($1)',
@@ -3073,7 +3073,7 @@ $messages['sr-el'] = array(
 	'narayam-de' => 'Nemački',
 );
 
-/** Swedish (Svenska)
+/** Swedish (svenska)
  * @author Lokal Profil
  * @author WikiPhoenix
  */
@@ -3348,7 +3348,7 @@ $messages['yi'] = array(
 	'narayam-he-standard-2011' => 'העברעיש מיט פינטלעך (ענגלישער קלאוויער)',
 );
 
-/** Simplified Chinese (‪中文(简体)‬)
+/** Simplified Chinese (‪中文（简体）‬)
  * @author Anakmalaysia
  * @author Bencmq
  * @author Hydra
@@ -3419,7 +3419,7 @@ $messages['zh-hans'] = array(
 	'narayam-he-standard-2011' => '希伯来语2011年标准（英语键盘）',
 );
 
-/** Traditional Chinese (‪中文(繁體)‬)
+/** Traditional Chinese (‪中文（繁體）‬)
  * @author Anakmalaysia
  * @author Oapbtommy
  */
