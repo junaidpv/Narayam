@@ -165,7 +165,7 @@ $wgNarayamSchemes = array(
 		'ta' => 'ext.narayam.rules.ta',
 		'ta-99' => 'ext.narayam.rules.ta-99',
 		'ta-bamini' => array( 'ext.narayam.rules.ta-bamini', 'beta' ),
-		'ta-inscript' =>  array( 'ext.narayam.rules.ta-inscript', 'beta' ),
+		'ta-inscript' => 'ext.narayam.rules.ta-inscript',
 	),
 	'tcy' => array(
 		'tcy' => array( 'ext.narayam.rules.tcy', 'beta' ),
