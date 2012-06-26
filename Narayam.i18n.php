@@ -1798,6 +1798,60 @@ $messages['kn'] = array(
 	'narayam-he-standard-2011' => 'ಹೀಬ್ರೂ ಸಾಮಾನ್ಯ ೨೦೧೧ (ಆಂಗ್ಲ ಕೀಲಿಮಣೆ)',
 );
 
+/** Korean (한국어)
+ * @author 아라
+ */
+$messages['ko'] = array(
+	'narayam-desc' => '필드 입력에 대한 사용자 정의 입력 방식을 추가하는 것을 허용',
+	'narayam-toggle-ime' => '활성화 ($1)',
+	'narayam-menu' => '입력 방식',
+	'narayam-menu-tooltip' => '입력 방식 선택',
+	'narayam-help' => '도움말',
+	'narayam-checkbox-tooltip' => '입력 방식 켜고 끄기 토글',
+	'narayam-enable-preference' => '입력 방식 활성화',
+	'narayam-more-imes' => '더 많은 입력 방식',
+	'narayam-am' => '암하라어 음역',
+	'narayam-as' => '아삼어 음역',
+	'narayam-as-avro' => '아삼어 Arvo',
+	'narayam-as-bornona' => '아삼어 Bornona',
+	'narayam-as-inscript' => '아삼어 인도스크립트',
+	'narayam-ber-tfng' => '티피나그 음역',
+	'narayam-cyrl-palochka' => 'palochka 포함한 키릴 문자',
+	'narayam-eo' => '에스페란토',
+	'narayam-hi' => '힌디어 음역',
+	'narayam-hi-bolnagri' => '힌디어 Bolnagri',
+	'narayam-hi-inscript' => '힌디어 인도스크립트',
+	'narayam-kn' => '칸나다어 음역',
+	'narayam-kn-inscript' => '칸나다어 인도스크립트',
+	'narayam-ml' => '말라얄람어 음역',
+	'narayam-ml-inscript' => '말라얄람어 인도스크립트',
+	'narayam-mr' => '마라티어 음역',
+	'narayam-mr-inscript' => '마라티어 인도스크립트',
+	'narayam-ne' => '네팔어 음역',
+	'narayam-ne-inscript' => '네팔어 인도스크립트',
+	'narayam-sa' => '산스크리트어 음역',
+	'narayam-sa-inscript' => '산스크리트어 인도스크립트',
+	'narayam-si-singlish' => '스리랑카어 Singlish',
+	'narayam-si-wijesekara' => '스리랑카어 Wijesekara',
+	'narayam-ta-99' => '타밀어99',
+	'narayam-ta-inscript' => '타밀어 인도스크립트',
+	'narayam-ta' => '타밀어 음역',
+	'narayam-ta-bamini' => '타밀어 Bamini',
+	'narayam-te' => '텔구어 음역',
+	'narayam-te-inscript' => '텔구어 인도스크립트',
+	'narayam-bn-avro' => '벵골어 Avro',
+	'narayam-bn-inscript' => '벵골어 인도스크립트',
+	'narayam-bn-nkb' => '벵골어 NKB',
+	'narayam-ur' => '우르두어 표준',
+	'narayam-de' => '독일어',
+	'narayam-gu' => '구자라트어 음역',
+	'narayam-gu-inscript' => '구자라트어 인도스크립트',
+	'narayam-ru-standard' => '러시아어 표준',
+	'narayam-sah-standard' => '사하어 표준',
+	'narayam-he-standard-2011-extonly' => '히브리어 표준 2011',
+	'narayam-he-standard-2011' => '히브리어 표준 2011 (영어 키보드)',
+);
+
 /** Colognian (Ripoarisch)
  * @author Purodha
  */
