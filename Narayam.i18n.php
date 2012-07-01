@@ -334,7 +334,7 @@ $messages['ba'] = array(
 	'narayam-he-standard-2011' => 'Йәһүд стандарт 2011',
 );
 
-/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Renessaince
@@ -457,12 +457,16 @@ $messages['br'] = array(
 	'narayam-checkbox-tooltip' => 'Evit eilpennañ an hentenn enmont war enaou pe get',
 	'narayam-enable-preference' => 'Gweredekaat an doare ebarzhiñ',
 	'narayam-more-imes' => 'Hentennoù enmont all',
-	'narayam-am' => 'Treuzlizherennadur amhareg',
+	'narayam-ahr' => 'Treuzlizherennadur en ahirani',
+	'narayam-ahr-inscript' => 'InScript ahirani',
+	'narayam-am' => 'Treuzlizherennadur en amhareg',
 	'narayam-as' => 'Treuzlizherennadur asameg',
 	'narayam-as-avro' => 'Avro asameg',
 	'narayam-as-bornona' => 'Bornora asameg',
 	'narayam-as-inscript' => 'InSript asameg',
 	'narayam-ber-tfng' => 'Treuzlizherennadur tifinagh',
+	'narayam-brx-inscript' => 'InScript Bodo',
+	'narayam-cyrl-palochka' => 'Kirilleg gant palochka',
 	'narayam-eo' => 'Esperanteg',
 	'narayam-hi' => 'Treuzlizherennadur hindi',
 	'narayam-hi-inscript' => 'InScript hindi',
@@ -470,20 +474,26 @@ $messages['br'] = array(
 	'narayam-kn-inscript' => 'InScript kannada',
 	'narayam-ml' => 'Treuzlizherennadur Malayalam',
 	'narayam-ml-inscript' => 'InScript malayalam',
-	'narayam-mr' => 'Treuzlizherennadur marathi',
-	'narayam-ne' => 'Treuzlizherennadur nepaleg',
+	'narayam-mr' => 'Treuzlizherennadur e marathi',
+	'narayam-mr-inscript' => 'InScript e marathi',
+	'narayam-ne' => 'Treuzlizherennadur e nepaleg',
 	'narayam-ne-inscript' => 'Inscript nepaleg',
 	'narayam-or' => 'Treuzlizherennadur oriya',
+	'narayam-or-lekhani' => 'Odiya Lekhani',
 	'narayam-or-inscript' => 'InScript oriya',
 	'narayam-sa' => 'Treuzlizherennadur sanskriteg',
 	'narayam-sa-inscript' => 'InScript sanskriteg',
 	'narayam-si-singlish' => 'Singlisheg Sri Lanka',
 	'narayam-si-wijesekara' => 'Wijesekara Sri Lanka',
 	'narayam-ta-99' => 'Tamil99',
+	'narayam-ta-inscript' => 'InScript tamileg',
 	'narayam-ta' => 'Treuzlizherennadur tamileg',
 	'narayam-ta-bamini' => 'Banini tamileg',
 	'narayam-tcy' => 'Treuzlizherennadur tulu',
+	'narayam-te' => 'Treuzlizherennadur e telougou',
 	'narayam-te-inscript' => 'InScript telougou',
+	'narayam-bho' => 'Treuzlizherennadur e bhojpuri',
+	'narayam-bho-inscript' => 'InScript bhojpuri',
 	'narayam-bn-avro' => 'Avro bengaleg',
 	'narayam-bn-inscript' => 'InScript bengaleg',
 	'narayam-bn-nkb' => 'NKB bengaleg',
@@ -1036,7 +1046,7 @@ $messages['frp'] = array(
 	'narayam-he-standard-2011' => 'Hèbrèo estandârd 2011',
 );
 
-/** Galician (Galego)
+/** Galician (galego)
  * @author MetalBrasil
  * @author Toliño
  */
@@ -1359,7 +1369,7 @@ $messages['hi'] = array(
 	'narayam-he-standard-2011' => 'हिब्रू मानक २०११ (अंग्रेजी कीबोर्ड)',
 );
 
-/** Upper Sorbian (Hornjoserbsce)
+/** Upper Sorbian (hornjoserbsce)
  * @author McDutchie
  * @author Michawiki
  */
@@ -1834,6 +1844,12 @@ $messages['ko'] = array(
 	'narayam-new-inscript' => '네와르어 인도스크립트',
 	'narayam-new' => '네와르어 음역',
 	'narayam-ne-inscript' => '네팔어 인도스크립트',
+	'narayam-or' => '오디야어 음역',
+	'narayam-or-lekhani' => '오디야어 Lekhani',
+	'narayam-or-inscript' => '오리야어 인도스크립트',
+	'narayam-pa' => '구르무키 펀자브어 음역',
+	'narayam-pa-phonetic' => '구르무키 펀자브어 Phonetic',
+	'narayam-pa-inscript' => '구르무키 펀자브어 인도스크립트',
 	'narayam-sa' => '산스크리트어 음역',
 	'narayam-sa-inscript' => '산스크리트어 인도스크립트',
 	'narayam-si-singlish' => '스리랑카어 Singlish',
@@ -1842,6 +1858,7 @@ $messages['ko'] = array(
 	'narayam-ta-inscript' => '타밀어 인도스크립트',
 	'narayam-ta' => '타밀어 음역',
 	'narayam-ta-bamini' => '타밀어 Bamini',
+	'narayam-tcy' => '투루어 음역',
 	'narayam-te' => '텔구어 음역',
 	'narayam-te-inscript' => '텔구어 인도스크립트',
 	'narayam-bn-avro' => '벵골어 Avro',
@@ -1853,6 +1870,7 @@ $messages['ko'] = array(
 	'narayam-gu-inscript' => '구자라트어 인도스크립트',
 	'narayam-ru-standard' => '러시아어 표준',
 	'narayam-sah-standard' => '사하어 표준',
+	'narayam-mai-inscript' => '마이틸리어 인도스크립트',
 	'narayam-he-standard-2011-extonly' => '히브리어 표준 2011',
 	'narayam-he-standard-2011' => '히브리어 표준 2011 (영어 키보드)',
 );
@@ -2788,7 +2806,7 @@ $messages['ru'] = array(
 	'narayam-he-standard-2011' => 'Hebrew Standard 2011',
 );
 
-/** Rusyn (Русиньскый)
+/** Rusyn (русиньскый)
  * @author Gazeb
  */
 $messages['rue'] = array(
