@@ -184,6 +184,23 @@ narayamTest( {
 } );
 
 narayamTest( {
+	description: 'Tamil Transliteration test',
+	tests: [
+		//(ks|KS)h should give non-conjunct form of ksh க்‌ஷ்
+		//(ks|KS)H should give the conjunct form க்ஷ்
+		{ input: 'thikshith', output: 'திக்‌ஷித்', description: 'thikshith in Tamil transliteration for திக்‌ஷித் non conjunct form' },
+		{ input: 'thikShith', output: 'திக்‌ஷித்', description: 'thikShith in Tamil transliteration for திக்‌ஷித் non conjunct form' },
+		{ input: 'thiksHith', output: 'திக்ஷித்', description: 'thiksHith in Tamil transliteration for திக்ஷித் conjunct form' },
+		{ input: 'thiKSHith', output: 'திக்ஷித்', description: 'thiKSHith in Tamil transliteration for திக்ஷித் conjunct form' },
+		{ input: 'Sri', output: 'ஸ்ரீ', description: 'Sri in Tamil transliteration for ஸ்ரீ Sri' },
+		{ input: 'Sruthi', output: 'ஸ்ருதி', description: 'Sruthi in Tamil transliteration for ஸ்ருதி' },
+		{ input: 'Sreeyaa', output: 'ஸ்ரேயா', description: 'Sreeyaa in Tamil transliteration for ஸ்ரேயா' }
+	],
+	scheme: 'ta',
+	$input: $( '<input>' ).attr( { id: 'ta', type: 'text' } )
+} );
+
+narayamTest( {
 	description: 'Tamil 99 test',
 	tests: [
 		//hfW should give non-conjunct form of ksha க்‌ஷ
