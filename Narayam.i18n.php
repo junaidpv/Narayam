@@ -1872,7 +1872,10 @@ $messages['ko'] = array(
 	'narayam-gu-inscript' => '구자라트어 인도스크립트',
 	'narayam-ru-standard' => '러시아어 표준',
 	'narayam-sah-standard' => '사하어 표준',
+	'narayam-hne-inscript' => '차티스가리어 인도스크립트',
 	'narayam-mai-inscript' => '마이틸리어 인도스크립트',
+	'narayam-gom-deva' => '고안 콘탄-데바나가리어 음역',
+	'narayam-gom-deva-inscript' => '고안 콘칸-데바나가리어 인도스크립트',
 	'narayam-he-standard-2011-extonly' => '히브리어 표준 2011',
 	'narayam-he-standard-2011' => '히브리어 표준 2011 (영어 키보드)',
 );
