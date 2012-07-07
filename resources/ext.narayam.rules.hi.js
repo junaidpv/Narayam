@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Transliteration regular expression rules table for Devanagari script for Hindi
  * According to CDAC's "Enhanced InScript Keyboard Layout 5.2"
  * @author Junaid P V ([[user:Junaidpv]])
