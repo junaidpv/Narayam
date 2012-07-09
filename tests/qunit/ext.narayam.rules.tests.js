@@ -6,6 +6,7 @@
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
 ( function () {
+"use strict";
 
 module( "ext.narayam.rules", QUnit.newMwEnvironment() );
 
@@ -29,7 +30,7 @@ test( "-- Initial check", function() {
 // characters - either
 //		- a string
 //		- an array of pairs of character and altKey value
-typeChars = function( $input, characters ) {
+var typeChars = function( $input, characters ) {
 	var len = characters.length;
 	for ( var i = 0; i < len; i++ ) {
 		// Get the key code
@@ -186,10 +187,10 @@ narayamTest( {
 narayamTest( {
 	description: 'Tamil Transliteration test',
 	tests: [
-		//(ks|KS)h should give non-conjunct form of ksh க்‌ஷ்
-		//(ks|KS)H should give the conjunct form க்ஷ்
-		{ input: 'thikshith', output: 'திக்‌ஷித்', description: 'thikshith in Tamil transliteration for திக்‌ஷித் non conjunct form' },
-		{ input: 'thikShith', output: 'திக்‌ஷித்', description: 'thikShith in Tamil transliteration for திக்‌ஷித் non conjunct form' },
+		//(ks|KS)h should give non-conjunct form of ksh க்‌ஷ் (with ZWNJ)
+		//(ks|KS)H should give the conjunct form க்ஷ் (with ZWNJ)
+		{ input: 'thikshith', output: 'திக்‌ஷித்', description: 'thikshith in Tamil transliteration for திக்‌ஷித் non conjunct form' }, // (with ZWNJ)
+		{ input: 'thikShith', output: 'திக்‌ஷித்', description: 'thikShith in Tamil transliteration for திக்‌ஷித் non conjunct form' }, // (with ZWNJ)
 		{ input: 'thiksHith', output: 'திக்ஷித்', description: 'thiksHith in Tamil transliteration for திக்ஷித் conjunct form' },
 		{ input: 'thiKSHith', output: 'திக்ஷித்', description: 'thiKSHith in Tamil transliteration for திக்ஷித் conjunct form' },
 		{ input: 'Sri', output: 'ஸ்ரீ', description: 'Sri in Tamil transliteration for ஸ்ரீ Sri' },
@@ -203,11 +204,11 @@ narayamTest( {
 narayamTest( {
 	description: 'Tamil 99 test',
 	tests: [
-		//hfW should give non-conjunct form of ksha க்‌ஷ
+		//hfW should give non-conjunct form of ksha க்‌ஷ (with ZWNJ)
 		//T still gives the conjunct form க்ஷ
-		{ input: 'lshfWslf', output: 'திக்‌ஷித்', description: 'lshfWslf in Tamil99 for திக்‌ஷித் non conjunct form' },
+		{ input: 'lshfWslf', output: 'திக்‌ஷித்', description: 'lshfWslf in Tamil99 for திக்‌ஷித் non conjunct form' }, // (with ZWNJ)
 		{ input: 'lsTslf', output: 'திக்ஷித்', description: 'lsTslf in Tamil99 for திக்ஷித் conjunct form' },
-		{ input: 'hfWtkakf', output: 'க்‌ஷேமம்', description: 'hfWtkakf in Tamil99 for க்‌ஷேமம் hfW -> க்‌ஷ non conjunct form' },
+		{ input: 'hfWtkakf', output: 'க்‌ஷேமம்', description: 'hfWtkakf in Tamil99 for க்‌ஷேமம் hfW -> க்‌ஷ non conjunct form' }, // (with ZWNJ)
 		{ input: 'Ttkakf', output: 'க்ஷேமம்', description: 'Ttkakf in Tamil99 for க்ஷேமம் T -> க்ஷ conjunct form' }
 	],
 	scheme: 'ta-99',
@@ -218,7 +219,7 @@ narayamTest( {
 	description: 'Tamil InScript test',
 	tests: [
 		{ input: 'ka', output: 'கோ', description: 'Tamil Inscript கோ' },
-		{ input: 'lfkd)<fld', output: 'திக்‌ஷித்', description: 'Tamil Inscript திக்‌ஷித் non conjunct form with ZWNJ in between' },
+		{ input: 'lfkd)<fld', output: 'திக்‌ஷித்', description: 'Tamil Inscript திக்‌ஷித் non conjunct form with ZWNJ in between' }, // (with ZWNJ)
 		{ input: 'lf&fld', output: 'திக்ஷித்', description: 'Tamil Inscript திக்ஷித் conjunct form' },
 		{ input: ';sjVd', output: 'சேரன்', description: 'Tamil Inscript சேரன் Cheran' },
 		{ input: ';aBVd', output: 'சோழன்', description: 'Tamil Inscript சோழன் Chozhan' },
@@ -226,7 +227,7 @@ narayamTest( {
 		{ input: 'heCd\'f/jd', output: 'பாண்டியர்', description: 'Tamil Inscript பாண்டியர் Pandiyar' },
 		{ input: 'Ecrjd', output: 'ஆமீர்', description: 'Tamil Inscript ஆமீர் Aamir' },
 		{ input: 'Duj`Vf', output: 'அஹரொனி', description: 'Tamil Inscript அஹரொனி Aharoni' },
-		{ input: 'md)jrkevdld', output: 'ஸ்‌ரீகாந்த்', description: 'Tamil Inscript ஸ்‌ரீகாந்த் with ZWNJ between ஸ் and ரீ Srikanth' },
+		{ input: 'md)jrkevdld', output: 'ஸ்‌ரீகாந்த்', description: 'Tamil Inscript ஸ்‌ரீகாந்த் with ZWNJ between ஸ் and ரீ Srikanth' }, // (with ZWNJ)
 		{ input: 'mdjrkevdld', output: 'ஸ்ரீகாந்த்', description: 'Tamil Inscript ஸ்ரீகாந்த் with SHRI = SA+RII' },
 		{ input: 'MdjrjcC', output: 'ஶ்ரீரமண', description: 'Tamil Inscript ஶ்ரீரமண Shriramana with SHRI = SHA+RII' },
 		{ input: 'Dnanfle', output: 'அலோலிதா', description: 'Tamil Inscript அலோலிதா Alolitha' },
@@ -236,8 +237,7 @@ narayamTest( {
 		{ input: 'vfkdnmd', output: 'நிக்லஸ்', description: 'Tamil Inscript நிக்லஸ் Niklas' },
 		{ input: ';rhdjCd\'g', output: 'சீப்ரண்டு', description: 'Tamil Inscript சீப்ரண்டு Siebrand' },
 		{ input: 'hzUdkNtjg', output: 'பெங்களூரு', description: 'Tamil Inscript பெங்களூரு Bengalooru' },
-		{ input: ';qje\'d\'fj', output: 'சௌராட்டிர', description: 'Tamil Inscript சௌராட்டிர Saurattira' },
-
+		{ input: ';qje\'d\'fj', output: 'சௌராட்டிர', description: 'Tamil Inscript சௌராட்டிர Saurattira' }
 	],
 	scheme: 'ta-inscript',
 	$input: $( '<input>' ).attr( { id: 'ta-inscript', type: 'text' } )
@@ -404,7 +404,7 @@ narayamTest( {
 		{ input: 'aikya', output: 'ઐક્ય', description: 'Gujarati aikya' },
 		{ input: 'kailaasa', output: 'કૈલાસ', description: 'Gujarati kailaasa' },
 		{ input: 'EMjiiniyara', output: 'ઍંજીનિયર', description: 'Gujarati EMjiiniyara - testing candra e' },
-		{ input: 'sad`bhaava', output: 'સદ્‌ભાવ', description: 'Gujarati sad`bhaava - testing ZWNJ' },
+		{ input: 'sad`bhaava', output: 'સદ્‌ભાવ', description: 'Gujarati sad`bhaava - testing ZWNJ' }, // (with ZWNJ)
 		{ input: 'caDJaavo', output: 'ચડ઼ાવો', description: 'Gujarati caDJaavo - testing nukta' }
 	],
 	scheme: 'gu',
