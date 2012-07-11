@@ -423,6 +423,25 @@ narayamTest( {
 	$input: $( '<input>' ).attr( { id: 'bn-avro', type: 'text' } )
 } );
 
+narayamTest( {
+	description: 'Hindi transliteration tests',
+	tests: [
+		{ input: 'namaH', output: 'नमः', description: 'Hindi transliteration - namaH (visarga)' },
+		{ input: 'madhumaChiyoM', output: 'मधुमक्खियों', description: 'Hindi transliteration - madhumaChiyoM (anusvara)' },
+		{ input: '//', output: 'ऽ', description: 'Hindi transliteration - // (avagraha)' },
+		{ input: 'raama', output: 'राम', description: 'Hindi transliteration - raama' },
+		{ input: 'laxmii', output: 'लक्ष्मी', description: 'Hindi transliteration - laxmii (testing ksh)' },
+		{ input: 'veeNaa', output: 'वीणा', description: 'Hindi transliteration - veeNaa' },
+		{ input: 'soorya', output: 'सूर्य', description: 'Hindi transliteration - soorya' },
+		{ input: 'amRtaa', output: 'अमृता', description: 'Hindi transliteration - amRtaa' },
+		{ input: 'bauThate', output: 'बौठते', description: 'Hindi transliteration - bauThate' },
+		{ input: '.', output: '।', description: 'Hindi transliteration - . (danda)' },
+		{ input: '..', output: '॥', description: 'Hindi transliteration - .. (double danda)' }
+	],
+	scheme: 'hi',
+	$input: $( '<input>' ).attr( { id: 'hi', type: 'text' } )
+} );
+
 teardown( );
 
 }() );
