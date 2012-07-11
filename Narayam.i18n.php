@@ -280,7 +280,7 @@ $messages['az'] = array(
 	'narayam-bn-nkb' => 'Bengali NKB',
 );
 
-/** Bashkir (Башҡортса)
+/** Bashkir (башҡортса)
  * @author Haqmar
  */
 $messages['ba'] = array(
@@ -2303,7 +2303,7 @@ $messages['ms'] = array(
 	'narayam-he-standard-2011' => 'Piawaian Ibrani 2011 (papan kekunci Inggeris)',
 );
 
-/** Norwegian Bokmål (‪Norsk (bokmål)‬)
+/** Norwegian Bokmål (‪norsk (bokmål)‬)
  * @author Event
  * @author Nghtwlkr
  * @author Sjurhamre
@@ -2311,8 +2311,34 @@ $messages['ms'] = array(
 $messages['nb'] = array(
 	'narayam-desc' => 'Gjør det mulgi å lage egendefinerte inndatametorer for inndatafelt',
 	'narayam-toggle-ime' => 'Aktiver ($1)',
+	'narayam-menu' => 'Inntastingsmetode',
+	'narayam-menu-tooltip' => 'Velg en inntastingsmetode',
 	'narayam-help' => 'Hjelp',
+	'narayam-checkbox-tooltip' => 'For å slå inntastingsmetode av og på',
+	'narayam-enable-preference' => 'Slå på inntastingsmetode',
+	'narayam-more-imes' => 'Flere inntastingsmetoder',
+	'narayam-am' => 'Amharisk translitterering',
+	'narayam-as' => 'Assamesisk translitterering',
+	'narayam-as-avro' => 'Assamesisk Avro',
+	'narayam-as-bornona' => 'Assamesisk Bornona',
+	'narayam-as-inscript' => 'Assamesisk InScript',
+	'narayam-ber-tfng' => 'Tifiniagh-translitterering',
+	'narayam-brx-inscript' => 'Bodo InScript',
 	'narayam-eo' => 'Esperanto',
+	'narayam-hi' => 'Hindi-translitterering',
+	'narayam-hi-inscript' => 'Hindi InScript',
+	'narayam-kn' => 'Kannada-translitterering',
+	'narayam-kn-inscript' => 'Kannada InScript',
+	'narayam-ml' => 'Malayalam-translitterering',
+	'narayam-ml-inscript' => 'Malayalam InScript',
+	'narayam-mr' => 'Marathi-translitterering',
+	'narayam-mr-inscript' => 'Marathi InScript',
+	'narayam-ne' => 'Nepali-translitterering',
+	'narayam-ne-inscript' => 'Nepali InScript',
+	'narayam-or' => 'Odiya-translitterering',
+	'narayam-or-lekhani' => 'Odiya Lekhani',
+	'narayam-or-inscript' => 'Oriya InScript',
+	'narayam-ru-standard' => 'Russisk standard',
 );
 
 /** Dutch (Nederlands)
