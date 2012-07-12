@@ -14,13 +14,14 @@ class NarayamHooks {
 	 * @return bool
 	 */
 	public static function addModules( $out, $skin ) {
-		global $wgNarayamUseOSK, $wgRequest;
+		global $wgNarayamUseOSK;
+
 		if ( $out->getUser()->getOption( 'narayamEnable' ) ) {
 			$schemes = array_values( self::getSchemes() );
 			if ( count( $schemes ) ) {
 				$out->addModules( $schemes );
 				$out->addModules( 'ext.narayam' );
-				if ( $wgNarayamUseOSK === true || $wgRequest->getText( 'useosk' ) === 'true' ) {
+				if ( $wgNarayamUseOSK === true || $skin->getRequest()->getText( 'useosk' ) === 'true' ) {
 					$out->addModules( 'ext.narayam.osk' );
 				}
 			}
@@ -34,7 +35,7 @@ class NarayamHooks {
 	 * @param $resourceLoader object
 	 * @return bool
 	 */
-	public static function addTestModules( array &$testModules, ResourceLoader &$resourceLoader ) { 
+	public static function addTestModules( array &$testModules, ResourceLoader &$resourceLoader ) {
 		$testModules['qunit']['ext.narayam.tests'] = array(
 			'scripts' => array( 'tests/qunit/ext.narayam.tests.js' ),
 			'dependencies' => array( 'ext.narayam.core' ),
