@@ -1,6 +1,5 @@
 /**
  * Transliteration regular expression rules table for Devanagari script for Hindi
- * According to CDAC's "Enhanced InScript Keyboard Layout 5.2"
  * @author Junaid P V ([[user:Junaidpv]])
  * @date 2011-11-20
  * License: GPLv3
@@ -52,7 +51,7 @@ var rules = [
 ['ळ्l', '', 'ऌ'],
 ['ऌl', '', 'ॡ'],
 ['ं(m|M|\\^)', '', 'ँ'], // Candrabindu
-['ओM', '', 'ॐ'], // Om
+['आऊM', '', 'ॐ'], // AUM (OM)
 
 ['क्h', '', 'ख्'],
 ['ग्h', '', 'घ्'],
