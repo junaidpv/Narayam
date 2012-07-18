@@ -14,6 +14,8 @@
  */
 
 ( function( $, mw ) {
+"use strict";
+
 $.narayam = new ( function() {
 	/* Private members */
 
@@ -49,10 +51,10 @@ $.narayam = new ( function() {
 	 * @return bool
 	 */
 	function isShortcutKey( e ) {
-		return e.altKey == shortcutKey.altKey &&
-			e.ctrlKey == shortcutKey.ctrlKey &&
-			e.shiftKey == shortcutKey.shiftKey &&
-			String.fromCharCode( e.which ) == shortcutKey.key;
+		return e.altKey === shortcutKey.altKey &&
+			e.ctrlKey === shortcutKey.ctrlKey &&
+			e.shiftKey === shortcutKey.shiftKey &&
+			String.fromCharCode( e.which ) === shortcutKey.key;
 	}
 
 	/**
@@ -72,13 +74,14 @@ $.narayam = new ( function() {
 		var profile = $.client.profile();
 		// Safari/Konqueror on any platform, but not Safari on Windows
 		// or any browser on Mac except chrome and opera
-		if ( !( profile.platform == 'win' && profile.name == 'safari' ) &&
-			 ( profile.name == 'safari'|| profile.platform == 'mac' || profile.name == 'konqueror' )
-			 && !( profile.name == 'opera' || profile.name == 'chrome' ) ) {
+		if ( !( profile.platform === 'win' && profile.name === 'safari' ) &&
+			( profile.name === 'safari'|| profile.platform === 'mac' || profile.name === 'konqueror' ) &&
+			!( profile.name === 'opera' || profile.name === 'chrome' ) )
+		{
 			defaultShortcut.key = 'G';
 		}
 		// For Opera in OSX, shortcut is control+command+m.
-		if ( profile.name == 'opera' && profile.platform == 'mac' ) {
+		if ( profile.name === 'opera' && profile.platform === 'mac' ) {
 			defaultShortcut.cmdKey = true;
 		}
 		return defaultShortcut;
@@ -115,7 +118,7 @@ $.narayam = new ( function() {
 		if ( enabled ) {
 			$element.addClass( 'narayam-input' );
 			if( $.narayam.osk ) {
-				 $.narayam.osk.bind( $element, currentScheme.namemsg );
+				$.narayam.osk.bind( $element, currentScheme.namemsg );
 			}
 		} else {
 			$element.removeClass( 'narayam-input' );
@@ -173,7 +176,7 @@ $.narayam = new ( function() {
 			return true;
 		}
 
-		if ( e.which == 8 ) { // Backspace
+		if ( e.which === 8 ) { // Backspace
 			// Blank the keybuffer
 			$( this ).data( 'narayamKeyBuffer', '' );
 			return true;
@@ -209,7 +212,7 @@ $.narayam = new ( function() {
 		$this.data( 'narayamKeyBuffer', keyBuffer );
 
 		// textSelection() magic is expensive, so we avoid it as much as we can
-		if ( replacement == input ) {
+		if ( replacement === input ) {
 			return true;
 		}
 		// Drop a common prefix, if any
@@ -221,7 +224,6 @@ $.narayam = new ( function() {
 		e.stopPropagation();
 		return false;
 	}
-
 
 	function getCaretPosition( element ){
 		var isDiv = ( element.nodeName === 'DIV' );
@@ -289,17 +291,16 @@ $.narayam = new ( function() {
 			currentScheme.rules_x : currentScheme.rules;
 		for ( var i = 0; i < rules.length; i++ ) {
 			var regex = new RegExp( rules[i][0] + '$' );
-			if ( regex.test( str ) // Input string match
-				&&
+			if ( regex.test( str ) && // Input string match
 				(
-					rules[i][1].length === 0 // Keybuffer match not required
-					||
+					rules[i][1].length === 0 || // Keybuffer match not required
 					( // Keybuffer match specified, so it should be met
-						rules[i][1].length > 0
-						&& new RegExp( rules[i][1] + '$' ).test( keyBuffer )
+						rules[i][1].length > 0 &&
+						new RegExp( rules[i][1] + '$' ).test( keyBuffer )
 					)
 				)
-			) {
+			)
+			{
 				return str.replace( regex, rules[i][2] );
 			}
 		}
@@ -475,7 +476,7 @@ $.narayam = new ( function() {
 			recent = recent.split( "," );
 		}
 		recent = $.grep( recent, function( value ) {
-			 return value != name;
+			return value !== name;
 		} );
 		recent.unshift( name );
 		recent = recent.slice( 0, recentItemsLength );
@@ -483,12 +484,16 @@ $.narayam = new ( function() {
 		$.cookie( 'narayam-scheme', recent, { path: '/', expires: 30 } );
 		if ( name in schemes ) {
 			currentScheme = schemes[name];
-			if ( callback ) callback.call();
+			if ( callback ) {
+				callback.call();
+			}
 		} else {
 			// load the rules dynamically.
 			mw.loader.using( "ext.narayam.rules." + name, function() {
 				currentScheme = schemes[name];
-				if ( callback ) callback.call();
+				if ( callback ) {
+					callback.call();
+				}
 			} );
 		}
 		return true;
@@ -518,10 +523,12 @@ $.narayam = new ( function() {
 			}
 			that.setScheme( $firstScheme.val() );
 			$firstScheme.prop( 'checked', true );
-
 		}
+
 		var enabledCookie = $.cookie( 'narayam-enabled' );
-		if ( enabledCookie == '1' || ( mw.config.get( 'wgNarayamEnabledByDefault' ) && enabledCookie !== '0' ) ) {
+		if ( enabledCookie === '1' ||
+			( mw.config.get( 'wgNarayamEnabledByDefault' ) && enabledCookie !== '0' ) )
+		{
 			that.enable();
 		} else {
 			$( 'li#pt-narayam' ).addClass( 'narayam-inactive' );
@@ -568,14 +575,16 @@ $.narayam = new ( function() {
 		}
 
 		// Prepare the recent inputmethods menu items
-		for ( var i = 0; i < recent.length; i++ ) {
-			var scheme = recent[i];
-			if ( $.inArray( scheme, seen ) > -1 ) { continue; }
-			seen.push( scheme );
-			if ( count++ > recentItemsLength ) { break; }
-			var $narayamMenuItem = that.buildMenuItem( scheme );
-			$narayamMenuItem.addClass( 'narayam-recent-menu-item' );
-			$narayamMenuItems.append( $narayamMenuItem );
+		for ( var recentIndex = 0; recentIndex < recent.length; recentIndex++ ) {
+			var recentScheme = recent[recentIndex];
+			if ( $.inArray( recentScheme, seen ) > -1 ) { continue; }
+			seen.push( recentScheme );
+			if ( count++ > recentItemsLength ) {
+				break;
+			}
+			var $narayamRecentMenuItem = that.buildMenuItem( recentScheme );
+			$narayamRecentMenuItem.addClass( 'narayam-recent-menu-item' );
+			$narayamMenuItems.append( $narayamRecentMenuItem );
 		}
 
 		// menu items for the language of wiki.
@@ -583,16 +592,21 @@ $.narayam = new ( function() {
 		$( 'textarea[lang]' ).each( function( index ) {
 			requested.push( this.lang );
 		});
-		for ( var i = 0; i < requested.length; i++ ) {
-			var lang = requested[i];
-			var langschemes = allImes[lang];
-			if ( !langschemes ) continue;
-			for ( var scheme in langschemes ) {
+		for ( var requestedIndex = 0; requestedIndex < requested.length; requestedIndex++ ) {
+			var requestedLang = requested[requestedIndex];
+			var requestedLangSchemes = allImes[requestedLang];
+			if ( !requestedLangSchemes ) {
+				continue;
+			}
+
+			for ( var requestedScheme in requestedLangSchemes ) {
 				haveSchemes = true;
-				if ( $.inArray( scheme, seen ) !== -1 ) { continue; }
-				seen.push( scheme );
-				var $narayamMenuItem = that.buildMenuItem( scheme );
-				$narayamMenuItems.append( $narayamMenuItem );
+				if ( $.inArray( requestedScheme, seen ) !== -1 ) {
+					continue;
+				}
+				seen.push( requestedScheme );
+				var $narayamRequestedMenuItem = that.buildMenuItem( requestedScheme );
+				$narayamMenuItems.append( $narayamRequestedMenuItem );
 			}
 		}
 
@@ -632,11 +646,13 @@ $.narayam = new ( function() {
 		);
 
 		for ( var lang in allImes ) {
-			var langschemes = allImes[lang];
-			for ( var scheme in langschemes ) {
-				// Do not repeat the input methods in more input methods section.
-				// If already shown on recent items.
-				if ( $.inArray( scheme, seen ) > -1 ) { continue; }
+			var langSchemes = allImes[lang];
+			for ( var scheme in langSchemes ) {
+				// Do not repeat the input methods in more input methods section
+				// if already shown on recent items.
+				if ( $.inArray( scheme, seen ) > -1 ) {
+					continue;
+				}
 				seen.push( scheme );
 
 				var $narayamMenuItem = that.buildMenuItem( scheme );
