@@ -1,10 +1,10 @@
 /**
  * Narayam
  * Input field rewriter tool for web pages
- * @author Junaid P V ([[user:Junaidpv]])(http://junaidpv.in)
+ * @author Junaid P V ([[User:Junaidpv]]) (http://junaidpv.in)
  * @date 2010-12-18 (Based on naaraayam transliteration tool I first wrote on 2010-05-19)
  * @version 3.0
- * Last update: 2010-11-28
+ * Last update: July 2012
  * License: GPLv3
  */
 
@@ -117,12 +117,12 @@ $.narayam = new ( function() {
 	function changeVisual( $element ) {
 		if ( enabled ) {
 			$element.addClass( 'narayam-input' );
-			if( $.narayam.osk ) {
+			if ( $.narayam.osk ) {
 				$.narayam.osk.bind( $element, currentScheme.namemsg );
 			}
 		} else {
 			$element.removeClass( 'narayam-input' );
-			if( $.narayam.osk ) {
+			if ( $.narayam.osk ) {
 				//$.narayam.osk.unbind( $element );
 			}
 		}
@@ -193,7 +193,7 @@ $.narayam = new ( function() {
 		// Get the current caret position. The user may have selected text to overwrite,
 		// so get both the start and end position of the selection. If there is no selection,
 		// startPos and endPos will be equal.
-		var pos = getCaretPosition(this);
+		var pos = getCaretPosition( this );
 		var startPos = pos[0];
 		var endPos = pos[1];
 		// Get the last few characters before the one the user just typed,
@@ -700,7 +700,7 @@ $.narayam = new ( function() {
 		// Remove the menu if already exists
 		$( 'li#pt-narayam,div#narayam-menu' ).remove();
 		var $menuItemsDiv = that.buildMenuItems();
-		if( $menuItemsDiv === null ) {
+		if ( $menuItemsDiv === null ) {
 			return false;
 		}
 		var $menu = $( '<div>' )
@@ -730,10 +730,10 @@ $.narayam = new ( function() {
 					menuOffset = $liMenu.offset().left;
 				} else {
 					menuSide = 'right';
-					menuOffset = $(window).width() - distanceToEdge;
+					menuOffset = $( window ).width() - distanceToEdge;
 				}
 			} else {
-				distanceToEdge = $(window).width() - $liMenu.offset().left;
+				distanceToEdge = $( window ).width() - $liMenu.offset().left;
 				if ( $menuItemsDiv.outerWidth() > distanceToEdge ) {
 					menuSide = 'right';
 					menuOffset = distanceToEdge - $liMenu.outerWidth();
@@ -745,7 +745,7 @@ $.narayam = new ( function() {
 
 			$menuItemsDiv.css( menuSide, menuOffset );
 
-			if( $menu.hasClass( 'open' ) ){
+			if ( $menu.hasClass( 'open' ) ){
 				$menu.removeClass( 'open' );
 				$menu.hide();
 			} else {
@@ -764,7 +764,7 @@ $.narayam = new ( function() {
 			event.stopPropagation();
 		} );
 
-		// Workaround for IE bug - activex components like input fields
+		// Workaround for IE bug - ActiveX components like input fields
 		// coming on top of everything.
 		// TODO: is there a better solution other than hiding it on hover?
 		if ( $.browser.msie ) {
@@ -772,9 +772,9 @@ $.narayam = new ( function() {
 				$( '#searchform' ).css( 'visibility', 'hidden' );
 			}, function() {
 				$( '#searchform' ).css( 'visibility', 'visible' );
-			});
+			} );
 		}
-		$('.narayam-scheme-dynamic-item').hide();
+		$( '.narayam-scheme-dynamic-item' ).hide();
 
 		// Narayam controls setup complete, returns true
 		return true;

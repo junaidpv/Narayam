@@ -1,8 +1,10 @@
 /**
  * QUnit tests for Narayam typing rules
  *
- * @file
- * @copyright Copyright © 2012 Santhosh Thottingal
+ * Information about running and maintaing these tests can be found at
+ * https://www.mediawiki.org/wiki/Extension:Narayam#Testing_layouts
+ *
+ * @copyright Copyright © 2012 Santhosh Thottingal, Amir E. Aharoni, Srikanth Lakshmanan
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
 ( function () {
@@ -16,7 +18,8 @@ function setup() {
 }
 
 function teardown() {
-	// we need to disable narayam, otherwise many typing simulation based test eg: jquery.byteLimitTest will fail.
+	// We need to disable narayam, otherwise many typing simulation
+	// based test, such as jquery.byteLimitTest, will fail.
 	$.narayam.disable();
 }
 
@@ -53,7 +56,7 @@ var typeChars = function( $input, characters ) {
 			charCode: code,
 			altKey: altKeyValue
 		} );
-		if( $input.triggerHandler( event ) ) {
+		if ( $input.triggerHandler( event ) ) {
 			$input.val( $input.val() + character ) ;
 		}
 	}
