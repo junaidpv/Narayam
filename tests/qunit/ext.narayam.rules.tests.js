@@ -442,6 +442,46 @@ narayamTest( {
 	$input: $( '<input>' ).attr( { id: 'hi', type: 'text' } )
 } );
 
+// Based on SRI LANKA STANDARD 1134 : 2004
+narayamTest( {
+	description: 'Sinhala Wijesekara transliteration tests',
+	tests: [
+		// A consonant is entered with a single key.
+		{ input: 'l', output: 'ක', description: 'Sinhala Wijesekara - l -> ක (KA)' },
+
+		// A vowel is entered with 1 or 2 keys.
+		{ input: 'w', output: 'අ', description: 'Sinhala Wijesekara - w -> අ (A)' },
+		{ input: 'wd', output: 'ආ', description: 'Sinhala Wijesekara - wd -> ආ (AA)' },
+		{ input: 'we', output: 'ඇ', description: 'Sinhala Wijesekara - wd -> ඇ (AE)' },
+		{ input: 'wE', output: 'ඈ', description: 'Sinhala Wijesekara - wd -> ඈ (AAE)' },
+
+		{ input: 'b', output: 'ඉ', description: 'Sinhala Wijesekara - b -> ඉ (I)' },
+		{ input: 'B', output: 'ඊ', description: 'Sinhala Wijesekara - B -> ඊ (II)' },
+
+		{ input: 'W', output: 'උ', description: 'Sinhala Wijesekara - W -> උ (U)' },
+		{ input: 'WA', output: 'ඌ', description: 'Sinhala Wijesekara - WA -> ඌ (UU)' },
+
+		{ input: 'R', output: 'ඍ', description: 'Sinhala Wijesekara - R -> ඍ (R)' },
+		{ input: 'RD', output: 'ඎ', description: 'Sinhala Wijesekara - RD -> ඎ (RR)' },
+
+		{ input: [ [ ',', true ] ], output: 'ඏ', description: 'Sinhala Wijesekara - Alt-, -> ඏ (L)' },
+		{ input: [ [ ',', true ], [ 'A', false ] ], output: 'ඐ', description: 'Sinhala Wijesekara - Alt-,+A -> ඐ (LL)' },
+
+		{ input: 't', output: 'එ', description: 'Sinhala Wijesekara - t -> එ (E)' },
+		{ input: 'ta', output: 'ඒ', description: 'Sinhala Wijesekara - ta -> ඒ (EE)' },
+		{ input: 'ft', output: 'ඓ', description: 'Sinhala Wijesekara - ft -> ඓ (AI)' },
+
+		{ input: 'T', output: 'ඔ', description: 'Sinhala Wijesekara - T -> ඔ (O)' },
+		{ input: 'Ta', output: 'ඕ', description: 'Sinhala Wijesekara - Ta -> ඕ (OO)' },
+		{ input: 'TA', output: 'ඖ', description: 'Sinhala Wijesekara - TA -> ඖ (AU)' },
+
+		// A pure consonant is entered with 2 keys: cons + al-lakuna.
+		{ input: 'la', output: 'ක්', description: 'Sinhala Wijesekara - la -> ක් (K)' }
+	],
+	scheme: 'si-wijesekara',
+	$input: $( '<input>' ).attr( { id: 'si-wijesekara', type: 'text' } )
+} );
+
 teardown( );
 
 }() );
