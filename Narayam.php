@@ -143,9 +143,9 @@ $wgNarayamSchemes = array(
 		'or-inscript' => 'ext.narayam.rules.or-inscript',
 	),
 	'pa' => array(
-		'pa' => array( 'ext.narayam.rules.pa', 'beta' ),
-		'pa-inscript' => array( 'ext.narayam.rules.pa-inscript', 'beta' ),
-		'pa-phonetic' => array( 'ext.narayam.rules.pa-phonetic', 'beta' ),
+		'pa' => 'ext.narayam.rules.pa',
+		'pa-inscript' => 'ext.narayam.rules.pa-inscript',
+		'pa-phonetic' => 'ext.narayam.rules.pa-phonetic',
 	),
 	'rif' => array(
 		'ber-tfng' => array( 'ext.narayam.rules.ber-tfng', 'beta' ),
