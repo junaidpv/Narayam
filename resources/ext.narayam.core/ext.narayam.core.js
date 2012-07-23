@@ -196,9 +196,14 @@ $.narayam = ( function () {
 			return true;
 		}
 
-		// Leave ASCII control characters alone, as well as anything involving
+		// Don't process ASCII control characters (except linefeed),
+		// as well as anything involving
 		// Alt (except for extended keymaps), Ctrl and Meta
-		if ( e.which < 32 || ( e.altKey && !currentScheme.extended_keyboard ) || e.ctrlKey || e.metaKey ) {
+		if ( ( e.which < 32 && e.which !== 13 ) ||
+			( e.altKey && !currentScheme.extended_keyboard )
+			|| e.ctrlKey
+			|| e.metaKey )
+		{
 			return true;
 		}
 

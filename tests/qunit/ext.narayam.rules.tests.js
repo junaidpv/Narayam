@@ -477,11 +477,39 @@ narayamTest( {
 narayamTest( {
 	description: 'Hindi transliteration tests',
 	tests: [
-		{ input: '\\~', output: '~', description: 'Hindi transliteration - \\~ -> ~' },
+		// The regex returns \n for \r.
+		{ input: "raam\r", output: "राम\n", description: 'Hindi transliteration - raam<line-break> (\\r)' },
+
+		{input: '\\~', output: '~', description: 'Hindi transliteration - \\~ -> ~' },
+		{input: 'agar ',output: 'अगर ', description:'Hindi transliteration - virama autoremoval on space'}, //bug 35990
+		{input: 'agar~ ',output: 'अगर् ', description:'Hindi transliteration - virama retention'}, //bug 35990
+
 		{ input: 'namaH', output: 'नमः', description: 'Hindi transliteration - namaH (visarga)' },
 		{ input: 'madhumaChiyoM', output: 'मधुमक्खियों', description: 'Hindi transliteration - madhumaChiyoM (anusvara)' },
 		{ input: '//', output: 'ऽ', description: 'Hindi transliteration - // (avagraha)' },
 		{ input: 'raama', output: 'राम', description: 'Hindi transliteration - raama' },
+		{ input: 'raama ', output: 'राम ', description: 'Hindi transliteration - raama<space> (backwards compatibility)' },
+		{ input: 'raama~ ', output: 'राम् ', description: 'Hindi transliteration - raama<viram><space>' },
+		{ input: 'raam ', output: 'राम ', description: 'Hindi transliteration - raam<space>' },
+		{ input: 'raam~ ', output: 'राम् ', description: 'Hindi transliteration - raam<viram><space>' },
+		{ input: 'raam,', output: 'राम,', description: 'Hindi transliteration - raam,' },
+		{ input: 'raam~,', output: 'राम्,', description: 'Hindi transliteration - raam<viram>,' },
+		{ input: 'raam?', output: 'राम?', description: 'Hindi transliteration - raam?' },
+		{ input: 'raam~?', output: 'राम्?', description: 'Hindi transliteration - raam<viram>?' },
+		{ input: 'raam!', output: 'राम!', description: 'Hindi transliteration - raam!' },
+		{ input: 'raam~!', output: 'राम्!', description: 'Hindi transliteration - raam<viram>!' },
+		{ input: 'raam-', output: 'राम-', description: 'Hindi transliteration - raam-' },
+		{ input: 'raam~-', output: 'राम्-', description: 'Hindi transliteration - raam<viram>-' },
+		{ input: 'raam:', output: 'राम:', description: 'Hindi transliteration - raam:' },
+		{ input: 'raam~:', output: 'राम्:', description: 'Hindi transliteration - raam<viram>:' },
+		{ input: 'raam;', output: 'राम;', description: 'Hindi transliteration - raam;' },
+		{ input: 'raam~;', output: 'राम्;', description: 'Hindi transliteration - raam<viram>;' },
+		{ input: 'raam5', output: 'राम५', description: 'Hindi transliteration - raam5' },
+		{ input: 'raam~5', output: 'राम्५', description: 'Hindi transliteration - raam<viram>5' },
+		{ input: 'santoSh.', output: 'सन्तोष।', description: 'Hindi transliteration - santoSh. (testing clusters and danda)' },
+		{ input: 'santoSh~.', output: 'सन्तोष्।', description: 'Hindi transliteration - santoSh<viram>. (testing clusters and danda)' },
+		{ input: 'raam..', output: 'राम॥', description: 'Hindi transliteration - raam..' },
+		{ input: 'raam~..', output: 'राम्॥', description: 'Hindi transliteration - raam<viram>..' },
 		{ input: 'laxmii', output: 'लक्ष्मी', description: 'Hindi transliteration - laxmii (testing ksh)' },
 		{ input: 'veeNaa', output: 'वीणा', description: 'Hindi transliteration - veeNaa' },
 		{ input: 'soorya', output: 'सूर्य', description: 'Hindi transliteration - soorya' },
@@ -496,7 +524,7 @@ narayamTest( {
 		{ input: 'bhaaShaaoM', output: 'भाषाओं', description: 'Hindi transliteration - bhaaShaaoM (testing correct typing of oM as a simple anusvara)' }
 	],
 	scheme: 'hi',
-	$input: $( '<input>' ).attr( { id: 'hi', type: 'text' } )
+	$input: $( '<textarea>' ).attr( { id: 'hi', type: 'text' } )
 } );
 
 // Based on SRI LANKA STANDARD 1134 : 2004
