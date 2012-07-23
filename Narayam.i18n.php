@@ -240,6 +240,7 @@ $messages['ar'] = array(
 );
 
 /** Assamese (অসমীয়া)
+ * @author Bishnu Saikia
  * @author Chaipau
  * @author Psneog
  */
@@ -247,11 +248,13 @@ $messages['as'] = array(
 	'narayam-toggle-ime' => 'সক্ৰিয় কৰক ($1)',
 	'narayam-menu' => "কীব'ৰ্ডৰ ভাষা",
 	'narayam-menu-tooltip' => '"নাৰায়ম"ৰ কীব\'ৰ্ড বাচনি কৰিবলৈ এই লিংক ব্যৱহাৰ কৰক',
+	'narayam-help' => 'সহায়',
 	'narayam-help-page' => '//as.wikipedia.org/wiki/Help:টাইপিং',
 	'narayam-as' => 'অসমীয়া প্ৰতিৰূপান্তৰণ',
 	'narayam-as-avro' => 'অসমীয়া অভ্ৰ',
 	'narayam-as-bornona' => 'অসমীয়া বৰ্ণনা',
 	'narayam-as-inscript' => 'অসমীয়া ইন্‌স্ক্ৰিপ্ত',
+	'narayam-de' => 'জাৰ্মান',
 );
 
 /** Azerbaijani (azərbaycanca)
@@ -650,6 +653,71 @@ $messages['de'] = array(
 	'narayam-gom-deva-inscript' => 'Konkani - Devanagari / Goa (InScript)',
 	'narayam-he-standard-2011-extonly' => 'Hebräisch (Standard 2011)',
 	'narayam-he-standard-2011' => 'Hebräisch (Standard 2011)',
+);
+
+/** Zazaki (Zazaki)
+ * @author Erdemaslancan
+ */
+$messages['diq'] = array(
+	'narayam-help' => 'Desteg',
+	'narayam-ahr' => 'Ahirani Açarnayış',
+	'narayam-ahr-inscript' => 'Ahirani InScript',
+	'narayam-am' => 'Amharki Açarnayış',
+	'narayam-as' => 'Assamese Açarnayış',
+	'narayam-as-avro' => 'Assamese Avro',
+	'narayam-as-bornona' => 'Assamese Bornona',
+	'narayam-as-inscript' => 'Assamese InScript',
+	'narayam-ber-tfng' => 'Tifinagh Açarnayış',
+	'narayam-brx-inscript' => 'Bodo InScript',
+	'narayam-cyrl-palochka' => 'Kirilik palochka',
+	'narayam-eo' => 'Esperanto',
+	'narayam-hi' => 'Hindi Açarnayış',
+	'narayam-hi-bolnagri' => 'Hindi Bolnagri',
+	'narayam-hi-inscript' => 'Hindi InScript',
+	'narayam-kn' => 'Kannada Açarnayış',
+	'narayam-kn-inscript' => 'Kannada InScript',
+	'narayam-ml' => 'Malayalam Açarnayış',
+	'narayam-ml-inscript' => 'Malayalam InScript',
+	'narayam-mr' => 'Marathi Açarnayış',
+	'narayam-mr-inscript' => 'Marathi InScript',
+	'narayam-ne' => 'Nepali Açarnayış',
+	'narayam-new-inscript' => 'Newari InScript',
+	'narayam-new' => 'Newari Açarnayış',
+	'narayam-ne-inscript' => 'Nepali InScript',
+	'narayam-or' => 'Odiya Açarnayış',
+	'narayam-or-lekhani' => 'Odiya Lekhani',
+	'narayam-or-inscript' => 'Oriya InScript',
+	'narayam-pa' => 'Gurmukhi Punjabi Açarnayış',
+	'narayam-pa-phonetic' => 'Gurmukhi Fonetige Punjabi',
+	'narayam-pa-inscript' => 'Gurmukhi Punjabi InScript',
+	'narayam-sa' => 'Sanskrit Açarnayış',
+	'narayam-sa-inscript' => 'Sanskrit InScript',
+	'narayam-si-singlish' => 'Sinhala Singlish',
+	'narayam-si-wijesekara' => 'Sinhala Wijesekara',
+	'narayam-ta-99' => 'Tamil99',
+	'narayam-ta-inscript' => 'Tamil InScript',
+	'narayam-ta' => 'Tamil Açarnayış',
+	'narayam-ta-bamini' => 'Tamil Bamini',
+	'narayam-tcy' => 'Tulu Açarnayış',
+	'narayam-te' => 'Telugu Açarnayış',
+	'narayam-te-inscript' => 'Telugu InScript',
+	'narayam-bho' => 'Bhojpuri Açarnayış',
+	'narayam-bho-inscript' => 'Bhojpuri InScript',
+	'narayam-bn-avro' => 'Bengali Avro',
+	'narayam-bn-inscript' => 'Bengali InScript',
+	'narayam-bn-nkb' => 'Bengali NKB',
+	'narayam-ur' => 'Standarde Urduki',
+	'narayam-de' => 'Almanki',
+	'narayam-gu' => 'Gujarati Açarnayış',
+	'narayam-gu-inscript' => 'Gujarati InScript',
+	'narayam-ru-standard' => 'Standarde Ruski',
+	'narayam-sah-standard' => 'Standarde Sakaya',
+	'narayam-hne-inscript' => 'Chhattisgarhi InScript',
+	'narayam-mai-inscript' => 'Maithili InScript',
+	'narayam-gom-deva' => 'Goan Konkani-Devanagari Açarnayış',
+	'narayam-gom-deva-inscript' => 'Goan Konkani-Devanagari InScript',
+	'narayam-he-standard-2011-extonly' => 'Standarde İbraniki 2011',
+	'narayam-he-standard-2011' => 'Standarde İbraniki 2011 (İngilizki klawyeya)',
 );
 
 /** Greek (Ελληνικά)
@@ -3232,7 +3300,7 @@ $messages['ta'] = array(
 	'narayam-sa-inscript' => 'சமஸ்கிருத இன்ஸ்கிரிப்ட்',
 	'narayam-ta-99' => 'தமிழ்99',
 	'narayam-ta-inscript' => 'தமிழ் இன்ஸ்கிரிப்ட்',
-	'narayam-ta' => 'எழுத்துப்பெயர்ப்பு',
+	'narayam-ta' => 'தமிழ் எழுத்துப்பெயர்ப்பு',
 	'narayam-ta-bamini' => 'பாமினி (சோதனை)',
 	'narayam-te' => 'தெலுங்கு எழுத்துப்பெயர்ப்பு',
 	'narayam-te-inscript' => 'தெலுங்கு இன்ஸ்கிரிப்ட்',
@@ -3279,7 +3347,7 @@ $messages['te'] = array(
  */
 $messages['tl'] = array(
 	'narayam-desc' => 'Nagpapahintulot na makapagdagdag ng pasadyang mga metodo ng pagpapasok para sa mga hanay na pinagpapasukan',
-	'narayam-toggle-ime' => 'Upang mapagpalipat-lipat ang IM ($1)',
+	'narayam-toggle-ime' => 'Paganahin ($1)',
 	'narayam-checkbox-tooltip' => 'Upang mapagpalit-palit ang paraan ng pagpasok bilang buhay at nakapatay',
 	'narayam-eo' => 'Esperanto',
 	'narayam-hi-inscript' => 'Panitik na Hindi',
@@ -3299,6 +3367,11 @@ $messages['tl'] = array(
 	'narayam-bn-avro' => 'Avro na Bengali',
 	'narayam-bn-inscript' => 'Panitik na Bengali',
 	'narayam-bn-nkb' => 'NKB na Bengali',
+	'narayam-mai-inscript' => 'Inskripsiyon ng Maithili',
+	'narayam-gom-deva' => 'Transliterasyon ng Goan Konkani-Devanagari',
+	'narayam-gom-deva-inscript' => 'Inskripsiyon ng Goan Konkani-Devanagari',
+	'narayam-he-standard-2011-extonly' => 'Pamantayang Hebreo 2011',
+	'narayam-he-standard-2011' => 'Pamantayang Hebreo 2011 (tipaang Ingles)',
 );
 
 /** Turkish (Türkçe)
