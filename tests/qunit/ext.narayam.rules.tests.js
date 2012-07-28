@@ -97,6 +97,7 @@ var narayamTest = function( options ) {
 narayamTest( {
 	description: 'Malayalam Transliteration test',
 	tests: [
+		{ input: '\\~', output: '~', description: 'Malayalam transliteration - \\~ -> ~' },
 		{ input: 'a', output: 'അ', description: 'Malayalam a' },
 		{ input: 'ra', output: 'ര', description: 'Malayalam ra' },
 		{ input: 'p', output: 'പ്', description: 'Malayalam p' },
@@ -173,11 +174,31 @@ narayamTest( {
 	$input: $( '<input>' ).attr( { id: 'te-inscript', type: 'text' } )
 } );
 
+// TODO: enhance.
+narayamTest( {
+	description: 'Sanskrit transliteration test',
+	tests: [
+		{ input: '\\~', output: '~', description: 'Sanskrit transliteration - \\~ -> ~' }
+	],
+	scheme: 'sa',
+	$input: $( '<input>' ).attr( { id: 'sa', type: 'text' } )
+} );
+
+// TODO: enhance.
+narayamTest( {
+	description: 'Oriya transliteration test',
+	tests: [
+		{ input: '\\~', output: '~', description: 'Oriya transliteration - \\~ -> ~' }
+	],
+	scheme: 'or',
+	$input: $( '<input>' ).attr( { id: 'or', type: 'text' } )
+} );
+
 narayamTest( {
 	description: 'Oriya InScript test',
 	tests: [{ input: 'ka', output: 'କୋ' }],
 	scheme: 'or-inscript',
-	$input: $( '<input>' ).attr( { id: 'or', type: 'text' } )
+	$input: $( '<input>' ).attr( { id: 'or-inscript', type: 'text' } )
 } );
 
 narayamTest( {
@@ -259,6 +280,7 @@ narayamTest ( {
 narayamTest ( {
 	description: 'Marathi Transliteration test',
 	tests: [
+		{ input: '\\~', output: '~', description: 'Marathi transliteration - \\~ -> ~' },
 		{ input: 'dny', output: 'ज्ञ्', description: 'dny for ज्ञ् in Marathi transliteration' },
 		{ input: 'kOM', output: 'काँ', description: 'kOM for काँ (काँग्रेस) in Marathi transliteration' }
 	],
@@ -315,6 +337,7 @@ narayamTest( {
 narayamTest( {
 	description: 'Punjabi Gurmukhi Transliteration',
 	tests: [
+		{ input: '\\~', output: '~', description: 'Punjabi Gurmukhi transliteration - \\~ -> ~' },
 		{ input: 'kaI', output: 'ਕਈ', description: 'Punjabi Gurmukhi kaI' },
 		{ input: 'hoiaa', output: 'ਹੋਇਆ', description: 'Punjabi Gurmukhi hoiaa' },
 		{ input: 'ki', output: 'ਕਿ', description: 'Punjabi Gurmukhi ki' },
@@ -429,6 +452,7 @@ narayamTest( {
 narayamTest( {
 	description: 'Hindi transliteration tests',
 	tests: [
+		{ input: '\\~', output: '~', description: 'Hindi transliteration - \\~ -> ~' },
 		{ input: 'namaH', output: 'नमः', description: 'Hindi transliteration - namaH (visarga)' },
 		{ input: 'madhumaChiyoM', output: 'मधुमक्खियों', description: 'Hindi transliteration - madhumaChiyoM (anusvara)' },
 		{ input: '//', output: 'ऽ', description: 'Hindi transliteration - // (avagraha)' },
