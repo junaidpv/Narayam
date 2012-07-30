@@ -34,7 +34,7 @@ var rules = [
 ['ਅi', '', 'ਐ'], // ai
 ['ਅ\\^', '', 'ੲ'], // a^ (iri - base for vowels)
 ['ਉ\\^', '', 'ੳ'], // u^ (ura - base for vowels)
-['(ੇe|ਇi)', '', 'ਈ'], // ee, ii
+['(ਏe|ਇi)', '', 'ਈ'], // ee, ii
 ['ਅu', '', 'ਔ'], // au
 ['ਂ[Mm^]', '', 'ਁ'], // bindi + 'm', 'M', or '^' -> Adak bindi
 ['ਣ੍N', '', 'ੰ'], // Tippi - nasalization
