@@ -3376,10 +3376,12 @@ $messages['tl'] = array(
 
 /** Turkish (Türkçe)
  * @author Cekli829
+ * @author Emperyan
  * @author Suelnur
  */
 $messages['tr'] = array(
 	'narayam-help' => 'Yardım',
+	'narayam-more-imes' => 'Diğer giriş yöntemleri',
 	'narayam-ta-99' => 'Tamil99',
 	'narayam-ta-bamini' => 'Tamil Bamini',
 	'narayam-de' => 'Almanca',
