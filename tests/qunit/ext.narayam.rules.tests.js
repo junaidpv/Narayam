@@ -282,7 +282,10 @@ narayamTest ( {
 	tests: [
 		{ input: '\\~', output: '~', description: 'Marathi transliteration - \\~ -> ~' },
 		{ input: 'dny', output: 'ज्ञ्', description: 'dny for ज्ञ् in Marathi transliteration' },
-		{ input: 'kOM', output: 'काँ', description: 'kOM for काँ (काँग्रेस) in Marathi transliteration' }
+		{ input: 'kOM', output: 'काँ', description: 'kOM for काँ (काँग्रेस) in Marathi transliteration' },
+		// bug 38238
+		{ input: 'AUM', output: 'ॐ', description: 'AUM - ॐ (OM)' },
+		{ input: 'oMkaara', output: 'ओंकार', description: 'oMkaara (testing correct typing of oM as a simple anusvara)' }
 	],
 	scheme: 'mr',
 	$input: $( '<input>' ).attr( { id: 'mr', type: 'text' } )
@@ -465,7 +468,12 @@ narayamTest( {
 		{ input: 'amRtaa', output: 'अमृता', description: 'Hindi transliteration - amRtaa' },
 		{ input: 'bauThate', output: 'बौठते', description: 'Hindi transliteration - bauThate' },
 		{ input: '.', output: '।', description: 'Hindi transliteration - . (danda)' },
-		{ input: '..', output: '॥', description: 'Hindi transliteration - .. (double danda)' }
+		{ input: '..', output: '॥', description: 'Hindi transliteration - .. (double danda)' },
+
+		// bug 38238
+		{ input: 'AUMkaara', output: 'ॐकार', description: 'Hindi transliteration - auMkaara' },
+		{ input: 'auMsa', output: 'औंस', description: 'Hindi transliteration - auMsa (ounce)' },
+		{ input: 'bhaaShaaoM', output: 'भाषाओं', description: 'Hindi transliteration - bhaaShaaoM (testing correct typing of oM as a simple anusvara)' }
 	],
 	scheme: 'hi',
 	$input: $( '<input>' ).attr( { id: 'hi', type: 'text' } )
