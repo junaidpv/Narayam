@@ -659,7 +659,7 @@ $messages['de'] = array(
  * @author Erdemaslancan
  */
 $messages['diq'] = array(
-	'narayam-help' => 'Desteg',
+	'narayam-help' => 'Peşti',
 	'narayam-ahr' => 'Ahirani Açarnayış',
 	'narayam-ahr-inscript' => 'Ahirani InScript',
 	'narayam-am' => 'Amharki Açarnayış',
@@ -3372,6 +3372,13 @@ $messages['tl'] = array(
 	'narayam-gom-deva-inscript' => 'Inskripsiyon ng Goan Konkani-Devanagari',
 	'narayam-he-standard-2011-extonly' => 'Pamantayang Hebreo 2011',
 	'narayam-he-standard-2011' => 'Pamantayang Hebreo 2011 (tipaang Ingles)',
+);
+
+/** толышә зывон (толышә зывон)
+ * @author Erdemaslancan
+ */
+$messages['tly'] = array(
+	'narayam-help' => 'Арајиш',
 );
 
 /** Turkish (Türkçe)
