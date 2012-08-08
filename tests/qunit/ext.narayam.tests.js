@@ -32,7 +32,7 @@ test( "-- Initial check", function() {
 
 	setup();
 	ok( $.narayam, "$.narayam is defined" );
-	equals( $.narayam.enabled(), mw.config.get( 'wgNarayamEnabledByDefault' ), 'Initial state of Narayam matches the configuration' );
+	equal( $.narayam.enabled(), mw.config.get( 'wgNarayamEnabledByDefault' ), 'Initial state of Narayam matches the configuration' );
 
 	// Init empty cookie of recent schemes
 	$.cookie( 'narayam-scheme', '', { path: '/', expires: 30 } );
@@ -47,16 +47,16 @@ test( "-- Initialization functions", function() {
 
 		// Now it's supposed to be enabled, so toggle() is supposed to disable.
 		$.narayam.toggle();
-		equals( $.narayam.enabled(), false, "toggle() disables Narayam when it is enabled." );
-		equals( $.cookie( stateCookieName ), "0", "The state cookie was set to 0." );
+		equal( $.narayam.enabled(), false, "toggle() disables Narayam when it is enabled." );
+		equal( $.cookie( stateCookieName ), "0", "The state cookie was set to 0." );
 		ok(  $( "li#pt-narayam" ).hasClass( "narayam-inactive" ), "After disabling the Narayam menu header has the narayam-inactive class." );
 		ok( !$( "li#pt-narayam" ).hasClass( "narayam-active" ),   "After disabling the Narayam menu header doesn't have the narayam-active class ." );
 		ok( !$( "#narayam-toggle" ).attr( "checked" ), "After disabling the Narayam checkbox is not checked." );
 
 		// Now it's supposed to be disabled, so toggle() is supposed to enable.
 		$.narayam.toggle();
-		equals( $.narayam.enabled(), true, "toggle() enables Narayam when it is disabled." );
-		equals( $.cookie( stateCookieName ), "1", "The state cookie was set to 1." );
+		equal( $.narayam.enabled(), true, "toggle() enables Narayam when it is disabled." );
+		equal( $.cookie( stateCookieName ), "1", "The state cookie was set to 1." );
 		ok( !$( "li#pt-narayam" ).hasClass( "narayam-inactive" ), "After enabling the Narayam menu header doesn't have the narayam-inactive class." );
 		ok(  $( "li#pt-narayam" ).hasClass( "narayam-active" ),   "After enabling the Narayam menu header has the narayam-active class ." );
 		ok(  $( "#narayam-toggle" ).attr( "checked" ), "After enabling the Narayam checkbox is checked." );
@@ -69,14 +69,14 @@ test( "-- Initialization functions", function() {
 test( "-- Simple character functions", function() {
 	expect( 7 );
 	setup();
-	equals( $.narayam.lastNChars( "foobarbaz", 5, 2 ), "ba", "lastNChars works with short buffer." );
-	equals( $.narayam.lastNChars( "foobarbaz", 2, 5 ), "fo", "lastNChars works with long buffer." );
+	equal( $.narayam.lastNChars( "foobarbaz", 5, 2 ), "ba", "lastNChars works with short buffer." );
+	equal( $.narayam.lastNChars( "foobarbaz", 2, 5 ), "fo", "lastNChars works with long buffer." );
 
-	equals( $.narayam.firstDivergence( "abc", "abc" ), -1, "firstDivergence - equal strings" );
-	equals( $.narayam.firstDivergence( "a", "b" ), 0, "firstDivergence - different one-letter strings" );
-	equals( $.narayam.firstDivergence( "a", "bb" ), 0, "firstDivergence - different strings, different lengths" );
-	equals( $.narayam.firstDivergence( "abc", "abd" ), 2, "firstDivergence - different strings with equal beginnings" );
-	equals( $.narayam.firstDivergence( "abcd", "abd" ), 2, "firstDivergence - different strings, equal beginnings, different lengths" );
+	equal( $.narayam.firstDivergence( "abc", "abc" ), -1, "firstDivergence - equal strings" );
+	equal( $.narayam.firstDivergence( "a", "b" ), 0, "firstDivergence - different one-letter strings" );
+	equal( $.narayam.firstDivergence( "a", "bb" ), 0, "firstDivergence - different strings, different lengths" );
+	equal( $.narayam.firstDivergence( "abc", "abd" ), 2, "firstDivergence - different strings with equal beginnings" );
+	equal( $.narayam.firstDivergence( "abcd", "abd" ), 2, "firstDivergence - different strings, equal beginnings, different lengths" );
 	teardown();
 } );
 
@@ -85,10 +85,10 @@ test( '-- Build the menu', function() {
 		expect( 5 );
 		setup();
 		assertTrue( $.narayam.buildMenu( ), 'Build the menu' );
-		equals( $( 'li#pt-narayam' ).length, 1, 'There should be one and only one menu at any time' );
+		equal( $( 'li#pt-narayam' ).length, 1, 'There should be one and only one menu at any time' );
 		ok(  $.narayam.buildMenu( ), 'Build the menu again' );
-		equals( $( 'li#pt-narayam' ).length, 1, 'There should be one and only one menu at any time' );
-		equals( $( 'li.narayam-help-link' ).length, 1, 'Help link exists' );
+		equal( $( 'li#pt-narayam' ).length, 1, 'There should be one and only one menu at any time' );
+		equal( $( 'li.narayam-help-link' ).length, 1, 'Help link exists' );
 		teardown();
 	} else {
 		expect( 0 );

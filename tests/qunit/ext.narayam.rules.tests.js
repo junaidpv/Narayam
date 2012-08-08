@@ -84,7 +84,7 @@ var narayamTest = function( options ) {
 			for ( var i = 0 ; i < opt.tests.length; i++ ) {
 				// Simulate pressing keys for each of the sample characters
 				typeChars( opt.$input, opt.tests[i].input );
-				equals( opt.$input.val() || opt.$input.text(), opt.tests[i].output, opt.tests[i].description );
+				equal( opt.$input.val() || opt.$input.text(), opt.tests[i].output, opt.tests[i].description );
 				opt.$input.val( '' );
 				opt.$input.text( '' );
 			}
