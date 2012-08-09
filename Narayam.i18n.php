@@ -726,9 +726,10 @@ $messages['diq'] = array(
  */
 $messages['el'] = array(
 	'narayam-menu' => 'Μέθοδος Εισαγωγής',
-	'narayam-menu-tooltip' => 'Έλεγχος Narayam Input Method Editor (IME)',
+	'narayam-menu-tooltip' => 'Επιλέξτε μια μέθοδο εισροής',
 	'narayam-help' => 'Βοήθεια',
 	'narayam-eo' => 'Εσπεράντο',
+	'narayam-de' => 'Γερμανικά',
 );
 
 /** Esperanto (Esperanto)
@@ -866,6 +867,19 @@ $messages['es'] = array(
 	'narayam-gom-deva-inscript' => 'Goan Konkaní-Devanagari InScript',
 	'narayam-he-standard-2011-extonly' => 'Hebreo estándar 2011',
 	'narayam-he-standard-2011' => 'Hebreo estándar 2011',
+);
+
+/** Estonian (eesti)
+ * @author Pikne
+ */
+$messages['et'] = array(
+	'narayam-desc' => 'Võimaldab kasutada sisendväljadel kohandatud sisestusviise.',
+	'narayam-toggle-ime' => 'Kasuta ($1)',
+	'narayam-menu' => 'Sisestusviis',
+	'narayam-menu-tooltip' => 'Vali sisestusviis',
+	'narayam-help' => 'Abi',
+	'narayam-checkbox-tooltip' => 'Lülita sisestusviis sisse või välja',
+	'narayam-enable-preference' => 'Kasuta sisestusviisi',
 );
 
 /** Persian (فارسی)
