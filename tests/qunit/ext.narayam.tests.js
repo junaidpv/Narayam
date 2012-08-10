@@ -84,9 +84,9 @@ test( '-- Build the menu', function() {
 	if( isNarayamMenuShown() ){
 		expect( 5 );
 		setup();
-		assertTrue( $.narayam.buildMenu( ), 'Build the menu' );
+		ok( $.narayam.buildMenu(), 'Build the menu' );
 		equal( $( 'li#pt-narayam' ).length, 1, 'There should be one and only one menu at any time' );
-		ok(  $.narayam.buildMenu( ), 'Build the menu again' );
+		ok( $.narayam.buildMenu(), 'Build the menu again' );
 		equal( $( 'li#pt-narayam' ).length, 1, 'There should be one and only one menu at any time' );
 		equal( $( 'li.narayam-help-link' ).length, 1, 'Help link exists' );
 		teardown();
