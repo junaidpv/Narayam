@@ -237,6 +237,7 @@ $messages['ar'] = array(
 	'narayam-bn-avro' => 'بنغالي أفرو (Bengali Avro)',
 	'narayam-bn-inscript' => 'بنغالي إنسكربت (Bengali InScript)',
 	'narayam-bn-nkb' => 'بنغالي إن كي بي (Bengali NKB)',
+	'narayam-de' => 'ألماني',
 );
 
 /** Assamese (অসমীয়া)
@@ -3153,7 +3154,7 @@ $messages['si'] = array(
 	'narayam-desc' => 'යෙදවුම් ක්ෂේත්‍රයන් සඳහා ව්‍යවහාර යෙදවුම් ක්‍රමයන් එක් කිරීමට ඉඩ දෙයි',
 	'narayam-toggle-ime' => 'සක්‍රිය කරන්න ($1)',
 	'narayam-menu' => 'විකල්ප යතුරුපුවරු',
-	'narayam-menu-tooltip' => 'නරයම් යෙදවුම් ක්‍රම සංස්කාරකය (IME) පාලනය කරන්න',
+	'narayam-menu-tooltip' => 'යෙදවුම් ක්‍රමයක් තෝරන්න',
 	'narayam-help' => 'උදව්',
 	'narayam-help-page' => '//si.wikipedia.org/wiki/Help:මූලිකාදර්ශය',
 	'narayam-checkbox-tooltip' => 'යෙදවුම් ක්‍රමය සක්‍රිය හෝ අක්‍රිය කිරීමට',
@@ -3454,6 +3455,9 @@ $messages['te'] = array(
 	'narayam-toggle-ime' => 'చేతనం చేయి ($1)',
 	'narayam-menu' => 'టైపింగు పద్ధతి',
 	'narayam-help' => 'సహాయం',
+	'narayam-as' => 'అస్సామీ లిప్యంతరీకరణ',
+	'narayam-as-inscript' => 'అస్సామీ ఇన్‌స్క్రిప్ట్',
+	'narayam-brx-inscript' => 'బోడో ఇన్‌స్క్రిప్ట్',
 	'narayam-hi' => 'హిందీ లిప్యంతరీకరణ',
 	'narayam-hi-inscript' => 'హిందీ ఇన్‌స్క్రిప్ట్',
 	'narayam-kn' => 'కన్నడ లిప్యంతరీకరణ',
@@ -3461,17 +3465,23 @@ $messages['te'] = array(
 	'narayam-ml' => 'మలయాళం లిప్యంతరీకరణ',
 	'narayam-ml-inscript' => 'మలయాళం ఇన్‌స్క్రిప్ట్',
 	'narayam-mr' => 'మరాఠీ లిప్యంతరీకరణ',
+	'narayam-mr-inscript' => 'మరాఠీ ఇన్‌స్క్రిప్ట్',
+	'narayam-ne' => 'నేపాలీ లిప్యంతరీకరణ',
+	'narayam-ne-inscript' => 'నేపాలీ ఇన్‌స్క్రిప్ట్',
 	'narayam-or' => 'ఒరియా లిప్యంతరీకరణ',
 	'narayam-or-inscript' => 'ఒరియా ఇన్‌స్క్రిప్ట్',
 	'narayam-sa' => 'సంస్కృతం లిప్యంతరీకరణ',
 	'narayam-sa-inscript' => 'సంస్కృతం ఇన్‌స్క్రిప్ట్',
 	'narayam-ta-99' => 'తమిళం99',
+	'narayam-ta-inscript' => 'తమిళం ఇన్‌స్క్రిప్ట్',
 	'narayam-ta' => 'తమిళం లిప్యంతరీకరణ',
 	'narayam-te' => 'తెలుగు లిప్యంతరీకరణ',
 	'narayam-te-inscript' => 'తెలుగు ఇన్‍స్క్రిప్ట్',
 	'narayam-bn-avro' => 'బెంగాలీ అవ్రో',
 	'narayam-bn-inscript' => 'బెంగాలీ ఇన్‌స్క్రిప్ట్',
 	'narayam-bn-nkb' => 'బెంగాలీ NKB',
+	'narayam-gu' => 'గుజరాతీ లిప్యంతరీకరణ',
+	'narayam-gu-inscript' => 'గుజరాతీ ఇన్‌స్క్రిప్ట్',
 );
 
 /** Tagalog (Tagalog)
