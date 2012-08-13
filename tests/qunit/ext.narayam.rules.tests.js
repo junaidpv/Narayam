@@ -174,6 +174,19 @@ narayamTest( {
 	$input: $( '<input>' ).attr( { id: 'te-inscript', type: 'text' } )
 } );
 
+narayamTest( {
+	description: 'Georgian Transliteration test',
+	tests: [
+		{ input: 'vikipedia', output: 'ვიკიპედია', description: 'Georgian vikipedia' },
+		{ input: 'jim morisoni', output: 'ჯიმ მორისონი', description: 'Georgian jim morisoni' },
+		{ input: 'abcdefghijklmnopqrstuvwxyz', output: 'აბცდეფგჰიჯკლმნოპქრსტუვწხყზ', description: 'a-z in Georgian' },
+		{ input: 'WRTSJZC', output: 'ჭღთშჟძჩ', description: 'WRTSJZC in Georgian' }
+	],
+	scheme: 'ka',
+	$input: $( '<input>' ).attr( { id: 'ka', type: 'text' } )
+} );
+
+
 // TODO: enhance.
 narayamTest( {
 	description: 'Sanskrit transliteration test',
