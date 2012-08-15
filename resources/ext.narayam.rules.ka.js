@@ -13,6 +13,9 @@
 
  // Normal rules
 var rules = [
+['\\\\([A-Za-z|\\~|\\`])', '\\\\', '$1'],
+['`', '','„'],
+['~', '','“'],
 ['q', '','ქ'],
 ['w', '','წ'],
 ['e', '','ე'],
@@ -55,7 +58,7 @@ var rules = [
 jQuery.narayam.addScheme( 'ka', {
 	'namemsg': 'narayam-ka',
 	'extended_keyboard': false,
-	'lookbackLength': 0,
-	'keyBufferLength': 0,
+	'lookbackLength': 2,
+	'keyBufferLength': 2,
 	'rules': rules
 } );
