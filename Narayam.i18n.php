@@ -644,6 +644,7 @@ $messages['de'] = array(
 	'narayam-pa' => 'Punjabi - Gurmukhi (Transliteration)',
 	'narayam-pa-phonetic' => 'Punjabi - Gurmukhi (Phonetisch)',
 	'narayam-pa-inscript' => 'Punjabi - Gurmukhi (InScript)',
+	'narayam-pa-mybest' => 'Punjabi - Gurmukhi (Phonetic MyBest)',
 	'narayam-sa' => 'Sanskrit (Transliteration)',
 	'narayam-sa-inscript' => 'Sanskrit (InScript)',
 	'narayam-si-singlish' => 'Singhalesisch (Singlish)',
@@ -960,6 +961,13 @@ $messages['et'] = array(
 	'narayam-he-standard-2011' => 'heebrea (standard 2011, inglise sõrmistik)',
 );
 
+/** Basque (euskara)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['eu'] = array(
+	'narayam-help' => 'Laguntza',
+);
+
 /** Persian (فارسی)
  * @author Mjbmr
  * @author ZxxZxxZ
@@ -1075,6 +1083,7 @@ $messages['fi'] = array(
 /** French (français)
  * @author Coyau
  * @author DavidL
+ * @author Erkethan
  * @author Gomoko
  * @author IAlex
  * @author Sherbrooke
@@ -1103,6 +1112,7 @@ $messages['fr'] = array(
 	'narayam-hi' => 'Traduction en hindi',
 	'narayam-hi-bolnagri' => 'Bolnagri hindi',
 	'narayam-hi-inscript' => 'InScript hindi',
+	'narayam-ka' => 'Traduction en géorgien',
 	'narayam-kn' => 'Translittération kannada',
 	'narayam-kn-inscript' => 'InScript kannada',
 	'narayam-ml' => 'Translittération malayâlam',
@@ -1161,6 +1171,8 @@ $messages['frp'] = array(
 	'narayam-checkbox-tooltip' => 'Por activar et dèsactivar la mètoda d’entrâ',
 	'narayam-enable-preference' => 'Activar la mètoda d’entrâ',
 	'narayam-more-imes' => 'Més de mètodes d’entrâ',
+	'narayam-ahr' => 'Translitèracion ahirani',
+	'narayam-ahr-inscript' => 'InScript ahirani',
 	'narayam-am' => 'Translitèracion amarica',
 	'narayam-as' => 'Translitèracion assamêsa',
 	'narayam-as-avro' => 'Avro assamês',
@@ -1168,9 +1180,12 @@ $messages['frp'] = array(
 	'narayam-as-inscript' => 'InScript assamês',
 	'narayam-ber-tfng' => 'Translitèracion tifinag',
 	'narayam-brx-inscript' => 'InScript bodô',
+	'narayam-cyrl-palochka' => 'Cirilico avouéc palotch·câ',
 	'narayam-eo' => 'Èsperanto',
 	'narayam-hi' => 'Translitèracion hindi',
+	'narayam-hi-bolnagri' => 'Bolnagri hindi',
 	'narayam-hi-inscript' => 'InScript hindi',
+	'narayam-ka' => 'Translitèracion jôrg·ièna',
 	'narayam-kn' => 'Translitèracion canadâ',
 	'narayam-kn-inscript' => 'InScript canadâ',
 	'narayam-ml' => 'Translitèracion malayâlame',
@@ -1178,10 +1193,13 @@ $messages['frp'] = array(
 	'narayam-mr' => 'Translitèracion marati',
 	'narayam-mr-inscript' => 'InScript marati',
 	'narayam-ne' => 'Translitèracion nèpalêsa',
+	'narayam-new-inscript' => 'InScript newari',
+	'narayam-new' => 'Translitèracion newari',
 	'narayam-ne-inscript' => 'InScript nèpalês',
 	'narayam-or' => 'Translitèracion oriyâ',
 	'narayam-or-lekhani' => 'Lekhani oriyâ',
 	'narayam-or-inscript' => 'InScript oriyâ',
+	'narayam-pa' => 'Translitèracion gourmouqui pendj·abi',
 	'narayam-pa-phonetic' => 'Fonètica gourmouqui pendj·abi',
 	'narayam-pa-inscript' => 'InScript gourmouqui pendj·abi',
 	'narayam-sa' => 'Translitèracion sanscrite',
@@ -1193,7 +1211,10 @@ $messages['frp'] = array(
 	'narayam-ta' => 'Translitèracion tamoule',
 	'narayam-ta-bamini' => 'Bamini tamoul',
 	'narayam-tcy' => 'Translitèracion toulou',
+	'narayam-te' => 'Translitèracion tèlougou',
 	'narayam-te-inscript' => 'InScript tèlougou',
+	'narayam-bho' => 'Translitèracion boj·pouri',
+	'narayam-bho-inscript' => 'InScript boj·pouri',
 	'narayam-bn-avro' => 'Avro bengali',
 	'narayam-bn-inscript' => 'InScript bengali',
 	'narayam-bn-nkb' => 'NKB bengali',
@@ -1209,6 +1230,13 @@ $messages['frp'] = array(
 	'narayam-gom-deva-inscript' => 'InScript concani-dèvanagari de Goa',
 	'narayam-he-standard-2011-extonly' => 'Hèbrèo estandârd 2011',
 	'narayam-he-standard-2011' => 'Hèbrèo estandârd 2011',
+);
+
+/** Irish (Gaeilge)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['ga'] = array(
+	'narayam-help' => 'Cuidiú',
 );
 
 /** Galician (galego)
@@ -1872,10 +1900,30 @@ $messages['ja'] = array(
  * @author David1010
  */
 $messages['ka'] = array(
+	'narayam-toggle-ime' => 'ჩართვა ($1)',
+	'narayam-menu' => 'შეყვანის მეთოდი',
+	'narayam-menu-tooltip' => 'შეყვანის მეთოდის არჩევა',
 	'narayam-help' => 'დახმარება',
+	'narayam-enable-preference' => 'შეყვანის მეთოდის ჩართვა',
+	'narayam-more-imes' => 'შეყვანის სხვა მეთოდები',
+	'narayam-ahr' => 'აჰირანი (ტრანსლიტერაცია)',
+	'narayam-am' => 'ამჰარული ტრანსლიტერაცია',
+	'narayam-as' => 'ასამური ტრანსლიტერაცია',
+	'narayam-as-avro' => 'ასამური ავრო',
+	'narayam-as-bornona' => 'ასამური ბორნონა',
+	'narayam-as-inscript' => 'ასამური დამწერლობა',
+	'narayam-cyrl-palochka' => 'კირილიცა ჯოხით',
 	'narayam-eo' => 'ესპერანტო',
+	'narayam-ka' => 'ქართული ტრანსლიტერაცია',
+	'narayam-kn' => 'კანადის ტრანსლიტერაცია',
+	'narayam-ne' => 'ნეპალური ტრანსლიტერაცია',
+	'narayam-sa' => 'სანსკრიტის ტრანსლიტერაცია',
+	'narayam-ur' => 'სტანდარტული ურდუ',
 	'narayam-de' => 'გერმანული',
+	'narayam-gu' => 'გუჯარათული ტრანსლიტერაცია',
 	'narayam-ru-standard' => 'რუსული სტანდარტული',
+	'narayam-he-standard-2011-extonly' => 'ებრაული სტანდარტი 2011',
+	'narayam-he-standard-2011' => 'ებრაული სტანდარტი 2011 (ინგლისური კლავიატურა)',
 );
 
 /** Khmer (ភាសាខ្មែរ)
@@ -2556,6 +2604,7 @@ $messages['nl'] = array(
 	'narayam-pa' => 'Punjabi Gurmukhi (transliteratie)',
 	'narayam-pa-phonetic' => 'Gurmukhi Punjabi Fonetisch',
 	'narayam-pa-inscript' => 'Punjabi Gurmukhi (InScript)',
+	'narayam-pa-mybest' => 'Gurmukhi Punjabi (fonetisch MyBest)',
 	'narayam-sa' => 'Sanskriet (transliteratie)',
 	'narayam-sa-inscript' => 'Sanskrit InScript',
 	'narayam-si-singlish' => 'Singalees Singlish',
