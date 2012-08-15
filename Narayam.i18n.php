@@ -54,6 +54,7 @@ $messages['en'] = array(
 	'narayam-pa' => 'Gurmukhi Punjabi Transliteration',
 	'narayam-pa-phonetic' => 'Gurmukhi Punjabi Phonetic',
 	'narayam-pa-inscript' => 'Gurmukhi Punjabi InScript',
+	'narayam-pa-mybest' => 'Gurmukhi Punjabi Phonetic MyBest',
 	'narayam-sa' => 'Sanskrit Transliteration',
 	'narayam-sa-inscript' => 'Sanskrit InScript',
 	'narayam-si-singlish' => 'Sinhala Singlish',
