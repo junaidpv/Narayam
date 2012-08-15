@@ -60,7 +60,7 @@ class NarayamHooks {
 		global $wgNarayamRecentItemsLength, $wgNarayamEnabledByDefault;
 		$vars['wgNarayamEnabledByDefault'] = $wgNarayamEnabledByDefault;
 		$vars['wgNarayamRecentItemsLength'] = $wgNarayamRecentItemsLength;
-		$vars['wgNarayamHelpPage'] = wfMsgForContent( 'narayam-help-page' );
+		$vars['wgNarayamHelpPage'] = wfMessage( 'narayam-help-page' )->inContentLanguage()->escaped();
 		return true;
 	}
 

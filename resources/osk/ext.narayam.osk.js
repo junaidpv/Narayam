@@ -34,14 +34,14 @@ $.narayam.osk = new ( function() {
 					collision: 'flip'
 					},
 		} );
-	}
+	};
 
 	this.unbind = function( $element ){
 		var $keyboard = $element.data( 'keyboard' );
 		if ( $keyboard ) {
 			$keyboard.destroy();
 		}
-	}
+	};
 
 	/* 
 	 * @param scheme Name of the input method, eg: hi-inscript

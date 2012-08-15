@@ -761,7 +761,7 @@ $.keyboard = function(el, options){
 	};
 
 	// Build default button
-	base.keyBtn = $('<button />')
+	base.keyBtn = $('<button>')
 		.attr({ 'role': 'button', 'aria-disabled': 'false', 'tabindex' : '-1' })
 		.addClass('ui-keyboard-button');
 
@@ -812,7 +812,7 @@ $.keyboard = function(el, options){
 			currentSet, key, keys, margin,
 			sets = 0,
 
-		container = $('<div />')
+		container = $('<div>')
 			.addClass('ui-keyboard ' + o.css.container + (o.alwaysOpen ? ' ui-keyboard-always-open' : '') )
 			.attr({ 'role': 'textbox' })
 			.hide();
@@ -833,7 +833,7 @@ $.keyboard = function(el, options){
 
 		// build preview container and append preview display
 		if (o.usePreview) {
-			$('<div />')
+			$('<div>')
 				.addClass('ui-keyboard-preview-wrapper')
 				.append(base.$preview)
 				.appendTo(container);
@@ -849,7 +849,7 @@ $.keyboard = function(el, options){
 		$.each($.keyboard.layouts[o.layout], function(set, keySet){
 			if (set !== "") {
 				sets++;
-				newSet = $('<div />')
+				newSet = $('<div>')
 					.attr('name', set) // added for typing extension
 					.addClass('ui-keyboard-keyset ui-keyboard-keyset-' + set)
 					.appendTo(container)[(set === 'default') ? 'show' : 'hide']();

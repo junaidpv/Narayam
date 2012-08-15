@@ -34,6 +34,7 @@ window.getDivCaretPos = function ( element ) {
 			}
 		}
 	}
+
 	if ( sel.rangeCount ) {
 		try {
 			traverseTextNodes( element, sel.getRangeAt(0) );
@@ -45,7 +46,7 @@ window.getDivCaretPos = function ( element ) {
 	}
 
 	return [start, end]
-}
+};
 
 /**
  * Set the caret position in the div.
@@ -84,5 +85,5 @@ window.setDivCaretPos = function ( element , position ) {
 			throw ex;
 		}
 	}
-}
+};
 

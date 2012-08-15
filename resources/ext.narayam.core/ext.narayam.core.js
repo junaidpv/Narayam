@@ -551,11 +551,9 @@ $.narayam = new ( function() {
 			.append( $input )
 			.append( mw.message( 'narayam-' + scheme ).escaped() );
 
-		var $narayamMenuItem = $( '<li>' )
+		return $( '<li>' )
 			.append( $input )
 			.append( $narayamMenuItemLabel );
-
-		return $narayamMenuItem;
 	};
 
 	/**

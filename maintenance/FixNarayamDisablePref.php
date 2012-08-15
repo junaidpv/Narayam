@@ -37,7 +37,6 @@ class FixNarayamDisablePref extends Maintenance {
 		$newPropName = 'narayamEnable';
 		$this->output( "Changing $oldPropName to $newPropName\n" );
 
-		$allIds = array();
 		while ( true ) {
 			$dbw->begin();
 			$res = $dbw->select(
