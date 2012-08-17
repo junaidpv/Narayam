@@ -2153,6 +2153,7 @@ $messages['ko'] = array(
 	'narayam-pa' => '구르무키 펀자브어 음역',
 	'narayam-pa-phonetic' => '구르무키 펀자브어 Phonetic',
 	'narayam-pa-inscript' => '구르무키 펀자브어 인도스크립트',
+	'narayam-pa-mybest' => '구르무키 펀자브어 Phonetic MyBest',
 	'narayam-sa' => '산스크리트어 음역',
 	'narayam-sa-inscript' => '산스크리트어 인도스크립트',
 	'narayam-si-singlish' => '싱할라어 Singlish',
@@ -3804,9 +3805,11 @@ $messages['uk'] = array(
 
 /** Urdu (اردو)
  * @author Istabani
+ * @author පසිඳු කාවින්ද
  */
 $messages['ur'] = array(
 	'narayam-toggle-ime' => '‏‏‏‏‏‏فعال کریں ($1)',
+	'narayam-help' => 'مدد',
 );
 
 /** Vietnamese (Tiếng Việt)
