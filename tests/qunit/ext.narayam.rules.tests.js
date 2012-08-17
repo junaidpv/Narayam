@@ -538,7 +538,20 @@ narayamTest( {
 		{ input: 'TA', output: 'ඖ', description: 'Sinhala Wijesekara - TA -> ඖ (AU)' },
 
 		// A pure consonant is entered with 2 keys: cons + al-lakuna.
-		{ input: 'la', output: 'ක්', description: 'Sinhala Wijesekara - la -> ක් (K)' }
+		{ input: 'la', output: 'ක්', description: 'Sinhala Wijesekara - la -> ක් (K)' },
+
+		// Vowel signs
+
+		// After the consonant
+		{ input: 'ld', output: 'කා', description: 'Sinhala Wijesekara - ld -> කා (KAA)' },
+		{ input: '.e', output: 'ගැ', description: 'Sinhala Wijesekara - .e -> ගැ (GAE)' },
+		{ input: 'gE', output: 'ටෑ', description: 'Sinhala Wijesekara - gE -> ටෑ (TTAAE)' },
+		{ input: 'vs', output: 'ඩි', description: 'Sinhala Wijesekara - vs -> ඩි (DDI)' },
+		{ input: ';S', output: 'තී', description: 'Sinhala Wijesekara - ;S -> තී (TII)' },
+		{ input: 'oq', output: 'දු', description: 'Sinhala Wijesekara - oq -> දු (DU)' },
+		{ input: 'mQ', output: 'පූ', description: 'Sinhala Wijesekara - mQ -> පූ (PUU)' },
+		{ input: 'nD', output: 'බෘ', description: 'Sinhala Wijesekara - nD -> බෘ (BR)' },
+		{ input: 'iDD', output: 'සෲ', description: 'Sinhala Wijesekara - iDD -> සෲ (SRR)' }
 	],
 	scheme: 'si-wijesekara',
 	$input: $( '<input>' ).attr( { id: 'si-wijesekara', type: 'text' } )
