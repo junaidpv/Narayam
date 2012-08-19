@@ -1093,6 +1093,7 @@ $messages['fi'] = array(
 );
 
 /** French (français)
+ * @author Boniface
  * @author Coyau
  * @author DavidL
  * @author Erkethan
@@ -1141,7 +1142,7 @@ $messages['fr'] = array(
 	'narayam-pa' => 'Translittération panjābī (gurmukhī)',
 	'narayam-pa-phonetic' => 'Phonétique Gurmukhi Punjabi',
 	'narayam-pa-inscript' => 'InScript Gurmukhi Punjabi',
-	'narayam-pa-mybest' => 'MyBest phonétique punjabi Gurmukhi',
+	'narayam-pa-mybest' => 'MyBest Phonétique Punjabi Gurmukhi',
 	'narayam-sa' => 'Translittération sanskrit',
 	'narayam-sa-inscript' => 'InScript sanskrit',
 	'narayam-si-singlish' => 'Singlish cinghalais',
@@ -1279,6 +1280,7 @@ $messages['gl'] = array(
 	'narayam-hi' => 'Transliteración para hindi',
 	'narayam-hi-bolnagri' => 'Hindi Bolnagri',
 	'narayam-hi-inscript' => 'InScript para hindi',
+	'narayam-ka' => 'Transliteración para xeorxiano',
 	'narayam-kn' => 'Transliteración para kannada',
 	'narayam-kn-inscript' => 'InScript para kannada',
 	'narayam-ml' => 'Transliteración para malayalam',
@@ -1295,6 +1297,7 @@ $messages['gl'] = array(
 	'narayam-pa' => 'Transliteración para gurmukhi punjabi',
 	'narayam-pa-phonetic' => 'Fonética para gurmukhi punjabi',
 	'narayam-pa-inscript' => 'InScript para gurmukhi punjabi',
+	'narayam-pa-mybest' => 'MyBest fonético para gurmukhi punjabi',
 	'narayam-sa' => 'Transliteración para sánscrito',
 	'narayam-sa-inscript' => 'InScript para sánscrito',
 	'narayam-si-singlish' => 'Singlish para cingalés',
@@ -1473,6 +1476,7 @@ $messages['he'] = array(
 	'narayam-pa' => "פנג'אבית גורמוקהי – תעתיק",
 	'narayam-pa-phonetic' => "פנג'אבית גורמוקהי – פונטית",
 	'narayam-pa-inscript' => "פנג'אבית גורמוקהי – InScript",
+	'narayam-pa-mybest' => "פנג'בית גורמוקהי פונטית MyBest",
 	'narayam-sa' => 'סנסקריט – תעתיק',
 	'narayam-sa-inscript' => 'סנסקריט – InScript',
 	'narayam-si-singlish' => 'סינהלה – Singlish',
@@ -1806,6 +1810,7 @@ $messages['it'] = array(
 	'narayam-pa' => 'Punjabi in Gurmukhi (translitterazione)',
 	'narayam-pa-phonetic' => 'Punjabi in Gurmukhi (fonetico)',
 	'narayam-pa-inscript' => 'Punjabi in Gurmukhi (InScript)',
+	'narayam-pa-mybest' => 'Gurmukhi Punjabi (Phonetic MyBest)',
 	'narayam-sa' => 'Sanscrito (translitterazione)',
 	'narayam-sa-inscript' => 'Sanscrito (InScript)',
 	'narayam-si-singlish' => 'Singalese (Singlish)',
@@ -2580,6 +2585,7 @@ $messages['ms'] = array(
 	'narayam-pa' => 'Alih Huruf Punjabi Gurmukhi',
 	'narayam-pa-phonetic' => 'Fonetik Punjabi Gurmukhi',
 	'narayam-pa-inscript' => 'InScript Punjabi Gurmukhi',
+	'narayam-pa-mybest' => 'MyBest Fonetik Punjabi Gurmukhi',
 	'narayam-sa' => 'Alih Huruf Sanskrit',
 	'narayam-sa-inscript' => 'InScript Sanskrit',
 	'narayam-si-singlish' => 'Singlish Sinhala',
@@ -3838,6 +3844,7 @@ $messages['vi'] = array(
 	'narayam-hi' => 'Chuyển tự tiếng Hindi',
 	'narayam-hi-bolnagri' => 'Bolnagri Hindi',
 	'narayam-hi-inscript' => 'InScript Hindi',
+	'narayam-ka' => 'Chuyển tự tiếng Gruzia',
 	'narayam-kn' => 'Chuyển tự tiếng Kannada',
 	'narayam-kn-inscript' => 'InScript Kannada',
 	'narayam-ml' => 'Chuyển tự tiếng Malayalam',
@@ -3854,6 +3861,7 @@ $messages['vi'] = array(
 	'narayam-pa' => 'Chuyển tự tiếng Punjab chữ Gurmukhi',
 	'narayam-pa-phonetic' => 'Tiếng Punjab chữ Gurmukhi ngữ âm',
 	'narayam-pa-inscript' => 'InScript Punjab chữ Gurmukhi',
+	'narayam-pa-mybest' => 'Tiếng Punjab chữ Gurmukhi ngữ âm MyBest',
 	'narayam-sa' => 'Chuyển tự tiếng Phạn',
 	'narayam-sa-inscript' => 'InScript Phạn',
 	'narayam-si-singlish' => 'Singlish Sinhala',
