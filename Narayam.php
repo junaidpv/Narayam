@@ -113,7 +113,7 @@ $wgNarayamSchemes = array(
 	'kbd' => $cyrlPalochkaScheme,
 	'kbd-cyrl' => $cyrlPalochkaScheme,
 	'ka' => array(
-		'ka' => array( 'ext.narayam.rules.ka', 'beta'),
+		'ka' => 'ext.narayam.rules.ka'
 	),
 	'kn' => array(
 		'kn' => 'ext.narayam.rules.kn',
