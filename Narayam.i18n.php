@@ -1891,6 +1891,7 @@ $messages['ja'] = array(
 	'narayam-pa' => 'パンジャブ語グルームキー文字翻字',
 	'narayam-pa-phonetic' => 'パンジャブ語グルムキー文字表音入力',
 	'narayam-pa-inscript' => 'パンジャブ語グルムキー文字 InScript',
+	'narayam-pa-mybest' => 'パンジャブ語グルムキー文字表音入力 MyBest',
 	'narayam-sa' => 'サンスクリット語翻字',
 	'narayam-sa-inscript' => 'サンスクリット語 InScript',
 	'narayam-si-singlish' => 'シンハラ語シングリッシュ',
