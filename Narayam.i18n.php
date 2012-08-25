@@ -1713,6 +1713,7 @@ $messages['ia'] = array(
 	'narayam-pa' => 'Translitteration Gurmukhi Punjabi',
 	'narayam-pa-phonetic' => 'Gurmukhi Punjabi phonetic',
 	'narayam-pa-inscript' => 'Punjabi - Gurmukhi (InScript)',
+	'narayam-pa-mybest' => 'MyBest Phonetic Punjabi Gurmukhi',
 	'narayam-sa' => 'Translitteration in sanscrito',
 	'narayam-sa-inscript' => 'Sanscrito (InScript)',
 	'narayam-si-singlish' => 'Cingalese (Singlish)',
