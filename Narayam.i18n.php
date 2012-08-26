@@ -1876,6 +1876,7 @@ $messages['ja'] = array(
 	'narayam-hi' => 'ヒンディー語翻字',
 	'narayam-hi-bolnagri' => 'ヒンディー語 Bolnagri',
 	'narayam-hi-inscript' => 'ヒンディー語 InScript',
+	'narayam-ka' => 'グルジア語翻字',
 	'narayam-kn' => 'カンナダ語翻字',
 	'narayam-kn-inscript' => 'カンナダ語 InScript',
 	'narayam-ml' => 'マラヤラム語翻字',
