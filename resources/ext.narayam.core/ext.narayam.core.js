@@ -505,6 +505,11 @@ $.narayam = new ( function() {
 	 * from a cookie or wgNarayamEnabledByDefault
 	 */
 	this.setup = function() {
+		// Disable Narayam if CodeEditor is requested on this page (bug 39557)
+		if ( mw.config.get( "wgCodeEditorCurrentLanguage" ) ) {
+			return;
+		}
+
 		that.buildMenu();
 		// Restore state from cookies
 		var recent = $.cookie( 'narayam-scheme' );
