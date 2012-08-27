@@ -12,6 +12,7 @@ $messages = array();
 
 /** English
  * @author Junaid P V
+ * @author nasir8891
  */
 $messages['en'] = array(
 	'narayam-desc' => 'Allows to add custom input methods for input fields',
@@ -71,6 +72,7 @@ $messages['en'] = array(
 	'narayam-bn-avro' => 'Bengali Avro',
 	'narayam-bn-inscript' => 'Bengali InScript',
 	'narayam-bn-nkb' => 'Bengali NKB',
+	'narayam-bn-probhat' => 'Bengali Probhat',
 	'narayam-ur' => 'Urdu standard',
 	'narayam-de' => 'German',
 	'narayam-gu' => 'Gujarati transliteration',
@@ -97,6 +99,7 @@ $messages['en'] = array(
  * @author Waldir
  * @author Yekrats
  * @author බිඟුවා
+ * @author nasir8891
  */
 $messages['qqq'] = array(
 	'narayam-desc' => '{{desc}}',
@@ -134,6 +137,7 @@ This allows for Narayam to add custom input methods for input fields. Esperanto 
 	'narayam-bn-avro' => 'Avro keyboard layout for the Bengali language.',
 	'narayam-bn-inscript' => '[[w:InScript|InScript]] keyboard layout for the Bengali language.',
 	'narayam-bn-nkb' => 'National (Jatiyo) keyboard layout for the Bengali language.',
+	'narayam-bn-probhat' => 'Probhat keyboard layout for the Bengali language.',
 );
 
 /** Afrikaans (Afrikaans)

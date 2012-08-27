@@ -78,6 +78,7 @@ $wgNarayamSchemes = array(
 		'bn-avro' => 'ext.narayam.rules.bn-avro',
 		'bn-inscript' => 'ext.narayam.rules.bn-inscript',
 		'bn-nkb' => 'ext.narayam.rules.bn-nkb',
+		'bn-probhat' => array( 'ext.narayam.rules.bn-probhat', 'beta' ),
 	),
 	'brx' => array(
 		'brx-inscript' => array( 'ext.narayam.rules.brx-inscript', 'beta' ),
@@ -246,6 +247,7 @@ $wgResourceModules['ext.narayam.core'] = $narayamTpl + array(
 		'narayam-bn-avro',
 		'narayam-bn-inscript',
 		'narayam-bn-nkb',
+		'narayam-bn-probhat',
 		'narayam-ber-tfng',
 		'narayam-brx-inscript',
 		'narayam-cyrl-palochka',
@@ -372,6 +374,10 @@ $wgResourceModules['ext.narayam.rules.bn-inscript'] = $narayamTpl + array(
 );
 $wgResourceModules['ext.narayam.rules.bn-nkb'] = $narayamTpl + array(
 	'scripts' => 'resources/ext.narayam.rules.bn-nkb.js',
+	'dependencies' => 'ext.narayam.core',
+);
+$wgResourceModules['ext.narayam.rules.bn-probhat'] = $narayamTpl + array(
+	'scripts' => 'resources/ext.narayam.rules.bn-probhat.js',
 	'dependencies' => 'ext.narayam.core',
 );
 $wgResourceModules['ext.narayam.rules.cyrl-palochka'] = $narayamTpl + array(

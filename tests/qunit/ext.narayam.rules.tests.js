@@ -552,6 +552,19 @@ narayamTest( {
 	$input: $( '<input>' ).attr( { id: 'si-wijesekara', type: 'text' } )
 } );
 
+narayamTest( {
+	description: 'Bengali Probhat layout test',
+	tests: [
+		{ input: 'ka', output: 'কা', description: 'Bengali Probhat - ka' },
+		{ input: 'ki', output: 'কি', description: 'Bengali Probhat - ki' },
+		{ input: 'k/S', output: 'ক্ষ', description: 'Bengali Probhat - kha' },
+		{ input: 'q<', output: 'দৃ', description: 'Bengali Probhat - drri' },
+		{ input: 'be', output: 'বী', description: 'Bengali Probhat - bee' }
+	],
+	scheme: 'bn-probhat',
+	$input: $( '<input>' ).attr( { id: 'bn-probhat', type: 'text' } )
+} );
+
 teardown( );
 
 }() );
