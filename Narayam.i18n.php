@@ -3795,6 +3795,35 @@ $messages['tr'] = array(
 	'narayam-de' => 'Almanca',
 );
 
+/** Tatar (Cyrillic script) (татарча)
+ * @author Ильнар
+ */
+$messages['tt-cyrl'] = array(
+	'narayam-desc' => 'Кептү юлларына кулланучының кертү ысулларын куярга ярдәм итә',
+	'narayam-toggle-ime' => 'Кабызу ($1)',
+	'narayam-menu' => 'Кертү ысулы',
+	'narayam-menu-tooltip' => 'Кертү ысулын сайлагыз',
+	'narayam-help' => 'Ярдәм',
+	'narayam-checkbox-tooltip' => 'Кертү ысулын кабызу һәм сүндерү',
+	'narayam-enable-preference' => 'Кертү ысулын кабызу',
+	'narayam-more-imes' => 'Башка кертү ысуллары',
+	'narayam-ahr' => 'Ahirani Transliteration',
+	'narayam-ahr-inscript' => 'Ahirani InScript',
+	'narayam-am' => 'Амхар транслитерациясе',
+	'narayam-as' => 'Ассам транслитерациясе',
+	'narayam-as-avro' => 'Ассам Avro',
+	'narayam-as-bornona' => 'Ассам Bornona',
+	'narayam-as-inscript' => 'Ассам InScript',
+	'narayam-ber-tfng' => 'Тифинаг (транслитерация)',
+	'narayam-brx-inscript' => 'Bodo InScript',
+	'narayam-cyrl-palochka' => 'Кавказ телләре өчен таяклы кирилл әлифбасы',
+	'narayam-eo' => 'Эсперанто',
+	'narayam-hi' => 'Һинди (транслитерация)',
+	'narayam-hi-bolnagri' => 'Һинди Болнагри',
+	'narayam-hi-inscript' => 'Һинди өчен InScript',
+	'narayam-ka' => 'Georgian Transliteration',
+);
+
 /** Ukrainian (українська)
  * @author Dim Grits
  * @author Olvin
