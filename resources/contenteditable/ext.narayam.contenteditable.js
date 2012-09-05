@@ -6,6 +6,7 @@
  * @date 2012-03-26
  * License: GPLv2+
  */
+/*global rangy */
 
 /**
  * Get the current caret position in the div.
@@ -45,7 +46,7 @@ window.getDivCaretPos = function ( element ) {
 		}
 	}
 
-	return [start, end]
+	return [start, end];
 };
 
 /**

@@ -13,34 +13,43 @@
  * documentation for addScheme().
  */
 
-( function( $, mw ) {
-"use strict";
+( function ( $, mw ) {
+'use strict';
 
-$.narayam = new ( function() {
+$.narayam = ( function () {
 	/* Private members */
 
-	// Reference to this object
-	var that = this;
-	// jQuery array holding all text inputs Narayam applies to
-	var $inputs = $( [] );
-	// Whether Narayam is enabled
-	var enabled = false;
-	// Registered schemes
-	var schemes = {};
-	// List of scheme names, ordered for presentation purposes
-	// Schemes not in this list won't be allowed to register
-	// This object is formatted as { 'schemename': '', 'schemename2': '', ... }
-	// for easy searching
-	var availableSchemes = mw.config.get( 'wgNarayamAvailableSchemes' ) || {};
-	// All input methods. This will be used for selecting input methods from languages
-	// other than uselang- optionally
-	var allImes = mw.config.get( 'wgNarayamAllSchemes' ) || {};
-	// Currently selected scheme
-	var currentScheme = null;
-	// Shortcut key for turning Narayam on and off
-	var shortcutKey = getShortCutKey();
-	// Number of recent input methods to be shown
-	var recentItemsLength = mw.config.get( 'wgNarayamRecentItemsLength' );
+	var
+		// Reference to the narayam API
+		narayam = {},
+
+		// jQuery array holding all text inputs Narayam applies to
+		$inputs = $( [] ),
+
+		// Whether Narayam is enabled
+		enabled = false,
+
+		// Registered schemes
+		schemes = {},
+
+		// List of scheme names, ordered for presentation purposes
+		// Schemes not in this list won't be allowed to register
+		// This object is formatted as { 'schemename': '', 'schemename2': '', ... }
+		// for easy searching
+		availableSchemes = mw.config.get( 'wgNarayamAvailableSchemes', {} ),
+
+		// All input methods. This will be used for selecting input methods from languages
+		// other than uselang- optionally
+		allImes = mw.config.get( 'wgNarayamAllSchemes', {} ),
+
+		// Currently selected scheme
+		currentScheme,
+
+		// Shortcut key for turning Narayam on and off
+		shortcutKey = getShortCutKey(),
+
+		// Number of recent input methods to be shown
+		recentItemsLength = mw.config.get( 'wgNarayamRecentItemsLength' );
 
 
 	/* Private functions */
@@ -113,6 +122,7 @@ $.narayam = new ( function() {
 	/**
 	 * Change visual appearance of element (text input, textarea) according
 	 * to the current state of Narayam
+	 * @param {jQuery} $element
 	 */
 	function changeVisual( $element ) {
 		if ( enabled ) {
@@ -122,9 +132,11 @@ $.narayam = new ( function() {
 			}
 		} else {
 			$element.removeClass( 'narayam-input' );
+			/*
 			if ( $.narayam.osk ) {
-				//$.narayam.osk.unbind( $element );
+				$.narayam.osk.unbind( $element );
 			}
+			*/
 		}
 	}
 
@@ -134,7 +146,7 @@ $.narayam = new ( function() {
 	 * because of bug: https://bugs.webkit.org/show_bug.cgi?id=66630
 	 * TODO: remove when webkit bug is handled in jQuery.textSelection.js
 	 *
-	 * @param $element jQuery object to wich replacement to be taked place
+	 * @param {jQuery} $element jQuery object to wich replacement to be taked place
 	 * @param startPos Starting position of text range to be replaced
 	 * @param endPos Ending position of text range to be replaced
 	 * @param peri String to be substituted
@@ -151,7 +163,8 @@ $.narayam = new ( function() {
 
 	/**
 	 * Keydown event handler. Handles shortcut key presses
-	 * @param e Event object
+	 * @context {HTMLElement}
+	 * @param {jQuery.Event} e
 	 */
 	function onkeydown( e ) {
 		// If the current scheme uses the alt key, ignore keydown for Alt+? combinations
@@ -159,7 +172,7 @@ $.narayam = new ( function() {
 			e.stopPropagation();
 			return false; // Not in original code -- does this belong here?
 		} else if ( isShortcutKey( e ) ) {
-			that.toggle();
+			narayam.toggle();
 			changeVisual( $( this ) );
 			e.stopPropagation();
 			return false;
@@ -169,7 +182,8 @@ $.narayam = new ( function() {
 
 	/**
 	 * Keypress event handler. This is where the real work happens
-	 * @param e Event object
+	 * @context {HTMLElement}
+	 * @param {jQuery.Event} e
 	 */
 	function onkeypress( e ) {
 		if ( !enabled ) {
@@ -199,9 +213,9 @@ $.narayam = new ( function() {
 		// Get the last few characters before the one the user just typed,
 		// to provide context for the transliteration regexes.
 		// We need to append c because it hasn't been added to $this.val() yet
-		var input = that.lastNChars(  $this.val() || $this.text(), startPos, currentScheme.lookbackLength ) + c;
+		var input = narayam.lastNChars(  $this.val() || $this.text(), startPos, currentScheme.lookbackLength ) + c;
 		var keyBuffer = $this.data( 'narayamKeyBuffer' );
-		var replacement = that.transliterate( input, keyBuffer, e.altKey );
+		var replacement = narayam.transliterate( input, keyBuffer, e.altKey );
 
 		// Update the key buffer
 		keyBuffer += c;
@@ -217,7 +231,7 @@ $.narayam = new ( function() {
 		}
 		// Drop a common prefix, if any
 		// TODO: Profile this, see if it's any faster
-		var divergingPos = that.firstDivergence( input, replacement );
+		var divergingPos = narayam.firstDivergence( input, replacement );
 		input = input.substring( divergingPos );
 		replacement = replacement.substring( divergingPos );
 		replaceText( this, replacement, startPos - input.length + 1, endPos );
@@ -228,9 +242,11 @@ $.narayam = new ( function() {
 	function getCaretPosition( element ){
 		var isDiv = ( element.nodeName === 'DIV' );
 		if ( !isDiv ) {
-			return $( element ).textSelection( 'getCaretPosition', { 'startAndEnd': true } );
+			return $( element ).textSelection( 'getCaretPosition', {
+				startAndEnd: true
+			} );
 		}
-		return getDivCaretPos( element );
+		return window.getDivCaretPos( element );
 	}
 
 	function replaceText( element, replacement, start, end ) {
@@ -248,7 +264,7 @@ $.narayam = new ( function() {
 			// Replace the text in the selection part with translterated text.
 			$this.text( $this.text().substr( 0, start ) + replacement + $this.text().substr( end, $this.text().length ) );
 			// Move the cursor to the end of the replaced text.
-			setDivCaretPos( element, {
+			window.setDivCaretPos( element, {
 				start: start + replacement.length,
 				end:  start + replacement.length
 			} );
@@ -257,7 +273,8 @@ $.narayam = new ( function() {
 
 	/**
 	 * Focus event handler.
-	 * @param e Event object
+	 * @context {HTMLElement}
+	 * @param {jQuery.Event} e
 	 */
 	function onfocus( e ) {
 		if ( !$( this ).data( 'narayamKeyBuffer' ) ) {
@@ -270,7 +287,8 @@ $.narayam = new ( function() {
 
 	/**
 	 * Blur event handler.
-	 * @param e Event object
+	 * @context {HTMLElement}
+	 * @param {jQuery.Event} e
 	 */
 	function onblur( e ) {
 		$( this ).removeClass( 'narayam-input' );
@@ -286,7 +304,7 @@ $.narayam = new ( function() {
 	 * @param useExtended Whether to use the extended part of the scheme
 	 * @return Transliterated string, or str if no applicable transliteration found.
 	 */
-	this.transliterate = function( str, keyBuffer, useExtended ) {
+	narayam.transliterate = function ( str, keyBuffer, useExtended ) {
 		var rules = currentScheme.extended_keyboard && useExtended ?
 			currentScheme.rules_x : currentScheme.rules;
 		for ( var i = 0; i < rules.length; i++ ) {
@@ -310,13 +328,13 @@ $.narayam = new ( function() {
 
 	/**
 	 * Get the n characters in str that immediately precede pos
-	 * Example: lastNChars( "foobarbaz", 5, 2 ) == "ba"
+	 * Example: lastNChars( 'foobarbaz', 5, 2 ) == 'ba'
 	 * @param str String to search in
 	 * @param pos Position in str
 	 * @param n Number of characters to go back from pos
 	 * @return Substring of str, at most n characters long, immediately preceding pos
 	 */
-	this.lastNChars = function( str, pos, n ) {
+	narayam.lastNChars = function ( str, pos, n ) {
 		if ( n === 0 ) {
 			return '';
 		} else if ( pos <= n ) {
@@ -329,11 +347,11 @@ $.narayam = new ( function() {
 	/**
 	 * Find the point at which a and b diverge, i.e. the first position
 	 * at which they don't have matching characters.
-	 * @param a String
-	 * @param b String
-	 * @return Position at which a and b diverge, or -1 if a == b
+	 * @param {String} a
+	 * @param {String} b
+	 * @return {Number} Position at which a and b diverge, or -1 if a == b
 	 */
-	this.firstDivergence = function( a, b ) {
+	narayam.firstDivergence = function ( a, b ) {
 		var minLength = a.length < b.length ? a.length : b.length;
 		for ( var i = 0; i < minLength; i++ ) {
 			if ( a.charCodeAt( i ) !== b.charCodeAt( i ) ) {
@@ -348,35 +366,44 @@ $.narayam = new ( function() {
 	 * @param inputs A jQuery object holding one or more input or textarea elements,
 	 *               or an array of DOM elements, or a single DOM element, or a selector
 	 */
-	this.addInputs = function( inputs ) {
-		if ( typeof( inputs ) === "string" ) {
+	narayam.addInputs = function ( inputs ) {
+		if ( typeof inputs  === 'string' ) {
 			// If a string is passed, it is a CSS selector.
-			// We can use jQuery's .live() instead of .bind()
-			// so Narayam can work on elements added later to DOM too
-			$( inputs )
-				.live( 'keydown', onkeydown )
-				.live( 'keypress', onkeypress )
-				.live( 'focus', onfocus )
-				.live( 'blur', onblur );
+			// We can bind on the document with a selector instead
+			// of selecting the elements now and binding to that.
+			// That way Narayam can work on elements added later to DOM.
+			$( document ).on(
+				{
+					'keydown': onkeydown,
+					'keypress': onkeypress,
+					'focus': onfocus,
+					'blur': onblur
+				},
+				/* selector = */ inputs
+			);
 		} else {
 			var $newInputs = $( inputs );
 			$inputs = $inputs.add( $newInputs );
-			$newInputs
-				.bind( 'keydown.narayam', onkeydown )
-				.bind( 'keypress.narayam', onkeypress )
-				.bind( 'focus', onfocus )
-				.bind( 'blur', onblur );
+			$newInputs.on({
+				'keydown.narayam': onkeydown,
+				'keypress.narayam': onkeypress,
+				'focus': onfocus,
+				'blur': onblur
+			});
 		}
 	};
 
 	/**
 	 * Enable Narayam
 	 */
-	this.enable = function() {
+	narayam.enable = function () {
 		if ( !enabled ) {
-			$.cookie( 'narayam-enabled', '1', { path: '/', expires: 30 } );
+			$.cookie( 'narayam-enabled', '1', {
+				path: '/',
+				expires: 30
+			} );
 			$( '#narayam-toggle' ).prop( 'checked', true );
-			$( 'li#pt-narayam' )
+			$( '#pt-narayam' )
 				.removeClass( 'narayam-inactive' )
 				.addClass( 'narayam-active' );
 			enabled = true;
@@ -386,11 +413,14 @@ $.narayam = new ( function() {
 	/**
 	 * Disable Narayam
 	 */
-	this.disable = function() {
+	narayam.disable = function () {
 		if ( enabled ) {
-			$.cookie( 'narayam-enabled', '0', { path: '/', expires: 30 } );
+			$.cookie( 'narayam-enabled', '0', {
+				path: '/',
+				expires: 30
+			} );
 			$( '#narayam-toggle' ).prop( 'checked', false );
-			$( 'li#pt-narayam' )
+			$( '#pt-narayam' )
 				.removeClass( 'narayam-active' )
 				.addClass( 'narayam-inactive' );
 			enabled = false;
@@ -398,17 +428,17 @@ $.narayam = new ( function() {
 	};
 
 	/**
-	 * Toggle the enabled/disabled state
+	 * Toggle the enabled/disabled state.
 	 */
-	this.toggle = function() {
+	narayam.toggle = function () {
 		if ( enabled ) {
-			that.disable();
+			narayam.disable();
 		} else {
-			that.enable();
+			narayam.enable();
 		}
 	};
 
-	this.enabled = function() {
+	narayam.enabled = function () {
 		return enabled;
 	};
 
@@ -448,40 +478,43 @@ $.narayam = new ( function() {
 	 * NOTE: All keys are REQUIRED (except rules_x when not used). Missing
 	 *       keys may result in JS errors.
 	 *
-	 * @param name Name of the scheme, must be unique
-	 * @param data Object with scheme data.
-	 * @return True if added, false if not
+	 * @param {String} name Name of the scheme, must be unique.
+	 * @param {Object} data Scheme data.
+	 * @return {Boolean} True if added, false if not.
 	 */
-	this.addScheme = function( name, data ) {
+	narayam.addScheme = function ( name, data ) {
 		schemes[name] = data;
 		return true;
 	};
 
 	/**
 	 * Get the transliteration rules for the given input method name.
-	 * @param name String
+	 * @param {String} name
 	 */
-	this.getScheme = function( name ) {
+	narayam.getScheme = function ( name ) {
 		return schemes[name];
 	};
 
 	/**
 	 * Change the current transliteration scheme
-	 * @param name String
-	 * @param callback Function to be called when the scheme is ready/dynamically loaded.- Optional
+	 * @param {String} name
+	 * @param {Function} callback To be called when the scheme is ready/dynamically loaded.- Optional
 	 */
-	this.setScheme = function( name, callback ) {
+	narayam.setScheme = function ( name, callback ) {
 		var recent = $.cookie( 'narayam-scheme' ) || [];
-		if ( typeof recent === "string" ) {
-			recent = recent.split( "," );
+		if ( typeof recent === 'string' ) {
+			recent = recent.split( ',' );
 		}
-		recent = $.grep( recent, function( value ) {
+		recent = $.grep( recent, function ( value ) {
 			return value !== name;
 		} );
 		recent.unshift( name );
 		recent = recent.slice( 0, recentItemsLength );
-		recent = recent.join( "," );
-		$.cookie( 'narayam-scheme', recent, { path: '/', expires: 30 } );
+		recent = recent.join( ',' );
+		$.cookie( 'narayam-scheme', recent, {
+			path: '/',
+			expires: 30
+		} );
 		if ( name in schemes ) {
 			currentScheme = schemes[name];
 			if ( callback ) {
@@ -489,7 +522,7 @@ $.narayam = new ( function() {
 			}
 		} else {
 			// load the rules dynamically.
-			mw.loader.using( "ext.narayam.rules." + name, function() {
+			mw.loader.using( 'ext.narayam.rules.' + name, function () {
 				currentScheme = schemes[name];
 				if ( callback ) {
 					callback.call();
@@ -504,21 +537,21 @@ $.narayam = new ( function() {
 	 * and initializes the enabled/disabled state and selected scheme
 	 * from a cookie or wgNarayamEnabledByDefault
 	 */
-	this.setup = function() {
+	narayam.setup = function () {
 		// Disable Narayam if CodeEditor is requested on this page (bug 39557)
-		if ( mw.config.get( "wgCodeEditorCurrentLanguage" ) ) {
+		if ( mw.config.get( 'wgCodeEditorCurrentLanguage' ) ) {
 			return;
 		}
 
-		that.buildMenu();
+		narayam.buildMenu();
 		// Restore state from cookies
 		var recent = $.cookie( 'narayam-scheme' );
-		var lastScheme = null;
-		if ( typeof recent === "string" ) {
-			lastScheme = recent.split( "," )[0];
+		var lastScheme;
+		if ( typeof recent === 'string' ) {
+			lastScheme = recent.split( ',' )[0];
 		}
 		if ( lastScheme ) {
-			that.setScheme( lastScheme );
+			narayam.setScheme( lastScheme );
 			$( '#narayam-' + lastScheme ).prop( 'checked', true );
 		} else {
 			//if no saved input scheme, select the first.
@@ -526,17 +559,17 @@ $.narayam = new ( function() {
 			if ( $firstScheme.val() === undefined ){
 				return;
 			}
-			that.setScheme( $firstScheme.val() );
+			narayam.setScheme( $firstScheme.val() );
 			$firstScheme.prop( 'checked', true );
 		}
 
 		var enabledCookie = $.cookie( 'narayam-enabled' );
 		if ( enabledCookie === '1' ||
-			( mw.config.get( 'wgNarayamEnabledByDefault' ) && enabledCookie !== '0' ) )
-		{
-			that.enable();
+			( mw.config.get( 'wgNarayamEnabledByDefault' ) && enabledCookie !== '0' )
+		) {
+			narayam.enable();
 		} else {
-			$( 'li#pt-narayam' ).addClass( 'narayam-inactive' );
+			$( '#pt-narayam' ).addClass( 'narayam-inactive' );
 		}
 		// Renew the narayam-enabled cookie. narayam-scheme is renewed by setScheme()
 		if ( enabledCookie ) {
@@ -547,7 +580,7 @@ $.narayam = new ( function() {
 	/**
 	 * Construct the menu item, for the given scheme name.
 	 */
-	this.buildMenuItem = function( scheme ) {
+	narayam.buildMenuItem = function ( scheme ) {
 		var $input = $( '<input type="radio" name="narayam-input-method" class="narayam-scheme" />' );
 		$input.attr( 'id', 'narayam-' + scheme ).val( scheme );
 
@@ -565,34 +598,40 @@ $.narayam = new ( function() {
 	 * prepare the menu list for all the input methods.
 	 * @return The div containing the constructed menu.
 	 */
-	this.buildMenuItems = function() {
+	narayam.buildMenuItems = function () {
 		var haveSchemes = false;
 		// Build schemes option list
 		var $narayamMenuItems = $( '<ul>' );
 		var count = 1;
 		var seen = [];
 
-		var recent = $.cookie( "narayam-scheme" ) || [];
-		if ( typeof recent === "string" ) {
-			recent = recent.split( "," );
+		var recent = $.cookie( 'narayam-scheme' ) || [];
+		if ( typeof recent === 'string' ) {
+			recent = recent.split( ',' );
 		}
 
 		// Prepare the recent inputmethods menu items
 		for ( var recentIndex = 0; recentIndex < recent.length; recentIndex++ ) {
 			var recentScheme = recent[recentIndex];
-			if ( $.inArray( recentScheme, seen ) > -1 ) { continue; }
+			if ( $.inArray( recentScheme, seen ) !== -1 ) {
+				continue;
+			}
 			seen.push( recentScheme );
 			if ( count++ > recentItemsLength ) {
 				break;
 			}
-			var $narayamRecentMenuItem = that.buildMenuItem( recentScheme );
+			var $narayamRecentMenuItem = narayam.buildMenuItem( recentScheme );
 			$narayamRecentMenuItem.addClass( 'narayam-recent-menu-item' );
 			$narayamMenuItems.append( $narayamRecentMenuItem );
 		}
 
 		// menu items for the language of wiki.
-		var requested = [mw.config.get( 'wgUserVariant' ), mw.config.get( 'wgContentLanguage' ), mw.config.get( 'wgUserLanguage' )];
-		$( 'textarea[lang]' ).each( function( index ) {
+		var requested = [
+			mw.config.get( 'wgUserVariant' ),
+			mw.config.get( 'wgContentLanguage' ),
+			mw.config.get( 'wgUserLanguage' )
+		];
+		$( 'textarea[lang]' ).each( function () {
 			requested.push( this.lang );
 		});
 		for ( var requestedIndex = 0; requestedIndex < requested.length; requestedIndex++ ) {
@@ -608,7 +647,7 @@ $.narayam = new ( function() {
 					continue;
 				}
 				seen.push( requestedScheme );
-				var $narayamRequestedMenuItem = that.buildMenuItem( requestedScheme );
+				var $narayamRequestedMenuItem = narayam.buildMenuItem( requestedScheme );
 				$narayamMenuItems.append( $narayamRequestedMenuItem );
 			}
 		}
@@ -622,7 +661,7 @@ $.narayam = new ( function() {
 		var $checkbox = $( '<input type="checkbox" id="narayam-toggle" />' );
 		$checkbox
 			.attr( 'title', mw.msg( 'narayam-checkbox-tooltip' ) )
-			.click( that.toggle );
+			.click( narayam.toggle );
 
 		var $label = $( '<label>' ).attr( 'for', 'narayam-toggle' );
 		$label
@@ -632,15 +671,12 @@ $.narayam = new ( function() {
 
 		var $moreLink = $( '<a>' )
 			.text( mw.msg( 'narayam-more-imes' ) )
-			.prop( 'href', '#' )
-			.click( function( event ) {
+			.attr( 'href', '#' )
+			.click( function ( e ) {
 				$( '.narayam-scheme-dynamic-item' ).toggle( 'fast' );
-				if ( $( 'li.narayam-more-imes-link' ).hasClass( 'open' ) ) {
-					$( 'li.narayam-more-imes-link' ).removeClass( 'open' );
-				} else {
-					$( 'li.narayam-more-imes-link' ).addClass( 'open' );
-				}
-				event.stopPropagation();
+				$( 'li.narayam-more-imes-link' ).toggleClass( 'open' );
+
+				e.stopPropagation();
 			} );
 
 		$narayamMenuItems.append( $( '<li>' )
@@ -653,25 +689,29 @@ $.narayam = new ( function() {
 			for ( var scheme in langSchemes ) {
 				// Do not repeat the input methods in more input methods section
 				// if already shown on recent items.
-				if ( $.inArray( scheme, seen ) > -1 ) {
+				if ( $.inArray( scheme, seen ) !== -1 ) {
 					continue;
 				}
 				seen.push( scheme );
 
-				var $narayamMenuItem = that.buildMenuItem( scheme );
+				var $narayamMenuItem = narayam.buildMenuItem( scheme );
 				$narayamMenuItem.addClass( 'narayam-scheme-dynamic-item' );
 				$narayamMenuItems.append( $narayamMenuItem );
 			}
 		}
 
 		// Event listener for scheme selection - dynamic loading of rules.
-		$narayamMenuItems.delegate( 'input:radio', 'click', function( ) {
-			that.setScheme( $( this ).val() );
+		$narayamMenuItems.on( 'click',  'input:radio', function () {
+			var selection;
+			narayam.setScheme( $( this ).val() );
 			if ( $( this ).parent().hasClass( 'narayam-scheme-dynamic-item' ) ) {
 				// rebuild the menu items with recent items.
 				$( '#narayam-menu' ).html( $.narayam.buildMenuItems() );
-				$( '#narayam-menu-items' ).css( 'left', $( 'li#pt-narayam' ).offset().left );
-				$( '#narayam-' + $( this ).val() ).prop( 'checked', true );
+				$( '#narayam-menu-items' ).css( 'left', $( '#pt-narayam' ).offset().left );
+				selection = document.getElementById( 'narayam-' + $( this ).val() );
+				if ( selection ) {
+					selection.checked = true;
+				}
 				if ( enabled ) {
 					$( '#narayam-toggle' ).prop( 'checked', true );
 				}
@@ -682,7 +722,7 @@ $.narayam = new ( function() {
 		if ( helppage ) {
 			var $link = $( '<a>' )
 				.text( mw.msg( 'narayam-help' ) )
-				.prop( 'href',  helppage )
+				.attr( 'href',  helppage )
 				.prop( 'target', '_blank' );
 			var $liHelpLink = $( '<li>' ).addClass( 'narayam-help-link' );
 			$narayamMenuItems.append( $liHelpLink.append( $link ) );
@@ -699,10 +739,10 @@ $.narayam = new ( function() {
 	/**
 	 * Construct the menu for Narayam
 	 */
-	this.buildMenu = function() {
+	narayam.buildMenu = function () {
 		// Remove the menu if already exists
-		$( 'li#pt-narayam,div#narayam-menu' ).remove();
-		var $menuItemsDiv = that.buildMenuItems();
+		$( '#pt-narayam, #narayam-menu' ).remove();
+		var $menuItemsDiv = narayam.buildMenuItems();
 		if ( $menuItemsDiv === null ) {
 			return false;
 		}
@@ -710,20 +750,22 @@ $.narayam = new ( function() {
 			.attr( 'id', 'narayam-menu' )
 			.addClass( 'narayam-menu' );
 		var $link = $( '<a>' )
-			.prop( 'href', '#' )
+			.attr( 'href', '#' )
 			.text( mw.msg( 'narayam-menu' ) )
 			.attr( 'title', mw.msg( 'narayam-menu-tooltip' ) );
 
 		$menu.append( $menuItemsDiv );
-		var $liMenu = $( '<li>' ).attr( 'id', 'pt-narayam' ).append( $link );
+		var $liMenu = $( '<li>' )
+			.attr( 'id', 'pt-narayam' )
+			.append( $link );
 
 		// If rtl, add to the right of top personal links. Else, to the left
 		var rtlEnv = $( 'body' ).hasClass( 'rtl' );
-		var positionFunction = rtlEnv ? "append" : "prepend";
+		var positionFunction = rtlEnv ? 'append' : 'prepend';
 		$( '#p-personal ul:first' )[positionFunction]( $liMenu );
 		$( 'body' ).prepend( $menu );
 		$menu.hide();
-		$liMenu.click( function( event ) {
+		$liMenu.click( function ( e ) {
 			var menuSide, menuOffset, distanceToEdge;
 
 			if ( rtlEnv ) {
@@ -749,31 +791,35 @@ $.narayam = new ( function() {
 			$menuItemsDiv.css( menuSide, menuOffset );
 
 			if ( $menu.hasClass( 'open' ) ){
-				$menu.removeClass( 'open' );
-				$menu.hide();
+				$menu
+					.removeClass( 'open' )
+					.hide();
 			} else {
+				// TOOD: "div.open" way too generic
 				$( 'div.open' ).removeClass( 'open' );
-				$menu.addClass( 'open' );
-				$menu.show();
-				event.stopPropagation();
+				$menu
+					.addClass( 'open' )
+					.show();
+				e.stopPropagation();
 			}
 		} );
 
-		$( 'html' ).click( function() {
-			$menu.removeClass( 'open' );
-			$menu.hide();
+		$( document ).click( function () {
+			$menu
+				.removeClass( 'open' )
+				.hide();
 		} );
-		$menu.click( function( event ) {
-			event.stopPropagation();
+		$menu.click( function ( e ) {
+			e.stopPropagation();
 		} );
 
 		// Workaround for IE bug - ActiveX components like input fields
 		// coming on top of everything.
 		// TODO: is there a better solution other than hiding it on hover?
 		if ( $.browser.msie ) {
-			$( '#narayam-menu' ).hover( function() {
+			$( '#narayam-menu' ).hover( function () {
 				$( '#searchform' ).css( 'visibility', 'hidden' );
-			}, function() {
+			}, function () {
 				$( '#searchform' ).css( 'visibility', 'visible' );
 			} );
 		}
@@ -782,6 +828,8 @@ $.narayam = new ( function() {
 		// Narayam controls setup complete, returns true
 		return true;
 	};
-} )();
 
-} )( jQuery, mediaWiki );
+	return narayam;
+}() );
+
+}( jQuery, mediaWiki ) );

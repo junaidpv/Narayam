@@ -8,9 +8,9 @@
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
 ( function () {
-"use strict";
+'use strict';
 
-module( "ext.narayam.rules", QUnit.newMwEnvironment() );
+module( 'ext.narayam.rules', QUnit.newMwEnvironment() );
 
 function setup() {
 	$.narayam.setup();
@@ -22,11 +22,6 @@ function teardown() {
 	// based test, such as jquery.byteLimitTest, will fail.
 	$.narayam.disable();
 }
-
-test( "-- Initial check", function() {
-	expect( 1 );
-	ok( $.narayam, '$.narayam is defined' );
-} );
 
 // Basic sendkey-implementation
 // $input - the input element
@@ -399,7 +394,7 @@ narayamTest( {
 		{ input: 'sS', output: 'ਸਸ਼', description: 'Punjabi Gurmukhi MyBest transliteration - sS -> ਸਸ਼'},
 		{ input: '<', output: 'ੴ', description: 'Punjabi Gurmukhi MyBest transliteration - < -> ੴ' },
 		{ input: '>', output: '☬', description: 'Punjabi Gurmukhi MyBest transliteration - > -> ☬' },
-		{ input: 'aa', output: 'ਅ', description: 'Punjabi Gurmukhi MyBest transliteration - aa -> ਅ' },
+		{ input: 'aa', output: 'ਅ', description: 'Punjabi Gurmukhi MyBest transliteration - aa -> ਅ' }
 	],
 	scheme: 'pa-mybest',
 	$input: $( '<input>' ).attr( { id: 'pa-mybest', type: 'text' } )

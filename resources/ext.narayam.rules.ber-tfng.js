@@ -39,7 +39,7 @@ var rules = [
 ['y', '', 'ⵢ'],
 ['x', '', 'ⵅ'],
 ['z', '', 'ⵣ'],
-['Z', '', 'ⵥ'],
+['Z', '', 'ⵥ']
 ];
 
 jQuery.narayam.addScheme( 'ber-tfng', {

@@ -4,16 +4,16 @@
  * @author Santhosh Thottingal
  * License: GPLv3
  */
- 
-( function( $ ) {
-$.narayam.osk = new ( function() {
+( function ( $ ) {
+$.narayam.osk = ( function () {
+	var osk = {};
 
 	/**
 	 * @param element Jquery selector for the field
 	 * @param schemename The Narayam scheme name.
 	 */
-	this.bind = function( $element, schemename ) {
-		layout = 'qwerty';
+	osk.bind = function ( $element, schemename ) {
+		var layout = 'qwerty';
 		var $keyboard = $element.data( 'keyboard' );
 		if ( $keyboard && $keyboard.options.layout === schemename ) {
 			return;
@@ -21,7 +21,7 @@ $.narayam.osk = new ( function() {
 		this.unbind( $element );
 		build( schemename, layout );
 		// TODO position it correctly. And show the kyboard only on click of that.
-		// $element.parent().append("<span id='narayam-osk-box'>&nbsp;&nbsp;</span>");
+		// $element.parent().append( '<span id="narayam-osk-box">&nbsp;&nbsp;</span>' );
 		$element.keyboard( {
 				layout : schemename,
 				usePreview: false,
@@ -32,11 +32,11 @@ $.narayam.osk = new ( function() {
 					at : 'center top',
 					at2: 'left bottom', // used when "usePreview" is false (centers keyboard at bottom of the input/textarea)
 					collision: 'flip'
-					},
+				}
 		} );
 	};
 
-	this.unbind = function( $element ){
+	osk.unbind = function ( $element ) {
 		var $keyboard = $element.data( 'keyboard' );
 		if ( $keyboard ) {
 			$keyboard.destroy();
@@ -53,24 +53,24 @@ $.narayam.osk = new ( function() {
 		$.keyboard.layouts[scheme] = {};
 		for ( var level in $.keyboard.layouts[layout] ) {
 			$.keyboard.layouts[scheme][level] = [];
-			for ( var i= 0 ; i< $.keyboard.layouts[layout][level].length; i++ ) {
-				layoutLine = $.keyboard.layouts[layout][level][i];
+			for ( var i = 0 ; i< $.keyboard.layouts[layout][level].length; i++ ) {
+				var layoutLine = $.keyboard.layouts[layout][level][i];
 				var keys = layoutLine.split( ' ' );
-				var keyLine = "";
+				var keyLine = '';
 				for ( var j = 0; j < keys.length ; j++ ) {
 					var key = $.trim( keys[j] );
-					if( key.match( "^{" ) && key.match( "}$" ) ){
-						keyLine += key + " ";
+					if( key.match( '^{' ) && key.match( '}$' ) ){
+						keyLine += key + ' ';
 					} else {
 						var transliteratedKey = $.narayam.transliterate( key , '', false ) ;
-						if ( transliteratedKey === "\u200C" ){
-							transliteratedKey = "zwnj";
+						if ( transliteratedKey === '\u200C' ){
+							transliteratedKey = 'zwnj';
 						}
-						if ( transliteratedKey === "\u200D" ){
-							transliteratedKey = "zwj";
+						if ( transliteratedKey === '\u200D' ){
+							transliteratedKey = 'zwj';
 						}
 
-						keyLine += transliteratedKey + " ";
+						keyLine += transliteratedKey + ' ';
 					}
 				}
 				$.keyboard.layouts[scheme][level][i] = keyLine;
@@ -78,6 +78,8 @@ $.narayam.osk = new ( function() {
 		}
 	}
 
-} )();
+	return osk;
 
-} )( jQuery );
+}() );
+
+}( jQuery ) );
