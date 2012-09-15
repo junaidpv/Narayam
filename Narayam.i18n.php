@@ -98,8 +98,8 @@ $messages['en'] = array(
  * @author Siebrand
  * @author Waldir
  * @author Yekrats
- * @author බිඟුවා
  * @author nasir8891
+ * @author බිඟුවා
  */
 $messages['qqq'] = array(
 	'narayam-desc' => '{{desc}}',
@@ -431,13 +431,17 @@ $messages['bho'] = array(
 
 /** Bengali (বাংলা)
  * @author Bellayet
+ * @author Nasir8891
  * @author Wikitanvir
  */
 $messages['bn'] = array(
 	'narayam-desc' => 'ইনপুট ক্ষেত্রের জন্য কাস্টম ইনপুট পদ্ধতির যোগ অনুমোদন করে',
 	'narayam-toggle-ime' => 'সক্রিয় ($1)',
 	'narayam-menu' => 'ইনপুট প্রক্রিয়া',
+	'narayam-menu-tooltip' => 'ইনপুট পদ্ধতি নির্বাচন',
 	'narayam-help' => 'সাহায্য',
+	'narayam-checkbox-tooltip' => 'ইনপুট পদ্ধতি চালু বা বন্ধ করা',
+	'narayam-enable-preference' => 'ইনপুট পদ্ধতি সক্রিয় করা',
 	'narayam-more-imes' => 'আরও ইনপুট পদ্ধতি',
 	'narayam-am' => 'আমহারিক প্রতিবর্ণীকরণ',
 	'narayam-as' => 'অসামীয়া প্রতিবর্ণীকরণ',
@@ -665,6 +669,7 @@ $messages['de'] = array(
 	'narayam-bn-avro' => 'Bengalisch (Avro)',
 	'narayam-bn-inscript' => 'Bengalisch (InScript)',
 	'narayam-bn-nkb' => 'Bengalisch (NKB)',
+	'narayam-bn-probhat' => 'Bengalisch (Probhat)',
 	'narayam-ur' => 'Urdu (Standard)',
 	'narayam-de' => 'Deutsch',
 	'narayam-gu' => 'Gujarati (Transliteration)',
@@ -881,6 +886,7 @@ $messages['es'] = array(
 	'narayam-bn-avro' => 'Avro bengalí',
 	'narayam-bn-inscript' => 'Bengalí InScript',
 	'narayam-bn-nkb' => 'NKB bengalí',
+	'narayam-bn-probhat' => 'Probhat para bengalí',
 	'narayam-ur' => 'Urdu estándar',
 	'narayam-de' => 'Alemán',
 	'narayam-gu' => 'Transliteración gujarati',
@@ -1322,6 +1328,7 @@ $messages['gl'] = array(
 	'narayam-bn-avro' => 'Avro para bengalí',
 	'narayam-bn-inscript' => 'InScript para bengalí',
 	'narayam-bn-nkb' => 'NKB para bengalí',
+	'narayam-bn-probhat' => 'Probhat para bengalí',
 	'narayam-ur' => 'Urdú estándar',
 	'narayam-de' => 'Alemán',
 	'narayam-gu' => 'Transliteración para maratí gujarati',
