@@ -2416,6 +2416,7 @@ $messages['mk'] = array(
 	'narayam-bn-avro' => 'бенгалски - Avro',
 	'narayam-bn-inscript' => 'бенгалски - InScript',
 	'narayam-bn-nkb' => 'бенгалски - NKB',
+	'narayam-bn-probhat' => 'бенгалски - Probhat',
 	'narayam-ur' => 'урду - стандард',
 	'narayam-de' => 'германски',
 	'narayam-gu' => 'Транслитерација на гуџарати',
