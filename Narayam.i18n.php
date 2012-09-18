@@ -469,6 +469,7 @@ $messages['bn'] = array(
 	'narayam-bn-avro' => 'বাংলা অভ্র',
 	'narayam-bn-inscript' => 'বাংলা ইন্সক্রিপ্ট',
 	'narayam-bn-nkb' => 'বাংলা এনকেবি',
+	'narayam-bn-probhat' => 'বাংলা প্রভাত',
 );
 
 /** Breton (brezhoneg)
@@ -1508,6 +1509,7 @@ $messages['he'] = array(
 	'narayam-bn-avro' => 'בנגלית – Avro',
 	'narayam-bn-inscript' => 'בנגלית – InScript',
 	'narayam-bn-nkb' => 'בנגלית – NKB',
+	'narayam-bn-probhat' => 'בנגלי Probhat',
 	'narayam-ur' => 'אורדו תקנית',
 	'narayam-de' => 'גרמנית',
 	'narayam-gu' => 'גוג׳ראטית – תעתיק',
