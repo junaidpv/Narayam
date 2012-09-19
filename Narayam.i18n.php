@@ -431,6 +431,7 @@ $messages['bho'] = array(
 
 /** Bengali (বাংলা)
  * @author Bellayet
+ * @author Jayantanth
  * @author Nasir8891
  * @author Wikitanvir
  */
@@ -444,10 +445,10 @@ $messages['bn'] = array(
 	'narayam-enable-preference' => 'ইনপুট পদ্ধতি সক্রিয় করা',
 	'narayam-more-imes' => 'আরও ইনপুট পদ্ধতি',
 	'narayam-am' => 'আমহারিক প্রতিবর্ণীকরণ',
-	'narayam-as' => 'অসামীয়া প্রতিবর্ণীকরণ',
-	'narayam-as-avro' => 'অসামীয়া অভ্র',
-	'narayam-as-bornona' => 'অসামীয়া বর্ণনা',
-	'narayam-as-inscript' => 'অসামীয়া ইন্সক্রিপ্ট',
+	'narayam-as' => 'অসমিয়া প্রতিবর্ণীকরণ',
+	'narayam-as-avro' => 'অসমিয়া অভ্র',
+	'narayam-as-bornona' => 'অসমিয়া বর্ণনা',
+	'narayam-as-inscript' => 'অসমিয়া ইন্সক্রিপ্ট',
 	'narayam-eo' => 'এসপারেন্টো',
 	'narayam-hi-inscript' => 'হিন্দি ইন্সক্রিপ্ট',
 	'narayam-kn' => 'কন্নড় প্রতিবর্ণীকরণ',
@@ -1658,6 +1659,7 @@ $messages['hsb'] = array(
 	'narayam-bn-avro' => 'Bengali-Avro',
 	'narayam-bn-inscript' => 'Bengali InScript',
 	'narayam-bn-nkb' => 'Bengali NKB',
+	'narayam-bn-probhat' => 'Bengalšćina (Probhat)',
 	'narayam-ur' => 'Urdušćina (standard)',
 	'narayam-de' => 'Němčina',
 	'narayam-gu' => 'Transliteracija gudźuratišćiny',
@@ -1923,6 +1925,7 @@ $messages['ja'] = array(
 	'narayam-bn-avro' => 'ベンガル語 Avro',
 	'narayam-bn-inscript' => 'ベンガル語 InScript',
 	'narayam-bn-nkb' => 'ベンガル語 NKB',
+	'narayam-bn-probhat' => 'ベンガル語 Probhat',
 	'narayam-ur' => 'ウルドゥー語標準',
 	'narayam-de' => 'ドイツ語',
 	'narayam-gu' => 'グジャラート語翻字',
