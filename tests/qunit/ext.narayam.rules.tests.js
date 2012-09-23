@@ -278,8 +278,26 @@ narayamTest( {
 narayamTest ( {
 	description: 'Amharic Transliteration test',
 	tests: [
-		{ input: 'ka', output: 'ካ', description: 'Amharic ka -> ካ' },
-		{ input: 'dwa', output: 'ዷ', description: 'Amharic dwa -> ዷ' }
+		{ input: 'k', output: 'ክ', description: 'Amharic k -> ክ' },
+		{ input: 'N', output: 'ኝ', description: 'Amharic N -> ኝ' },
+		{ input: 'neNu', output: 'ነኙ', description: 'Amharic neNu -> ነኙ' },
+		{ input: 'Nu', output: 'ኙ', description: 'Amharic Nu -> ኙ' },
+		{ input: 'cika', output: 'ቺካ', description: 'Amharic cika -> ቺካ' },
+		{ input: '<<', output: '«', description: 'Amharic << -> «' },
+		{ input: 'vee', output: 'ቬ', description: 'Amharic vee -> ቬ' },
+		{ input: 'vE', output: 'ቬ', description: 'Amharic vE -> ቬ' },
+		{ input: 'Vee', output: 'ቬ', description: 'Amharic Vee -> ቬ' },
+		{ input: 'VE::', output: 'ቬ።', description: 'Amharic VE:: -> ቬ።' },
+		{ input: 'to', output: 'ቶ', description: 'Amharic to -> ቶ' },
+		{ input: 'dW', output: 'ዷ', description: 'Amharic dW -> ዷ' },
+		{ input: 'ss', output: 'ሥ', description: 'Amharic ss -> ሥ' },
+		{ input: 'gWi', output: 'ጒ', description: 'Amharic gWi -> ጒ' },
+		{ input: 'hhW', output: 'ኋ', description: 'Amharic hhW -> ኋ' },
+		{ input: 'FY', output: 'ፚ', description: 'Amharic FY -> ፚ' },
+		{ input: '5', output: '፭', description: 'Amharic 5 -> ፭' },
+		{ input: '60', output: '፷', description: 'Amharic 60 -> ፷' },
+		{ input: '3005', output: '፫፻፭', description: 'Amharic 3005 -> ፫፻፭' },
+		{ input: 'ea', output: 'ኧ', description: 'Amharic ea -> ኧ' }
 	],
 	scheme: 'am',
 	$input: $( '<input>' ).attr( { id: 'am', type: 'text' } )
