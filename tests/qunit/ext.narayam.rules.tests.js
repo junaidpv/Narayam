@@ -297,6 +297,7 @@ narayamTest ( {
 		{ input: '5', output: '፭', description: 'Amharic 5 -> ፭' },
 		{ input: '60', output: '፷', description: 'Amharic 60 -> ፷' },
 		{ input: '3005', output: '፫፻፭', description: 'Amharic 3005 -> ፫፻፭' },
+		{ input: 'aa.m.', output: 'ዓ.ም.', description: 'Amharic aa.m. -> ዓ.ም.' },
 		{ input: 'ea', output: 'ኧ', description: 'Amharic ea -> ኧ' }
 	],
 	scheme: 'am',
