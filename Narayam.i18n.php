@@ -357,7 +357,7 @@ $messages['ba'] = array(
 	'narayam-he-standard-2011' => 'Йәһүд стандарт 2011',
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Renessaince
