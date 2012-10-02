@@ -111,6 +111,9 @@ $wgNarayamSchemes = array(
 		'hi-inscript' => 'ext.narayam.rules.hi-inscript',
 	),
 	'inh' => $cyrlPalochkaScheme,
+	'jv' => array(
+		'jv' => array( 'ext.narayam.rules.jv', 'beta' )
+	),
 	'kbd' => $cyrlPalochkaScheme,
 	'kbd-cyrl' => $cyrlPalochkaScheme,
 	'ka' => array(
@@ -263,6 +266,7 @@ $wgResourceModules['ext.narayam.core'] = $narayamTpl + array(
 		'narayam-hi-bolnagri',
 		'narayam-hi-inscript',
 		'narayam-hne-inscript',
+		'narayam-jv',
 		'narayam-mai-inscript',
 		'narayam-ka',
 		'narayam-kn',
@@ -414,6 +418,10 @@ $wgResourceModules['ext.narayam.rules.hi-bolnagri'] = $narayamTpl + array(
 );
 $wgResourceModules['ext.narayam.rules.hi-inscript'] = $narayamTpl + array(
 	'scripts' => 'resources/ext.narayam.rules.hi-inscript.js',
+	'dependencies' => 'ext.narayam.core',
+);
+$wgResourceModules['ext.narayam.rules.jv'] = $narayamTpl + array(
+	'scripts' => 'resources/ext.narayam.rules.jv.js',
 	'dependencies' => 'ext.narayam.core',
 );
 $wgResourceModules['ext.narayam.rules.ka'] = $narayamTpl + array(

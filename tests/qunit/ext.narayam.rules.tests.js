@@ -612,6 +612,21 @@ narayamTest( {
 	$input: $( '<input>' ).attr( { id: 'bn-probhat', type: 'text' } )
 } );
 
+narayamTest( {
+	description: 'Javanese transliteration layout test',
+	tests: [
+		{ input: '\\A', output: 'A', description: 'Javanese transliteration escape mode - A' },
+		{input: '\\~', output: '~', description: 'Javanese transliteration - \\~ -> ~' },
+		{ input: 'A', output: 'ꦄ', description: 'Javanese transliteration - A' },
+		{ input: 'B', output: 'ꦨ', description: 'Javanese transliteration - B' },
+		{ input: 'y', output: 'ꦪ', description: 'Javanese transliteration - y' },
+		{ input: 'z', output: 'ꦗ꦳', description: 'Javanese transliteration - z' },
+		{ input: 'q`', output: '꧀', description: 'Javanese transliteration - q`' }
+	],
+	scheme: 'jv',
+	$input: $( '<input>' ).attr( { id: 'jv', type: 'text' } )
+} );
+
 teardown( );
 
 }() );
