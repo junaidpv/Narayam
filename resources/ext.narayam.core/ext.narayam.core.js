@@ -372,30 +372,14 @@ $.narayam = ( function () {
 	 *               or an array of DOM elements, or a single DOM element, or a selector
 	 */
 	narayam.addInputs = function ( inputs ) {
-		if ( typeof inputs  === 'string' ) {
-			// If a string is passed, it is a CSS selector.
-			// We can bind on the document with a selector instead
-			// of selecting the elements now and binding to that.
-			// That way Narayam can work on elements added later to DOM.
-			$( document ).on(
-				{
-					'keydown': onkeydown,
-					'keypress': onkeypress,
-					'focus': onfocus,
-					'blur': onblur
-				},
-				/* selector = */ inputs
-			);
-		} else {
-			var $newInputs = $( inputs );
-			$inputs = $inputs.add( $newInputs );
-			$newInputs.on({
-				'keydown.narayam': onkeydown,
-				'keypress.narayam': onkeypress,
-				'focus': onfocus,
-				'blur': onblur
-			});
-		}
+		var $newInputs = $( inputs );
+		$inputs = $inputs.add( $newInputs );
+		$newInputs.on({
+			'keydown.narayam': onkeydown,
+			'keypress.narayam': onkeypress,
+			'focus': onfocus,
+			'blur': onblur
+		});
 	};
 
 	/**
