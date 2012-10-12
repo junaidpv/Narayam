@@ -78,7 +78,7 @@ $wgNarayamSchemes = array(
 		'bn-avro' => 'ext.narayam.rules.bn-avro',
 		'bn-inscript' => 'ext.narayam.rules.bn-inscript',
 		'bn-nkb' => 'ext.narayam.rules.bn-nkb',
-		'bn-probhat' => array( 'ext.narayam.rules.bn-probhat', 'beta' ),
+		'bn-probhat' => 'ext.narayam.rules.bn-probhat',
 	),
 	'brx' => array(
 		'brx-inscript' => array( 'ext.narayam.rules.brx-inscript', 'beta' ),
