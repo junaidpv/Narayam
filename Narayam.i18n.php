@@ -214,7 +214,7 @@ $messages['ar'] = array(
 	'narayam-desc' => 'يتيح إضافة أساليب إدخال مخصصة لحقول الإدخال',
 	'narayam-toggle-ime' => 'فعل ($1)',
 	'narayam-menu' => 'أسلوب الإدخال',
-	'narayam-menu-tooltip' => 'تعطيل محرر أسلوب إدخال نارايام (Narayam IME)',
+	'narayam-menu-tooltip' => 'تعطيل محرر أسلوب إدخال نارايام (Narayam IME)', # Fuzzy
 	'narayam-help' => 'مساعدة',
 	'narayam-checkbox-tooltip' => 'لتشغيل أو تعطيل أسلوب الإدخال',
 	'narayam-am' => 'نسخ حرفي للغة الأمهرية',
@@ -254,7 +254,7 @@ $messages['ar'] = array(
 $messages['as'] = array(
 	'narayam-toggle-ime' => 'সক্ৰিয় কৰক ($1)',
 	'narayam-menu' => "কীব'ৰ্ডৰ ভাষা",
-	'narayam-menu-tooltip' => '"নাৰায়ম"ৰ কীব\'ৰ্ড বাচনি কৰিবলৈ এই লিংক ব্যৱহাৰ কৰক',
+	'narayam-menu-tooltip' => '"নাৰায়ম"ৰ কীব\'ৰ্ড বাচনি কৰিবলৈ এই লিংক ব্যৱহাৰ কৰক', # Fuzzy
 	'narayam-help' => 'সহায়',
 	'narayam-help-page' => '//as.wikipedia.org/wiki/Help:টাইপিং',
 	'narayam-as' => 'অসমীয়া প্ৰতিৰূপান্তৰণ',
@@ -565,7 +565,7 @@ $messages['br'] = array(
  */
 $messages['bs'] = array(
 	'narayam-desc' => 'Omogućava dodavanje proizvoljnog metoda unosa za polja unosa',
-	'narayam-toggle-ime' => 'Za prebacivanje IM ($1)',
+	'narayam-toggle-ime' => 'Za prebacivanje IM ($1)', # Fuzzy
 	'narayam-checkbox-tooltip' => 'Za uključivanje i isključivanje načina unosa',
 	'narayam-eo' => 'Esperanto',
 	'narayam-hi-inscript' => 'InScript za hidni',
@@ -797,7 +797,7 @@ $messages['eo'] = array(
 	'narayam-desc' => 'Provizas agorditajn enigmetodojn por enigkampoj',
 	'narayam-toggle-ime' => 'Ŝalti enigmetodon ($1)',
 	'narayam-menu' => 'Metodo de enigo',
-	'narayam-menu-tooltip' => 'Trakti redaktilon de eniga metodo (IME) Narayam',
+	'narayam-menu-tooltip' => 'Trakti redaktilon de eniga metodo (IME) Narayam', # Fuzzy
 	'narayam-help' => 'Helpo',
 	'narayam-checkbox-tooltip' => 'En/elŝalti enigmetodon for specialaj literoj',
 	'narayam-enable-preference' => 'Ŝalti enigan metodon',
@@ -1018,7 +1018,7 @@ $messages['fa'] = array(
 	'narayam-desc' => 'اجازهٔ افزودن روش‌های ورودی سفارشی برای زمینه‌های ورودی را می‌دهد',
 	'narayam-toggle-ime' => 'فعال سازی ($1)',
 	'narayam-menu' => 'روش ورودی',
-	'narayam-menu-tooltip' => 'کنترل ویرایشگر روش ورودی نارایام (IME)',
+	'narayam-menu-tooltip' => 'کنترل ویرایشگر روش ورودی نارایام (IME)', # Fuzzy
 	'narayam-help' => 'راهنما',
 	'narayam-checkbox-tooltip' => 'برای تغییر روش ورودی، روشن یا خاموش',
 	'narayam-more-imes' => 'روش‌های ورودی بیشتر',
@@ -1222,7 +1222,7 @@ $messages['frp'] = array(
 	'narayam-desc' => 'Pèrmèt d’apondre des mètodes d’entrâ pèrsonalisâs por los champs d’entrâ.',
 	'narayam-toggle-ime' => 'Activar ($1)',
 	'narayam-menu' => 'Mètoda d’entrâ',
-	'narayam-menu-tooltip' => 'Chouèsir una mètoda d’entrâ',
+	'narayam-menu-tooltip' => 'Chouèsir una mètoda d’entrâ', # Fuzzy
 	'narayam-help' => 'Éde',
 	'narayam-checkbox-tooltip' => 'Por activar et dèsactivar la mètoda d’entrâ',
 	'narayam-enable-preference' => 'Activar la mètoda d’entrâ',
@@ -1379,7 +1379,7 @@ $messages['gsw'] = array(
 	'narayam-desc' => 'Macht benutzerdefinierti Yygabemethode fir Yygabefälder megli',
 	'narayam-toggle-ime' => 'Yyschalte ($1)',
 	'narayam-menu' => 'Yygab-Method',
-	'narayam-menu-tooltip' => 'Stüürig vum Yygabmethode-Editor vo Narayam (IME)',
+	'narayam-menu-tooltip' => 'Stüürig vum Yygabmethode-Editor vo Narayam (IME)', # Fuzzy
 	'narayam-help' => 'Hilf',
 	'narayam-checkbox-tooltip' => 'Yygabemethode aa- un abstelle',
 	'narayam-more-imes' => 'Wytri Möglichkeite zur Yygab',
@@ -1420,7 +1420,7 @@ $messages['gu'] = array(
 	'narayam-desc' => 'લખાણ ક્ષેત્રો માટે વિવિધ લેખન પદ્ધતિઓ ઉમેરવાની પરવાનગી આપે છે',
 	'narayam-toggle-ime' => 'સક્રિય ($1)',
 	'narayam-menu' => 'લેખન પદ્ધતિ',
-	'narayam-menu-tooltip' => 'લેખન પ્રણાલી પસંદ કરો',
+	'narayam-menu-tooltip' => 'લેખન પ્રણાલી પસંદ કરો', # Fuzzy
 	'narayam-help' => 'મદદ',
 	'narayam-checkbox-tooltip' => 'લેખન પદ્ધતિ ચાલુ અને બંધ કરવા માટે',
 	'narayam-enable-preference' => 'લેખન પ્રણાલી સક્રિય કરો',
@@ -1790,7 +1790,7 @@ $messages['ia'] = array(
  */
 $messages['id'] = array(
 	'narayam-desc' => 'Memungkinkan penambahan metode masukan ubah suaian untuk bidang isian',
-	'narayam-toggle-ime' => 'Untuk mengganti IM ($1)',
+	'narayam-toggle-ime' => 'Untuk mengganti IM ($1)', # Fuzzy
 	'narayam-checkbox-tooltip' => 'Untuk mengaktifkan/mematikan metode masukan',
 	'narayam-eo' => 'Esperanto',
 	'narayam-hi-inscript' => 'InScript Hindi',
@@ -2092,7 +2092,7 @@ $messages['ka'] = array(
  */
 $messages['km'] = array(
 	'narayam-desc' => 'អនុញ្ញាតឲ្យបន្ថែមវិធីវាយបញ្ចូលពិសេសសម្រាប់ការវាយបញ្ចូលអក្សរ',
-	'narayam-toggle-ime' => 'ដើម្បីប្ដូរ IM ($1)',
+	'narayam-toggle-ime' => 'ដើម្បីប្ដូរ IM ($1)', # Fuzzy
 	'narayam-checkbox-tooltip' => 'ដើម្បីបិទឬបើកវិធីវាយបញ្ចូលអក្សរ',
 	'narayam-eo' => 'ភាសា Esperanto',
 	'narayam-hi-inscript' => 'ក្ដារវាយពុម្ពអក្សរ Hindi InScript',
@@ -2700,7 +2700,7 @@ $messages['nb'] = array(
 	'narayam-desc' => 'Gjør det mulgi å lage egendefinerte inndatametorer for inndatafelt',
 	'narayam-toggle-ime' => 'Aktiver ($1)',
 	'narayam-menu' => 'Inntastingsmetode',
-	'narayam-menu-tooltip' => 'Velg en inntastingsmetode',
+	'narayam-menu-tooltip' => 'Velg en inntastingsmetode', # Fuzzy
 	'narayam-help' => 'Hjelp',
 	'narayam-checkbox-tooltip' => 'For å slå inntastingsmetode av og på',
 	'narayam-enable-preference' => 'Slå på inntastingsmetode',
@@ -2999,7 +2999,7 @@ $messages['pt'] = array(
 	'narayam-desc' => 'Permite a adição de métodos de entrada personalizados para os campos de entrada',
 	'narayam-toggle-ime' => 'Activar ($1)',
 	'narayam-menu' => 'Método de entrada',
-	'narayam-menu-tooltip' => 'Controlar o Narayam Input Method Editor (IME)',
+	'narayam-menu-tooltip' => 'Controlar o Narayam Input Method Editor (IME)', # Fuzzy
 	'narayam-help' => 'Ajuda',
 	'narayam-checkbox-tooltip' => 'Para alternar o método de entrada entre ligado e desligado',
 	'narayam-eo' => 'Esperanto',
@@ -3025,9 +3025,9 @@ $messages['pt'] = array(
 );
 
 /** Brazilian Portuguese (português do Brasil)
- * @author 555
  * @author Giro720
  * @author MetalBrasil
+ * @author 555
  */
 $messages['pt-br'] = array(
 	'narayam-desc' => 'Permite a adição de métodos de entrada personalizados para os campos de entrada',
@@ -3285,7 +3285,7 @@ $messages['rue'] = array(
 	'narayam-desc' => 'Доволює придавати ку вступным полям властны методы вступу',
 	'narayam-toggle-ime' => 'Поболити ($1)',
 	'narayam-menu' => 'Вступна метода',
-	'narayam-menu-tooltip' => 'Керовати едітор (IME) Narayam',
+	'narayam-menu-tooltip' => 'Керовати едітор (IME) Narayam', # Fuzzy
 	'narayam-help' => 'Поміч',
 	'narayam-checkbox-tooltip' => 'Про перекапчаня методів вводу',
 	'narayam-eo' => 'Есперанто',
@@ -3358,7 +3358,7 @@ $messages['sa'] = array(
  * @author HalanTul
  */
 $messages['sah'] = array(
-	'narayam-toggle-ime' => 'Киллэрии ньыматын уларытарга ($1)',
+	'narayam-toggle-ime' => 'Киллэрии ньыматын уларытарга ($1)', # Fuzzy
 	'narayam-checkbox-tooltip' => 'Киллэрии ньыматын холбооһун уонна араарыы',
 	'narayam-hi-inscript' => 'Хиинди инскрипт',
 	'narayam-kn' => 'Каннадаа транслитерацията',
@@ -3460,7 +3460,7 @@ $messages['si'] = array(
  */
 $messages['sk'] = array(
 	'narayam-desc' => 'Umožňuje pridať vlastné vstupné metódy vstupných polí',
-	'narayam-toggle-ime' => 'Ak chcete prepnúť VM ($1)',
+	'narayam-toggle-ime' => 'Ak chcete prepnúť VM ($1)', # Fuzzy
 	'narayam-checkbox-tooltip' => 'Ak chcete vypnúť alebo zapnúť vstupnú metódu',
 	'narayam-eo' => 'Esperanto',
 	'narayam-hi-inscript' => 'Hindčina, InScript',
@@ -3623,7 +3623,8 @@ $messages['sr-ec'] = array(
 	'narayam-he-standard-2011' => 'Хебрејски (стандард 2011)',
 );
 
-/** Serbian (Latin script) (srpski (latinica)‎) */
+/** Serbian (Latin script) (srpski (latinica)‎)
+ */
 $messages['sr-el'] = array(
 	'narayam-desc' => 'Omogućava dodavanje prilagođenih ulaznih metoda za uređivački okvir',
 	'narayam-toggle-ime' => 'Omogući ($1)',
@@ -4235,4 +4236,3 @@ $messages['zh-hant'] = array(
 	'narayam-he-standard-2011-extonly' => '希伯來語2011年標準',
 	'narayam-he-standard-2011' => '希伯來語2011年標準（英語鍵盤）',
 );
-
