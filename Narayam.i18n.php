@@ -410,6 +410,7 @@ $messages['be-tarask'] = array(
 	'narayam-bn-avro' => 'Bengali Avro',
 	'narayam-bn-inscript' => 'Bengali InScript',
 	'narayam-bn-nkb' => 'Бэнгальская NKB',
+	'narayam-de' => 'Нямецкая',
 	'narayam-ru-standard' => 'Расейская стандартная',
 );
 
