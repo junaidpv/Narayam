@@ -1202,6 +1202,7 @@ $messages['fr'] = array(
 	'narayam-bn-avro' => 'Avro bengali',
 	'narayam-bn-inscript' => 'InScript bengali',
 	'narayam-bn-nkb' => 'NKB bengali',
+	'narayam-bn-probhat' => 'Probhat bengali',
 	'narayam-ur' => 'Standard ourdou',
 	'narayam-de' => 'Allemand',
 	'narayam-gu' => 'Traduction en gujarati',
