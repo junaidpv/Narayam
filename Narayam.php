@@ -57,7 +57,7 @@ $wgNarayamSchemes = array(
 		'ahr-inscript' => 'ext.narayam.rules.ahr-inscript',
 	),
 	'am' => array(
-		'am' => array( 'ext.narayam.rules.am', 'beta' ),
+		'am' => array( 'ext.narayam.rules.am' ),
 	),
 	'as' => array(
 		'as' => 'ext.narayam.rules.as',
