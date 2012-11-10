@@ -3948,6 +3948,14 @@ $messages['tt-cyrl'] = array(
 	'narayam-ka' => 'Georgian Transliteration',
 );
 
+/** Central Atlas Tamazight (ⵜⴰⵎⴰⵣⵉⵖⵜ)
+ * @author Tifinaghes
+ */
+$messages['tzm'] = array(
+	'narayam-help' => 'ⵜⵉⵡⵉⵙⵉ',
+	'narayam-ta-99' => 'ⵜⴰⵎⵉⵍ99',
+);
+
 /** Ukrainian (українська)
  * @author Dim Grits
  * @author Olvin
