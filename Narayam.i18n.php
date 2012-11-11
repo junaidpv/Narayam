@@ -2136,6 +2136,7 @@ $messages['km'] = array(
 );
 
 /** Kannada (ಕನ್ನಡ)
+ * @author HPN
  * @author Logicwiki
  * @author M G Harish
  * @author Nayvik
@@ -2143,7 +2144,7 @@ $messages['km'] = array(
 $messages['kn'] = array(
 	'narayam-desc' => 'ಆದಾನ ಕ್ಷೇತ್ರಗಳಲ್ಲಿ ಐಚ್ಛಿಕ ಆದಾನ ಕ್ರಮಗಳನ್ನು ಸೇರಿಸಲು ಅವಕಾಶ ಕೊಡುತ್ತದೆ',
 	'narayam-toggle-ime' => '($1) ಶಕ್ತಗೊಳಿಸು',
-	'narayam-menu' => 'ಆದಾನ ಕ್ರಮ',
+	'narayam-menu' => 'ಕೀಲಿಮಣೆ',
 	'narayam-menu-tooltip' => 'ಆದಾನ ಕ್ರಮ ಆಯ್ದುಕೊಳ್ಳಿ',
 	'narayam-help' => 'ಸಹಾಯ',
 	'narayam-checkbox-tooltip' => 'ಆದಾನ ಕ್ರಮವನ್ನು ಆರಂಭಿಸಲು ಅಥವಾ ನಿಲ್ಲಿಸಲು',
