@@ -407,18 +407,6 @@ narayamTest( {
 	$input: $( '<input>' ).attr( { id: 'pa', type: 'text' } )
 } );
 
-narayamTest( {
-	description: 'Punjabi Gurmukhi MyBest Transliteration',
-	tests: [
-		{ input: 'sS', output: 'ਸਸ਼', description: 'Punjabi Gurmukhi MyBest transliteration - sS -> ਸਸ਼'},
-		{ input: '<', output: 'ੴ', description: 'Punjabi Gurmukhi MyBest transliteration - < -> ੴ' },
-		{ input: '>', output: '☬', description: 'Punjabi Gurmukhi MyBest transliteration - > -> ☬' },
-		{ input: 'aa', output: 'ਅ', description: 'Punjabi Gurmukhi MyBest transliteration - aa -> ਅ' }
-	],
-	scheme: 'pa-mybest',
-	$input: $( '<input>' ).attr( { id: 'pa-mybest', type: 'text' } )
-} );
-
 // Variables for Cyrillic with palochka transliteration tests.
 // All the characters are very similar in appearance,
 // so it's better to give them names to avoid confusion.
