@@ -1344,6 +1344,7 @@ $messages['gl'] = array(
 	'narayam-hi' => 'Transliteración para hindi',
 	'narayam-hi-bolnagri' => 'Hindi Bolnagri',
 	'narayam-hi-inscript' => 'InScript para hindi',
+	'narayam-jv' => 'Transliteración para xavanés',
 	'narayam-ka' => 'Transliteración para xeorxiano',
 	'narayam-kn' => 'Transliteración para kannada',
 	'narayam-kn-inscript' => 'InScript para kannada',
@@ -1731,6 +1732,25 @@ $messages['hu'] = array(
 	'narayam-enable-preference' => 'Beviteli mód engedélyezése',
 	'narayam-more-imes' => 'További beviteli módok',
 	'narayam-eo' => 'Eszperantó',
+);
+
+/** Armenian (Հայերեն)
+ * @author Xelgen
+ */
+$messages['hy'] = array(
+	'narayam-desc' => 'Թույլատրում է դաշտերում ավելացնել սեփական ներմուծման եղանակներ',
+	'narayam-toggle-ime' => 'Միացնել ($1)',
+	'narayam-menu' => 'Ներմուծման եղանակ',
+	'narayam-menu-tooltip' => 'Ընտրեք ներմուծման եղանակ',
+	'narayam-help' => 'Օգնություն',
+	'narayam-checkbox-tooltip' => 'Ներմուծման եղանակը միացնելու և անջատելու համար',
+	'narayam-enable-preference' => 'Միացնել ներմուծման մեթոդը',
+	'narayam-am' => 'Ամհարերերն տրանսլիտերացում',
+	'narayam-cyrl-palochka' => 'Կյուրեղյան Կովկասի լեզուների',
+	'narayam-eo' => 'Էսպերանտո',
+	'narayam-ka' => 'Վրացերեն տրանսլիտերացում',
+	'narayam-de' => 'Գերմաներեն',
+	'narayam-ru-standard' => 'Ռուսերեն ստանդարտ',
 );
 
 /** Interlingua (interlingua)
