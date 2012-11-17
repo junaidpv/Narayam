@@ -1830,30 +1830,80 @@ $messages['ia'] = array(
 );
 
 /** Indonesian (Bahasa Indonesia)
+ * @author Bennylin
  * @author IvanLanin
  */
 $messages['id'] = array(
 	'narayam-desc' => 'Memungkinkan penambahan metode masukan ubah suaian untuk bidang isian',
-	'narayam-toggle-ime' => 'Untuk mengganti IM ($1)', # Fuzzy
-	'narayam-checkbox-tooltip' => 'Untuk mengaktifkan/mematikan metode masukan',
+	'narayam-toggle-ime' => 'Aktifkan ($1)',
+	'narayam-menu' => 'Metode Isian',
+	'narayam-menu-tooltip' => 'Pilih metode isian',
+	'narayam-help' => 'Bantuan',
+	'narayam-checkbox-tooltip' => 'Untuk mengaktifkan/mematikan metode isian',
+	'narayam-enable-preference' => 'Aktifkan metode isian',
+	'narayam-more-imes' => 'Metode isian lebih lanjut',
+	'narayam-ahr' => 'Transliterasi Ahir',
+	'narayam-ahr-inscript' => 'InScript Ahir',
+	'narayam-am' => 'Transliterasi Amhar',
+	'narayam-as' => 'Transliterasi Assam',
+	'narayam-as-avro' => 'Avro Assam',
+	'narayam-as-bornona' => 'Bornona Assam',
+	'narayam-as-inscript' => 'InScript Assam',
+	'narayam-ber-tfng' => 'Transliterasi Tifinagh',
+	'narayam-brx-inscript' => 'InScript Bodo',
+	'narayam-cyrl-palochka' => 'Sirilik dengan palochka',
 	'narayam-eo' => 'Esperanto',
+	'narayam-hi' => 'Transliterasi Hindi',
+	'narayam-hi-bolnagri' => 'Hindi Bolnagri',
 	'narayam-hi-inscript' => 'InScript Hindi',
+	'narayam-jv' => 'Transliterasi Aksara Jawa',
+	'narayam-ka' => 'Transliterasi Georgia',
 	'narayam-kn' => 'Transliterasi Kannada',
 	'narayam-kn-inscript' => 'InScript Kannada',
 	'narayam-ml' => 'Transliterasi Malayalam',
 	'narayam-ml-inscript' => 'InScript Malayalam',
+	'narayam-mr' => 'Transliterasi Marathi',
+	'narayam-mr-inscript' => 'InScript Marathi',
+	'narayam-ne' => 'Transliterasi Nepal',
+	'narayam-new-inscript' => 'InScript Newar',
+	'narayam-new' => 'Transliterasi Newar',
+	'narayam-ne-inscript' => 'InScript Nepal',
 	'narayam-or' => 'Transliterasi Oriya',
+	'narayam-or-lekhani' => 'Lekhani Odiya',
 	'narayam-or-inscript' => 'InScript Oriya',
+	'narayam-pa' => 'Transliterasi Punjab aksara Gurmukhi',
+	'narayam-pa-phonetic' => 'Punjab aksara Gurmukhi fonetis',
+	'narayam-pa-inscript' => 'InScript Punjab aksara Gurmukhi',
+	'narayam-pa-mybest' => 'Punjab aksara Gurmukhi fonetis MyBest',
 	'narayam-sa' => 'Transliterasi Sanskerta',
 	'narayam-sa-inscript' => 'InScript Sanskerta',
 	'narayam-si-singlish' => 'Singlish Sinhala',
 	'narayam-si-wijesekara' => 'Wijesekara Sinhala',
 	'narayam-ta-99' => 'Tamil99',
+	'narayam-ta-inscript' => 'InScript Tamil',
 	'narayam-ta' => 'Transliterasi Tamil',
+	'narayam-ta-bamini' => 'Bamini Tamil',
+	'narayam-tcy' => 'Transliterasi Tulu',
+	'narayam-te' => 'Transliterasi Telugu',
 	'narayam-te-inscript' => 'InScript Telugu',
+	'narayam-bho' => 'Transliterasi Bhojpur',
+	'narayam-bho-inscript' => 'InScript Bhojpur',
 	'narayam-bn-avro' => 'Avro Bengali',
 	'narayam-bn-inscript' => 'InScript Bengali',
 	'narayam-bn-nkb' => 'NKB Bengali',
+	'narayam-bn-probhat' => 'Probhat Bengal',
+	'narayam-ur' => 'Standar Urdu',
+	'narayam-de' => 'Jerman',
+	'narayam-gu' => 'Transliterasi Gujarat',
+	'narayam-gu-inscript' => 'InScript Gujarat',
+	'narayam-ru-standard' => 'Standar Rusia',
+	'narayam-sah-standard' => 'Standar Sakha',
+	'narayam-hne-inscript' => 'InScript Chhattisgarh',
+	'narayam-mai-inscript' => 'InScript Maithil',
+	'narayam-gom-deva' => 'Transliterasi Goan Konkani-Devanagri',
+	'narayam-gom-deva-inscript' => 'InScript Goan Konkani-Devanagari',
+	'narayam-he-standard-2011-extonly' => 'Standar Ibrani 2011',
+	'narayam-he-standard-2011' => 'Standar Ibrani 2011 (papan ketik Indonesia)',
 );
 
 /** Italian (italiano)
@@ -2014,6 +2064,7 @@ $messages['ja'] = array(
 );
 
 /** Javanese (Basa Jawa)
+ * @author Bennylin
  * @author NoiX180
  */
 $messages['jv'] = array(
@@ -2037,6 +2088,7 @@ $messages['jv'] = array(
 	'narayam-hi' => 'Transliterasi Hindi',
 	'narayam-hi-bolnagri' => 'Bolnagri Hindi',
 	'narayam-hi-inscript' => 'InScript Hindi',
+	'narayam-jv' => 'Transliterasi Jawa',
 	'narayam-ka' => 'Transliterasi Georgia',
 	'narayam-kn' => 'Transliterasi Kannada',
 	'narayam-kn-inscript' => 'InScript Kannada',
