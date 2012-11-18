@@ -1527,6 +1527,7 @@ $messages['he'] = array(
 	'narayam-hi' => 'הינדי תעתיק',
 	'narayam-hi-bolnagri' => 'הינדי – בולנגרי',
 	'narayam-hi-inscript' => 'הינדי – InScript',
+	'narayam-jv' => "תעתיק מג'אוואנית",
 	'narayam-ka' => 'גאורגית – תעתיק',
 	'narayam-kn' => 'קאנדה – תעתיק',
 	'narayam-kn-inscript' => 'קאנדה – InScript',
