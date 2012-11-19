@@ -1190,6 +1190,7 @@ $messages['fr'] = array(
 	'narayam-hi' => 'Traduction en hindi',
 	'narayam-hi-bolnagri' => 'Bolnagri hindi',
 	'narayam-hi-inscript' => 'InScript hindi',
+	'narayam-jv' => 'Traduction javanaise',
 	'narayam-ka' => 'Traduction en géorgien',
 	'narayam-kn' => 'Translittération kannada',
 	'narayam-kn-inscript' => 'InScript kannada',
