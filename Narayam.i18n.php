@@ -2860,6 +2860,7 @@ $messages['nl'] = array(
 	'narayam-hi' => 'Hindi (transliteratie)',
 	'narayam-hi-bolnagri' => 'Hindi Bolnagri',
 	'narayam-hi-inscript' => 'Hindi InScript',
+	'narayam-jv' => 'Javaans (transliteratie)',
 	'narayam-ka' => 'Georgisch (transliteratie)',
 	'narayam-kn' => 'Kannada (transliteratie)',
 	'narayam-kn-inscript' => 'Kannada InScript',
