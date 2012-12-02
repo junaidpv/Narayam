@@ -282,10 +282,17 @@ $.narayam = ( function () {
 	 * @param {jQuery.Event} e
 	 */
 	function onfocus( e ) {
-		if ( !$( this ).data( 'narayamKeyBuffer' ) ) {
+		if ( $( this ).data( 'narayamKeyBuffer' ) === undefined ) {
 			// First-time focus on the input field
 			// So, initialise a key buffer for it
 			$( this ).data( 'narayamKeyBuffer', '' );
+			$inputs = $inputs.add( $( this ) );
+			// Attach event listeners
+			$( this ).on( {
+				'keydown.narayam': onkeydown,
+				'keypress.narayam': onkeypress,
+				'blur': onblur
+			} );
 		}
 		changeVisual( $( this ) );
 	}
@@ -367,19 +374,13 @@ $.narayam = ( function () {
 	};
 
 	/**
-	 * Add more inputs to apply Narayam to
-	 * @param inputs A jQuery object holding one or more input or textarea elements,
-	 *               or an array of DOM elements, or a single DOM element, or a selector
+	 * Add more inputs to apply Narayam to. Also works with future DOM elements
+	 * matching the selector.
+	 * @param inputs A jQuery selector
 	 */
 	narayam.addInputs = function ( inputs ) {
-		var $newInputs = $( inputs );
-		$inputs = $inputs.add( $newInputs );
-		$newInputs.on({
-			'keydown.narayam': onkeydown,
-			'keypress.narayam': onkeypress,
-			'focus': onfocus,
-			'blur': onblur
-		});
+		// Initialization happens in first focus on input field
+		$( 'body' ).on( 'focus', inputs, onfocus );
 	};
 
 	/**
