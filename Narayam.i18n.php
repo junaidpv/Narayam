@@ -2820,6 +2820,14 @@ $messages['nb'] = array(
 	'narayam-ru-standard' => 'Russisk standard',
 );
 
+/** Newari (नेपाल भाषा)
+ * @author Eukesh
+ */
+$messages['new'] = array(
+	'narayam-new-inscript' => 'नेपालभाषा इनस्क्रिप्ट',
+	'narayam-new' => 'नेपालभाषा लिपिहिला',
+);
+
 /** Dutch (Nederlands)
  * @author GerardM
  * @author SPQRobin
