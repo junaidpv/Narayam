@@ -4035,6 +4035,7 @@ $messages['tzm'] = array(
 );
 
 /** Ukrainian (українська)
+ * @author Base
  * @author Dim Grits
  * @author Olvin
  * @author Тест
@@ -4048,8 +4049,18 @@ $messages['uk'] = array(
 	'narayam-checkbox-tooltip' => 'Для перемикання методів вводу',
 	'narayam-enable-preference' => 'Дозволити методи введення (IME)',
 	'narayam-more-imes' => 'Більше методів введення',
+	'narayam-ahr' => 'Агіранська транслітерація',
+	'narayam-ahr-inscript' => 'Агірані InScript',
+	'narayam-am' => 'Амхарська транслітерація',
+	'narayam-as' => 'Ассамська транслітерація',
+	'narayam-as-avro' => 'Ассамський Avro',
+	'narayam-as-bornona' => 'Ассамський Bornona',
+	'narayam-as-inscript' => 'Ассамський InScript',
+	'narayam-ber-tfng' => 'Тіфінаг (транслітерація)',
+	'narayam-brx-inscript' => 'Bodo InScript',
 	'narayam-cyrl-palochka' => 'Кирилиця з паличкою (для кавказьких мов)',
 	'narayam-eo' => 'Есперанто',
+	'narayam-hi' => 'Гінді (транслітерація)',
 	'narayam-hi-inscript' => 'Гінді Inscript',
 	'narayam-kn' => 'Транслітерація каннада',
 	'narayam-kn-inscript' => 'Каннада Inscript',
