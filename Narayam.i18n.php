@@ -417,8 +417,10 @@ $messages['be-tarask'] = array(
 
 /** Bulgarian (български)
  * @author DCLXVI
+ * @author පසිඳු කාවින්ද
  */
 $messages['bg'] = array(
+	'narayam-help' => 'Помощ',
 	'narayam-eo' => 'Есперанто',
 );
 
@@ -2463,8 +2465,11 @@ $messages['lt'] = array(
 
 /** Latvian (latviešu)
  * @author GreenZeb
+ * @author Papuass
  */
 $messages['lv'] = array(
+	'narayam-menu' => 'Ievades metode',
+	'narayam-menu-tooltip' => 'Izvēlieties ievades metodi',
 	'narayam-as' => 'Asamiešu transliterācija',
 );
 
