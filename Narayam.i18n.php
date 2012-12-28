@@ -4062,6 +4062,7 @@ $messages['tzm'] = array(
  * @author Base
  * @author Dim Grits
  * @author Olvin
+ * @author Steve.rusyn
  * @author Тест
  */
 $messages['uk'] = array(
@@ -4086,26 +4087,45 @@ $messages['uk'] = array(
 	'narayam-eo' => 'Есперанто',
 	'narayam-hi' => 'Гінді (транслітерація)',
 	'narayam-hi-inscript' => 'Гінді Inscript',
+	'narayam-jv' => 'Яванська транслітерація',
+	'narayam-ka' => 'Грузинська транслітерація',
 	'narayam-kn' => 'Транслітерація каннада',
 	'narayam-kn-inscript' => 'Каннада Inscript',
 	'narayam-ml' => 'Малайська транслітерація',
 	'narayam-ml-inscript' => 'Малайський Inscript',
+	'narayam-mr' => 'Транслітерація маратхі',
+	'narayam-mr-inscript' => 'Маратхі InScript',
 	'narayam-ne' => 'Транслітерація непальською',
+	'narayam-new-inscript' => 'Неварський InScript',
+	'narayam-new' => 'Неварська транслітерація',
 	'narayam-ne-inscript' => 'Непальський Inscript',
 	'narayam-or' => 'Транслітерація орія',
+	'narayam-or-lekhani' => 'Odiya Lekhani',
 	'narayam-or-inscript' => 'Орія Inscript',
 	'narayam-sa' => 'Транслітерація санскритом',
 	'narayam-sa-inscript' => 'Санскрит Inscript',
 	'narayam-si-singlish' => 'Сингальський Сінгліш',
 	'narayam-si-wijesekara' => 'Сингальська Віджесекера',
 	'narayam-ta-99' => 'Таміл99',
+	'narayam-ta-inscript' => 'Тамільський InScript',
 	'narayam-ta' => 'Тамільська транслітерація',
+	'narayam-ta-bamini' => 'Тамільський Bamini',
+	'narayam-tcy' => 'Транслітерація тулу',
+	'narayam-te' => 'Транслітерація телуґу',
 	'narayam-te-inscript' => 'Телугу Inscript',
+	'narayam-bho' => 'Транслітерація бходжпурі',
+	'narayam-bho-inscript' => 'Бходжпурі InScript',
 	'narayam-bn-avro' => 'Бенгальська',
 	'narayam-bn-inscript' => 'Бенгальська Inscript',
 	'narayam-bn-nkb' => 'Бенгальська НКБ',
 	'narayam-de' => 'Німецька',
+	'narayam-gu' => 'Транслітерація гуджараті',
+	'narayam-gu-inscript' => 'Гуджараті InScript',
 	'narayam-ru-standard' => 'Російська стандартна',
+	'narayam-hne-inscript' => 'Чхаттісгархі InScript',
+	'narayam-mai-inscript' => 'Майтхілі InScript',
+	'narayam-gom-deva' => 'Транслітерація деванагарі гоайського конкані',
+	'narayam-gom-deva-inscript' => 'Goan Konkani-Devanagari InScript',
 	'narayam-he-standard-2011-extonly' => 'Hebrew Standard 2011',
 );
 
