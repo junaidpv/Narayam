@@ -610,6 +610,7 @@ $messages['bs'] = array(
 /** Czech (česky)
  * @author Mormegil
  * @author Reaperman
+ * @author Vks
  */
 $messages['cs'] = array(
 	'narayam-desc' => 'Umožňuje přidávat ke vstupním polím vlastní metody vstupu',
@@ -620,6 +621,7 @@ $messages['cs'] = array(
 	'narayam-checkbox-tooltip' => 'Zapnout nebo vypnout metodu zadávání znaků',
 	'narayam-enable-preference' => 'Povolit metodu zadávání znaků',
 	'narayam-more-imes' => 'Další metody zadávání znaků',
+	'narayam-de' => 'Němčina',
 );
 
 /** Danish (dansk)
@@ -3527,6 +3529,7 @@ $messages['si'] = array(
 	'narayam-enable-preference' => 'යෙදවුම් ක්‍රමය සක්‍රීය කරන්න',
 	'narayam-more-imes' => 'තවත් යෙදවුම් ක්‍රම',
 	'narayam-ahr' => 'අහිරාණි අක්ෂර පරිවර්තනය',
+	'narayam-ahr-inscript' => 'අහිරාණි අන්තර්ලේඛනය',
 	'narayam-am' => 'ඇම්හරික් අක්ෂර පරිවර්තනය',
 	'narayam-as' => 'අස්සමෙසේ අක්ෂර පරිවර්තනය',
 	'narayam-as-avro' => 'අස්සමෙසේ අවරෝ',
@@ -3534,10 +3537,12 @@ $messages['si'] = array(
 	'narayam-as-inscript' => 'අස්සමෙසේ අන්තර්ලේඛනය',
 	'narayam-ber-tfng' => 'ටිෆිනාග්හ් අක්ෂර පරිවර්තනය',
 	'narayam-brx-inscript' => 'බෝඩෝ අන්තර්ලේඛනය',
+	'narayam-cyrl-palochka' => 'පලොච්කා සමඟ සිරිලික්',
 	'narayam-eo' => 'එස්පෙරන්ටෝ',
 	'narayam-hi' => 'හින්දි අක්ෂර පරිවර්තනය',
 	'narayam-hi-bolnagri' => 'හින්දි බෝල්නාග්රි',
 	'narayam-hi-inscript' => 'හින්දි අන්තර්ලේඛනය',
+	'narayam-jv' => 'ජාවානීස් අක්ෂර පරිවර්තනය',
 	'narayam-ka' => 'ජෝර්ජියානු අක්ෂර පරිවර්තනය',
 	'narayam-kn' => 'කන්නද අක්ෂර පරිවර්තනය',
 	'narayam-kn-inscript' => 'කන්නද අන්තර්ලේඛනය',
@@ -3546,11 +3551,13 @@ $messages['si'] = array(
 	'narayam-mr' => 'මාරතී අක්ෂර පරිවර්තනය',
 	'narayam-mr-inscript' => 'මාරතී අන්තර්ලේඛනය',
 	'narayam-ne' => 'නෙපාලි අක්ෂර පරිවර්තනය',
+	'narayam-new-inscript' => 'නෙවාරි අන්තර්ලේඛනය',
 	'narayam-new' => 'නෙවරී අක්ෂර පරිවර්තනය',
 	'narayam-ne-inscript' => 'නේපාලි අන්තර්ලේඛනය',
 	'narayam-or' => 'ඔරිය අක්ෂර පරිවර්තනය',
 	'narayam-or-lekhani' => 'ඔඩියා ලේඛනය',
 	'narayam-or-inscript' => 'ඔරිය අන්තර්ලේඛනය',
+	'narayam-pa' => 'ගුර්මුකී පන්ජාබි අක්ෂර පරිවර්තනය',
 	'narayam-pa-phonetic' => 'ගුර්මුකි පන්ජාබි වාග්විෂ',
 	'narayam-pa-inscript' => 'ගුර්මුකි පන්ජාබි අන්තර්ලේඛනය',
 	'narayam-sa' => 'සංස්කෘත අක්ෂර පරිවර්තනය',
@@ -3565,9 +3572,11 @@ $messages['si'] = array(
 	'narayam-te' => 'ටෙලුගු අක්ෂර පරිවර්තනය',
 	'narayam-te-inscript' => 'තෙළිඟු අන්තර්ලේඛනය',
 	'narayam-bho' => 'භෝජ්පුරි අක්ෂර පරිවර්තනය',
+	'narayam-bho-inscript' => 'භෝජ්පුරි අන්තර්ලේඛනය',
 	'narayam-bn-avro' => 'බෙන්ගාලි අවුරෝ',
 	'narayam-bn-inscript' => 'බෙන්ගාලි අන්තර්ලේඛනය',
 	'narayam-bn-nkb' => 'බෙන්ගාලි NKB',
+	'narayam-bn-probhat' => 'බෙංගාලි ප්රොභාට්',
 	'narayam-ur' => 'සම්මත උර්දු',
 	'narayam-de' => 'ජර්මානු',
 	'narayam-gu' => 'ගුජරාටි අක්ෂර පරිවර්තනය',
@@ -3579,6 +3588,7 @@ $messages['si'] = array(
 	'narayam-gom-deva' => 'ගොඅන් කොන්කනි-දේවනගරි අක්ෂර පරිවර්තනය',
 	'narayam-gom-deva-inscript' => 'ගොඅන් කොන්කනි-දේවනගරි අන්තර්ලේඛනය',
 	'narayam-he-standard-2011-extonly' => 'සම්මත යුදෙව් 2011',
+	'narayam-he-standard-2011' => 'යුදෙව් භාෂා සම්මත 2011 (ඉංග්‍රීසි යතුරුපුවරුව)',
 );
 
 /** Slovak (slovenčina)
