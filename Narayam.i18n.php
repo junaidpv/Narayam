@@ -621,6 +621,7 @@ $messages['cs'] = array(
 	'narayam-checkbox-tooltip' => 'Zapnout nebo vypnout metodu zadávání znaků',
 	'narayam-enable-preference' => 'Povolit metodu zadávání znaků',
 	'narayam-more-imes' => 'Další metody zadávání znaků',
+	'narayam-ur' => 'Urdština (standardní)',
 	'narayam-de' => 'Němčina',
 );
 
@@ -1252,7 +1253,7 @@ $messages['frp'] = array(
 	'narayam-desc' => 'Pèrmèt d’apondre des mètodes d’entrâ pèrsonalisâs por los champs d’entrâ.',
 	'narayam-toggle-ime' => 'Activar ($1)',
 	'narayam-menu' => 'Mètoda d’entrâ',
-	'narayam-menu-tooltip' => 'Chouèsir una mètoda d’entrâ', # Fuzzy
+	'narayam-menu-tooltip' => 'Chouèsésséd na mètoda d’entrâ',
 	'narayam-help' => 'Éde',
 	'narayam-checkbox-tooltip' => 'Por activar et dèsactivar la mètoda d’entrâ',
 	'narayam-enable-preference' => 'Activar la mètoda d’entrâ',
@@ -1271,6 +1272,7 @@ $messages['frp'] = array(
 	'narayam-hi' => 'Translitèracion hindi',
 	'narayam-hi-bolnagri' => 'Bolnagri hindi',
 	'narayam-hi-inscript' => 'InScript hindi',
+	'narayam-jv' => 'Translitèracion j·avanêsa',
 	'narayam-ka' => 'Translitèracion jôrg·ièna',
 	'narayam-kn' => 'Translitèracion canadâ',
 	'narayam-kn-inscript' => 'InScript canadâ',
@@ -1304,6 +1306,7 @@ $messages['frp'] = array(
 	'narayam-bn-avro' => 'Avro bengali',
 	'narayam-bn-inscript' => 'InScript bengali',
 	'narayam-bn-nkb' => 'NKB bengali',
+	'narayam-bn-probhat' => 'Probhat bengali',
 	'narayam-ur' => 'Ourdou estandârd',
 	'narayam-de' => 'Alemand',
 	'narayam-gu' => 'Translitèracion goudj·arati',
@@ -4078,6 +4081,16 @@ $messages['tt-cyrl'] = array(
 $messages['tzm'] = array(
 	'narayam-help' => 'ⵜⵉⵡⵉⵙⵉ',
 	'narayam-ta-99' => 'ⵜⴰⵎⵉⵍ99',
+);
+
+/** Uyghur (Arabic script) (ئۇيغۇرچە)
+ * @author Sahran
+ */
+$messages['ug-arab'] = array(
+	'narayam-menu' => 'كىرگۈزگۈچ',
+	'narayam-help' => 'ياردەم',
+	'narayam-eo' => 'ئېسپېرانتو (دۇنيا تىلى)',
+	'narayam-de' => 'گېرمانچە',
 );
 
 /** Ukrainian (українська)
