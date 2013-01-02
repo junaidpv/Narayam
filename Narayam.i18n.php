@@ -3266,6 +3266,7 @@ $messages['roa-tara'] = array(
 	'narayam-menu-tooltip' => "Scacchie 'nu metode de inserimende",
 	'narayam-help' => 'Ajute',
 	'narayam-checkbox-tooltip' => "Pe mettere e luà 'u metode de input",
+	'narayam-enable-preference' => 'Abbilite metode de inserimende',
 	'narayam-more-imes' => 'Cchiù metode de immissione',
 	'narayam-ahr' => 'Translitterazzione Ahirani',
 	'narayam-ahr-inscript' => 'InScript Ahirani',
