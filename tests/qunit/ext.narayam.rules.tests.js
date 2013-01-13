@@ -52,7 +52,7 @@ var typeChars = function( $input, characters ) {
 			altKey: altKeyValue
 		} );
 		if ( $input.triggerHandler( event ) ) {
-			$input.val( $input.val() + character ) ;
+			$input.val( $input.val() + character );
 		}
 	}
 };
@@ -75,6 +75,7 @@ var narayamTest = function( options ) {
 		$.narayam.setScheme( opt.scheme, function () {
 			opt.$input.appendTo( '#qunit-fixture' );
 			$.narayam.addInputs( opt.$input );
+			opt.$input[0].focus();
 			$.narayam.setScheme( opt.scheme );
 			for ( var i = 0 ; i < opt.tests.length; i++ ) {
 				// Simulate pressing keys for each of the sample characters
@@ -421,6 +422,24 @@ narayamTest( {
 	],
 	scheme: 'he-standard-2011-extonly',
 	$input: $( '<input>' ).attr( { id: 'he-standard-2011-extonly', type: 'text' } )
+} );
+
+narayamTest( {
+	description: 'Punjabi Gurmukhi Phonetic',
+	tests: [
+		{ input: 'Au', output: 'ਉ', description: 'Punjabi Gurmukhi phonetic Au -> ਉ' },
+		{ input: 'AU', output: 'ਊ', description: 'Punjabi Gurmukhi phonetic AU -> ਊ' },
+		{ input: 'a', output: 'ਅ', description: 'Punjabi Gurmukhi phonetic a -> ਅ' },
+		{ input: 'aw', output: 'ਆ', description: 'Punjabi Gurmukhi phonetic aw -> ਆ' },
+		{ input: 'ei', output: 'ਐ', description: 'Punjabi Gurmukhi phonetic ei -> ਐ' },
+		{ input: 'ee', output: 'ਏ', description: 'Punjabi Gurmukhi phonetic ee -> ਏ' },
+		{ input: 'O', output: 'ੌ', description: 'Punjabi Gurmukhi phonetic O -> ੌ' },
+		{ input: 'aO', output: 'ਔ', description: 'Punjabi Gurmukhi phonetic aO -> ੌ' },
+		{ input: 'kO', output: 'ਕੌ', description: 'Punjabi Gurmukhi phonetic kO -> ਕੌ' },
+		{ input: 's~q', output: 'ਸੱਤ', description: 'Punjabi Gurmukhi phonetic s~q -> ਸੱਤ' },
+	],
+	scheme:  'pa-phonetic',
+	$input: $( '<input>' ).attr( { id: 'pa-phonetic', type: 'text' } )
 } );
 
 narayamTest( {
