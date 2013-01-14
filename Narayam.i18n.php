@@ -109,7 +109,8 @@ $messages['qqq'] = array(
 See: http://www.mediawiki.org/wiki/Extension:Narayam',
 	'narayam-help' => 'See: http://www.mediawiki.org/wiki/Extension:Narayam
 {{Identical|Help}}',
-	'narayam-help-page' => '{{doc-important|Only translate this message if the documentation on MediaWiki.org is not used for a language.}}
+	'narayam-help-page' => '{{Optional}}
+{{doc-important|Only translate this message if the documentation on MediaWiki.org is not used for a language.}}
 This is a URL to the help page for Narayam that describes how to use this tool.',
 	'narayam-checkbox-tooltip' => 'Toggle the input method —that is, the interpretation of keystrokes— between "standard" and "interpreted by Narayam".',
 	'narayam-cyrl-palochka' => 'This is a name of a keyboard mapping for the Cyrillic alphabet that includes the letter palochka. See https://en.wikipedia.org/wiki/Palochka .',
