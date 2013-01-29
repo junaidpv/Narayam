@@ -2187,11 +2187,12 @@ $messages['ka'] = array(
 );
 
 /** Khmer (ភាសាខ្មែរ)
+ * @author គីមស៊្រុន
  * @author វ័ណថារិទ្ធ
  */
 $messages['km'] = array(
 	'narayam-desc' => 'អនុញ្ញាតឲ្យបន្ថែមវិធីវាយបញ្ចូលពិសេសសម្រាប់ការវាយបញ្ចូលអក្សរ',
-	'narayam-toggle-ime' => 'ដើម្បីប្ដូរ IM ($1)', # Fuzzy
+	'narayam-toggle-ime' => 'ប្រើ ($1)',
 	'narayam-checkbox-tooltip' => 'ដើម្បីបិទឬបើកវិធីវាយបញ្ចូលអក្សរ',
 	'narayam-eo' => 'ភាសា Esperanto',
 	'narayam-hi-inscript' => 'ក្ដារវាយពុម្ពអក្សរ Hindi InScript',
