@@ -2144,7 +2144,7 @@ $messages['jv'] = array(
  */
 $messages['ka'] = array(
 	'narayam-toggle-ime' => 'ჩართვა ($1)',
-	'narayam-menu' => 'შეყვანის მეთოდი',
+	'narayam-menu' => 'შრიფტის არჩევა',
 	'narayam-menu-tooltip' => 'შეყვანის მეთოდის არჩევა',
 	'narayam-help' => 'დახმარება',
 	'narayam-enable-preference' => 'შეყვანის მეთოდის ჩართვა',
