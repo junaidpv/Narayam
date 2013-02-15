@@ -146,7 +146,7 @@ $wgNarayamSchemes = array(
 	),
 	'or' => array(
 		'or' => 'ext.narayam.rules.or',
-		'or-lekhani' =>  array( 'ext.narayam.rules.or-lekhani', 'beta' ),
+		'or-lekhani' =>  array( 'ext.narayam.rules.or-lekhani' ),
 		'or-inscript' => 'ext.narayam.rules.or-inscript',
 	),
 	'pa' => array(
