@@ -106,7 +106,8 @@ $messages['qqq'] = array(
 	'narayam-desc' => '{{desc|name=Narayam|url=http://www.mediawiki.org/wiki/Extension:Narayam}}',
 	'narayam-toggle-ime' => 'Switch input method ($1)',
 	'narayam-menu' => 'Narayam allows to add custom input methods for input fields.
-See: http://www.mediawiki.org/wiki/Extension:Narayam',
+See: http://www.mediawiki.org/wiki/Extension:Narayam
+{{Identical|Input method}}',
 	'narayam-help' => 'See: http://www.mediawiki.org/wiki/Extension:Narayam
 {{Identical|Help}}',
 	'narayam-help-page' => '{{Optional}}
