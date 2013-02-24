@@ -2064,7 +2064,7 @@ $messages['ja'] = array(
 	'narayam-gom-deva' => 'ゴア州コンカニ語デーヴァナーガリー文字翻字',
 	'narayam-gom-deva-inscript' => 'ゴア州コンカニ語デーヴァナーガリー文字 InScript',
 	'narayam-he-standard-2011-extonly' => 'ヘブライ語2011年標準',
-	'narayam-he-standard-2011' => 'ヘブライ語2011年標準（英語キーボード）',
+	'narayam-he-standard-2011' => 'ヘブライ語2011年標準 (英語キーボード)',
 );
 
 /** Javanese (Basa Jawa)
