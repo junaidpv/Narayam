@@ -2,7 +2,7 @@
  * Trasliteration regular expression rules table for Telugu
  * based on RTS
  * @author Veeven ([[user:Veeven]])
- * @date 2012-01-23
+ * @date 2013-03-02
  * @credits Junaid, Naveen Shankar (because it is partly based on Sanskrit);
  * Nagarjuna Venna and others (because it mostly uses RTS)
  * License: GPLv3,  CC-BY-SA 3.0
@@ -100,7 +100,7 @@ var rules = [
 */
 
 // zwnj
-['(్)\\^', '', '$1\u200d'],
+['(్)\\^', '', '$1\u200c'],
 
 // sunna ending
 ['మ్(\\s|\\.|\\, |\\))', '', 'ం$1'],
