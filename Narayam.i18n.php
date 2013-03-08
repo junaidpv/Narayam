@@ -521,6 +521,7 @@ $messages['bn'] = array(
 );
 
 /** Breton (brezhoneg)
+ * @author Fohanno
  * @author Fulup
  * @author Y-M D
  */
@@ -545,6 +546,7 @@ $messages['br'] = array(
 	'narayam-cyrl-palochka' => 'Kirilleg gant palochka',
 	'narayam-eo' => 'Esperanteg',
 	'narayam-hi' => 'Treuzlizherennadur hindi',
+	'narayam-hi-bolnagri' => 'Bolnagri hindi',
 	'narayam-hi-inscript' => 'InScript hindi',
 	'narayam-kn' => 'Treuzlizherennadur kannada',
 	'narayam-kn-inscript' => 'InScript kannada',
