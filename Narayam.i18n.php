@@ -2861,6 +2861,15 @@ $messages['nb'] = array(
 	'narayam-ru-standard' => 'Russisk standard',
 );
 
+/** Low German (Plattdüütsch)
+ * @author Joachim Mos
+ */
+$messages['nds'] = array(
+	'narayam-help' => 'Hülp',
+	'narayam-eo' => 'Esperanto',
+	'narayam-de' => 'Düütsch',
+);
+
 /** Newari (नेपाल भाषा)
  * @author Eukesh
  */
