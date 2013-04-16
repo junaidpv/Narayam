@@ -1448,6 +1448,7 @@ $messages['gsw'] = array(
 
 /** Gujarati (ગુજરાતી)
  * @author Ankit
+ * @author Ashok modhvadia
  * @author Dsvyas
  * @author Sweta
  */
@@ -1455,7 +1456,7 @@ $messages['gu'] = array(
 	'narayam-desc' => 'લખાણ ક્ષેત્રો માટે વિવિધ લેખન પદ્ધતિઓ ઉમેરવાની પરવાનગી આપે છે',
 	'narayam-toggle-ime' => 'સક્રિય ($1)',
 	'narayam-menu' => 'લેખન પદ્ધતિ',
-	'narayam-menu-tooltip' => 'લેખન પ્રણાલી પસંદ કરો', # Fuzzy
+	'narayam-menu-tooltip' => 'લેખન પ્રણાલી પસંદ કરો',
 	'narayam-help' => 'મદદ',
 	'narayam-checkbox-tooltip' => 'લેખન પદ્ધતિ ચાલુ અને બંધ કરવા માટે',
 	'narayam-enable-preference' => 'લેખન પ્રણાલી સક્રિય કરો',
