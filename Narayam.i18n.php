@@ -1551,7 +1551,7 @@ $messages['he'] = array(
 	'narayam-new' => 'נווארי – תעתיק',
 	'narayam-ne-inscript' => 'נפאלית – InScript',
 	'narayam-or' => 'אורייה – תעתיק',
-	'narayam-or-lekhani' => 'אודייה Lekhani',
+	'narayam-or-lekhani' => 'אורייה Lekhani',
 	'narayam-or-inscript' => 'אורייה – InScript',
 	'narayam-pa' => "פנג'אבית גורמוקהי – תעתיק",
 	'narayam-pa-phonetic' => "פנג'אבית גורמוקהי – פונטית",
@@ -4134,6 +4134,7 @@ $messages['ug-arab'] = array(
  * @author Dim Grits
  * @author Olvin
  * @author Steve.rusyn
+ * @author Ата
  * @author Тест
  */
 $messages['uk'] = array(
@@ -4171,8 +4172,8 @@ $messages['uk'] = array(
 	'narayam-new' => 'Неварська транслітерація',
 	'narayam-ne-inscript' => 'Непальський Inscript',
 	'narayam-or' => 'Транслітерація орія',
-	'narayam-or-lekhani' => 'Odiya Lekhani',
-	'narayam-or-inscript' => 'Орія Inscript',
+	'narayam-or-lekhani' => 'Орія Lekhani',
+	'narayam-or-inscript' => 'Орія InScript',
 	'narayam-sa' => 'Транслітерація санскритом',
 	'narayam-sa-inscript' => 'Санскрит Inscript',
 	'narayam-si-singlish' => 'Сингальський Сінгліш',
