@@ -141,6 +141,7 @@ This allows for Narayam to add custom input methods for input fields. Esperanto 
 	'narayam-bn-inscript' => '[[w:InScript|InScript]] keyboard layout for the Bengali language.',
 	'narayam-bn-nkb' => 'National (Jatiyo) keyboard layout for the Bengali language.',
 	'narayam-bn-probhat' => 'Probhat keyboard layout for the Bengali language.',
+	'narayam-de' => '{{Identical|German}}',
 );
 
 /** Afrikaans (Afrikaans)
