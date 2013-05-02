@@ -3730,6 +3730,7 @@ $messages['sl'] = array(
 /** Serbian (Cyrillic script) (српски (ћирилица)‎)
  * @author Nikola Smolenski
  * @author Rancher
+ * @author Милан Јелисавчић
  */
 $messages['sr-ec'] = array(
 	'narayam-desc' => 'Омогућава додавање прилагођених улазних метода за уређивачки оквир',
@@ -3764,9 +3765,9 @@ $messages['sr-ec'] = array(
 	'narayam-new-inscript' => 'Неварски – индијско писмо',
 	'narayam-new' => 'Пресловљавање на неварски',
 	'narayam-ne-inscript' => 'Непалски – индијско писмо',
-	'narayam-or' => 'Пресловљавање за орија',
-	'narayam-or-lekhani' => 'Орија – лекани',
-	'narayam-or-inscript' => 'Орија – индијско писмо',
+	'narayam-or' => 'Пресловљавање за орија', # Fuzzy
+	'narayam-or-lekhani' => 'Орија – лекани', # Fuzzy
+	'narayam-or-inscript' => 'Орија – индијско писмо', # Fuzzy
 	'narayam-pa' => 'Пресловљавање на гурмукхи за панџаби',
 	'narayam-pa-phonetic' => 'Гурмуки за пенџапски (фонетски)',
 	'narayam-pa-inscript' => 'Гурмуки за пенџапски – индијско писмо',
@@ -3787,7 +3788,7 @@ $messages['sr-ec'] = array(
 	'narayam-bn-inscript' => 'Бенгалски – индијско писмо',
 	'narayam-bn-nkb' => 'Званични распоред за бенгалски',
 	'narayam-ur' => 'Урду (стандардно)',
-	'narayam-de' => 'Немачки',
+	'narayam-de' => 'немачки',
 	'narayam-gu' => 'Пресловљавање за гуџарати',
 	'narayam-gu-inscript' => 'Гуџарати – индијско писмо',
 	'narayam-ru-standard' => 'Руски (стандардно)',
