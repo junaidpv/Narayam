@@ -3154,13 +3154,14 @@ $messages['ps'] = array(
 
 /** Portuguese (português)
  * @author Hamilton Abreu
+ * @author Luckas
  * @author MetalBrasil
  * @author SandroHc
  * @author Waldir
  */
 $messages['pt'] = array(
 	'narayam-desc' => 'Permite a adição de métodos de entrada personalizados para os campos de entrada',
-	'narayam-toggle-ime' => 'Activar ($1)',
+	'narayam-toggle-ime' => 'Ativar ($1)',
 	'narayam-menu' => 'Método de entrada',
 	'narayam-menu-tooltip' => 'Controlar o Narayam Input Method Editor (IME)', # Fuzzy
 	'narayam-help' => 'Ajuda',
@@ -3173,8 +3174,8 @@ $messages['pt'] = array(
 	'narayam-ml-inscript' => 'InScript para malaiala',
 	'narayam-ne' => 'Transliteração de nepali',
 	'narayam-ne-inscript' => 'InScript para nepali',
-	'narayam-or' => 'Transliteração do oriá',
-	'narayam-or-inscript' => 'InScript para oriá',
+	'narayam-or' => 'Transliteração do oriá', # Fuzzy
+	'narayam-or-inscript' => 'InScript para oriá', # Fuzzy
 	'narayam-sa' => 'Transliteração do sânscrito',
 	'narayam-sa-inscript' => 'InScript para sânscrito',
 	'narayam-si-singlish' => 'Singlish para cingalês',
