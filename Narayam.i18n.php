@@ -3214,6 +3214,7 @@ $messages['pt'] = array(
 
 /** Brazilian Portuguese (português do Brasil)
  * @author Giro720
+ * @author Luckas
  * @author MetalBrasil
  * @author 555
  */
@@ -3232,8 +3233,8 @@ $messages['pt-br'] = array(
 	'narayam-ml-inscript' => 'InScript para malaiala',
 	'narayam-ne' => 'Transliteração para nepali',
 	'narayam-ne-inscript' => 'InScript para nepali',
-	'narayam-or' => 'Transliteração do oriá',
-	'narayam-or-inscript' => 'InScript para oriá',
+	'narayam-or' => 'Transliteração do oriá', # Fuzzy
+	'narayam-or-inscript' => 'InScript para oriá', # Fuzzy
 	'narayam-sa' => 'Transliteração do sânscrito',
 	'narayam-sa-inscript' => 'InScript para sânscrito',
 	'narayam-si-singlish' => 'Singlish para cingalês',
@@ -3244,6 +3245,7 @@ $messages['pt-br'] = array(
 	'narayam-bn-avro' => 'Avro para bengali',
 	'narayam-bn-inscript' => 'InScript para bengali',
 	'narayam-bn-nkb' => 'NKB para bengali',
+	'narayam-de' => 'Alemão',
 );
 
 /** Romanian (română)
