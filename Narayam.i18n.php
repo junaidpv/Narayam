@@ -611,6 +611,13 @@ $messages['bs'] = array(
 	'narayam-bn-nkb' => 'Bengalski NKB',
 );
 
+/** Chechen (нохчийн)
+ * @author Умар
+ */
+$messages['ce'] = array(
+	'narayam-ta-bamini' => 'Тамилхойн Bamini',
+);
+
 /** Czech (česky)
  * @author Mormegil
  * @author Reaperman
