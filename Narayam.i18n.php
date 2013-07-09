@@ -2327,7 +2327,7 @@ $messages['kn'] = array(
  * @author 아라
  */
 $messages['ko'] = array(
-	'narayam-desc' => '필드 입력에 대한 사용자 정의 입력 방식을 추가하는 것을 허용',
+	'narayam-desc' => '필드 입력에 대한 사용자 정의 입력 방식을 추가할 수 있습니다',
 	'narayam-toggle-ime' => '활성화 ($1)',
 	'narayam-menu' => '입력 방식',
 	'narayam-menu-tooltip' => '입력 방식 선택',
@@ -2361,12 +2361,12 @@ $messages['ko'] = array(
 	'narayam-new-inscript' => '네와르어 인도스크립트',
 	'narayam-new' => '네와르어 음역',
 	'narayam-ne-inscript' => '네팔어 인도스크립트',
-	'narayam-or' => '오디야어 음역', # Fuzzy
-	'narayam-or-lekhani' => '오디야어 Lekhani', # Fuzzy
-	'narayam-or-inscript' => '오리야어 인도스크립트', # Fuzzy
-	'narayam-pa' => '구르무키 펀자브어 음역',
-	'narayam-pa-phonetic' => '구르무키 펀자브어 Phonetic',
-	'narayam-pa-inscript' => '구르무키 펀자브어 인도스크립트',
+	'narayam-or' => '오디아어 음역',
+	'narayam-or-lekhani' => '오디아어 Lekhani',
+	'narayam-or-inscript' => '오디아어 인도스크립트',
+	'narayam-pa' => '굴묵키어 펀자브어 음역',
+	'narayam-pa-phonetic' => '굴묵키어 펀자브어 Phonetic',
+	'narayam-pa-inscript' => '굴묵키어 펀자브어 인도스크립트',
 	'narayam-sa' => '산스크리트어 음역',
 	'narayam-sa-inscript' => '산스크리트어 인도스크립트',
 	'narayam-si-singlish' => '싱할라어 Singlish',
