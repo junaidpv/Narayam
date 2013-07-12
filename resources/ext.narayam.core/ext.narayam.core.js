@@ -621,6 +621,10 @@ $.narayam = ( function () {
 			mw.config.get( 'wgContentLanguage' ),
 			mw.config.get( 'wgUserLanguage' )
 		];
+		var mandatoryLangs = mw.config.get('wgNarayamAlwaysLoadForLanguages');
+		$(mandatoryLangs).each(function(index, item) {
+		  requested.push(item);
+		});
 		$( 'textarea[lang]' ).each( function () {
 			requested.push( this.lang );
 		});

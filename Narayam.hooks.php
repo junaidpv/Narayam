@@ -58,8 +58,10 @@ class NarayamHooks {
 	 */
 	public static function addConfig( &$vars ) {
 		global $wgNarayamRecentItemsLength, $wgNarayamEnabledByDefault;
+		global $wgNarayamAlwaysLoadForLanguages;
 		$vars['wgNarayamEnabledByDefault'] = $wgNarayamEnabledByDefault;
 		$vars['wgNarayamRecentItemsLength'] = $wgNarayamRecentItemsLength;
+		$vars['wgNarayamAlwaysLoadForLanguages'] = $wgNarayamAlwaysLoadForLanguages;
 		$vars['wgNarayamHelpPage'] = wfMessage( 'narayam-help-page' )->inContentLanguage()->escaped();
 		return true;
 	}
@@ -100,6 +102,7 @@ class NarayamHooks {
 	 */
 	protected static function getSchemes() {
 		global $wgLanguageCode, $wgLang, $wgNarayamSchemes, $wgTitle, $wgNarayamUseBetaMapping;
+		global $wgNarayamAlwaysLoadForLanguages;
 
 		$userlangCode = $wgLang->getCode();
 		$contlangSchemes = isset( $wgNarayamSchemes[$wgLanguageCode] ) ?
@@ -110,7 +113,13 @@ class NarayamHooks {
 		$pagelangSchemes = isset( $wgNarayamSchemes[$pagelang] ) ?
 			$wgNarayamSchemes[$pagelang] : array();
 
-		$schemes = $userlangSchemes + $contlangSchemes + $pagelangSchemes;
+		$alwaysLoadSchemes = array();
+		foreach ( $wgNarayamAlwaysLoadForLanguages as $lang ) {
+			$alwaysLoadSchemes += isset( $wgNarayamSchemes[$lang] ) ?
+			$wgNarayamSchemes[$lang] : array();
+		}
+
+		$schemes = $userlangSchemes + $contlangSchemes + $pagelangSchemes + $alwaysLoadSchemes;
 		foreach ( $schemes as $i => $scheme ) {
 			$version = isset( $scheme[1] ) ? $scheme[1] : "stable";
 			if ( $version === "beta" ) {

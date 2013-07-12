@@ -4,7 +4,7 @@
  *
  * @file
  * @ingroup extensions
- * @version 0.2
+ * @version 1.0
  *
  * @author Junaid P V
  * @author Niklas Laxström
@@ -41,6 +41,11 @@ $wgNarayamUseBetaMapping = false;
 
 // Enable experimental onscreen keyboard feature.
 $wgNarayamUseOSK = false;
+
+// In some sites some language IMEs should be loaded always regardless
+// of site language  or user language.
+// This shoulbe an array of language codes.
+$wgNarayamAlwaysLoadForLanguages = array();
 
 // This layout is repeated many times
 $cyrlPalochkaScheme = array(
